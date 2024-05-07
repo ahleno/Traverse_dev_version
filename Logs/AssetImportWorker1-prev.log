@@ -1,23 +1,23 @@
 Using pre-set license
-Built from '2022.3/staging' branch; Version is '2022.3.26f1 (ec6cd8118806) revision 15494360'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'ko' Physical Memory: 16300 MB
+Built from '2022.3/staging' branch; Version is '2022.3.25f1 (530ae0ba3889) revision 5442272'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22631) 64bit Professional' Language: 'ko' Physical Memory: 130939 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity\Hub\Editor\2022.3.26f1\Editor\Unity.exe
+C:\Program Files\Unity\Hub\Editor\2022.3.25f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker1
 -projectPath
-C:/Users/haneol/Documents/GitHub/Traverse
+C:/Users/FCSL/Traverse
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-8342
-Successfully changed project path to: C:/Users/haneol/Documents/GitHub/Traverse
-C:/Users/haneol/Documents/GitHub/Traverse
+59932
+Successfully changed project path to: C:/Users/FCSL/Traverse
+C:/Users/FCSL/Traverse
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -49,70 +49,70 @@ C:/Users/haneol/Documents/GitHub/Traverse
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [21020] Host "[IP] 192.168.123.100 [Port] 0 [Flags] 2 [Guid] 2262808078 [EditorId] 2262808078 [Version] 1048832 [Id] WindowsEditor(7,HANEOL-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [27924] Host "[IP] 192.168.63.215 [Port] 0 [Flags] 2 [Guid] 359781742 [EditorId] 359781742 [Version] 1048832 [Id] WindowsEditor(7,ML-PC3) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [21020] Host "[IP] 192.168.123.100 [Port] 0 [Flags] 2 [Guid] 2262808078 [EditorId] 2262808078 [Version] 1048832 [Id] WindowsEditor(7,HANEOL-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [27924] Host "[IP] 192.168.63.215 [Port] 0 [Flags] 2 [Guid] 359781742 [EditorId] 359781742 [Version] 1048832 [Id] WindowsEditor(7,ML-PC3) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-[Physics::Module] Initialized MultithreadedJobDispatcher with 11 workers.
-Refreshing native plugins compatible for Editor in 2955.94 ms, found 11 plugins.
-Preloading 3 native plugins for Editor in 5.79 ms.
-Initialize engine version: 2022.3.26f1 (ec6cd8118806)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.26f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/haneol/Documents/GitHub/Traverse/Assets
+[Physics::Module] Initialized MultithreadedJobDispatcher with 19 workers.
+Refreshing native plugins compatible for Editor in 16.84 ms, found 11 plugins.
+Preloading 3 native plugins for Editor in 1.89 ms.
+Initialize engine version: 2022.3.25f1 (530ae0ba3889)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.25f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/FCSL/Traverse/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 1660 SUPER (ID=0x21c4)
+    Renderer: NVIDIA GeForce RTX 3090 (ID=0x2204)
     Vendor:   NVIDIA
-    VRAM:     5980 MB
-    Driver:   31.0.15.3623
+    VRAM:     24340 MB
+    Driver:   31.0.15.3640
 Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
 Shader 'Scene/HighlightsAndShadows': fallback shader 'Off' not found
 Initialize mono
-Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.26f1/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.26f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
-Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.26f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56108
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.25f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.25f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.25f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56024
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.26f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.26f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 2.339774 seconds.
-- Loaded All Assemblies, in 20.132 seconds
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.25f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.25f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.008261 seconds.
+- Loaded All Assemblies, in  0.328 seconds
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 779 ms
+Android Extension - Scanning For ADB Devices 253 ms
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  5.264 seconds
-Domain Reload Profiling: 25390ms
-	BeginReloadAssembly (14248ms)
+- Finished resetting the current domain, in  0.549 seconds
+Domain Reload Profiling: 875ms
+	BeginReloadAssembly (98ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (490ms)
-	RebuildNativeTypeToScriptingClass (21ms)
-	initialDomainReloadingComplete (2624ms)
-	LoadAllAssembliesAndSetupDomain (2742ms)
-		LoadAssemblies (14491ms)
+	RebuildCommonClasses (29ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (54ms)
+	LoadAllAssembliesAndSetupDomain (135ms)
+		LoadAssemblies (96ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (2485ms)
-			TypeCache.Refresh (2482ms)
-				TypeCache.ScanAssembly (2198ms)
-			ScanForSourceGeneratedMonoScriptInfo (1ms)
-			ResolveRequiredComponents (1ms)
-	FinalizeReload (5265ms)
+		AnalyzeDomain (133ms)
+			TypeCache.Refresh (131ms)
+				TypeCache.ScanAssembly (119ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (549ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (5090ms)
+		SetupLoadedEditorAssemblies (499ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (2179ms)
+			InitializePlatformSupportModulesInManaged (348ms)
 			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (3ms)
-			ProcessInitializeOnLoadAttributes (2807ms)
-			ProcessInitializeOnLoadMethodAttributes (96ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (102ms)
+			ProcessInitializeOnLoadMethodAttributes (42ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -120,8 +120,8 @@ Domain Reload Profiling: 25390ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  2.982 seconds
-Refreshing native plugins compatible for Editor in 30.82 ms, found 11 plugins.
+- Loaded All Assemblies, in  0.708 seconds
+Refreshing native plugins compatible for Editor in 11.52 ms, found 11 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Package Manager log level set to [2]
@@ -142,7 +142,7 @@ System.Reflection.TargetInvocationException: Exception has been thrown by the ta
    --- End of inner exception stack trace ---
   at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <b11ba2a8fbf24f219f7cc98532a11304>:0 
   at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <b11ba2a8fbf24f219f7cc98532a11304>:0 
-  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <8a5cd56eb1bb450ba65aa5485166bfb3>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <477bdcb097d4488eae58cbed17286dd8>:0 
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
 UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
 UnityEngine.Logger:Log (UnityEngine.LogType,object)
@@ -156,53 +156,53 @@ Mono: successfully reloaded assembly
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  1.277 seconds
-Domain Reload Profiling: 4247ms
-	BeginReloadAssembly (206ms)
+- Finished resetting the current domain, in  0.652 seconds
+Domain Reload Profiling: 1356ms
+	BeginReloadAssembly (130ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (8ms)
+		DisableScriptedObjects (5ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (28ms)
-	RebuildCommonClasses (41ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (59ms)
-	LoadAllAssembliesAndSetupDomain (2652ms)
-		LoadAssemblies (2414ms)
+		CreateAndSetChildDomain (22ms)
+	RebuildCommonClasses (29ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (38ms)
+	LoadAllAssembliesAndSetupDomain (497ms)
+		LoadAssemblies (322ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (366ms)
-			TypeCache.Refresh (304ms)
-				TypeCache.ScanAssembly (262ms)
-			ScanForSourceGeneratedMonoScriptInfo (44ms)
-			ResolveRequiredComponents (15ms)
-	FinalizeReload (1278ms)
+		AnalyzeDomain (249ms)
+			TypeCache.Refresh (208ms)
+				TypeCache.ScanAssembly (185ms)
+			ScanForSourceGeneratedMonoScriptInfo (29ms)
+			ResolveRequiredComponents (11ms)
+	FinalizeReload (652ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (963ms)
+		SetupLoadedEditorAssemblies (466ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (40ms)
-			SetLoadedEditorAssemblies (7ms)
+			InitializePlatformSupportModulesInManaged (22ms)
+			SetLoadedEditorAssemblies (5ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (154ms)
-			ProcessInitializeOnLoadAttributes (697ms)
-			ProcessInitializeOnLoadMethodAttributes (44ms)
-			AfterProcessingInitializeOnLoad (20ms)
+			BeforeProcessingInitializeOnLoad (85ms)
+			ProcessInitializeOnLoadAttributes (323ms)
+			ProcessInitializeOnLoadMethodAttributes (23ms)
+			AfterProcessingInitializeOnLoad (8ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (18ms)
-Switching build target platform(13) subTarget(5) extendedPlatform(0) -> platform(13) subTarget(0) extendedPlatform(0)
+		AwakeInstancesAfterBackupRestoration (5ms)
 Shader 'Scene/HighlightsAndShadows': fallback shader 'Off' not found
 Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
-Refreshing native plugins compatible for Editor in 32.77 ms, found 11 plugins.
-Preloading 3 native plugins for Editor in 0.21 ms.
-Unloading 4990 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 77 unused Assets / (76.8 KB). Loaded Objects now: 5427.
-Memory consumption went from 190.1 MB to 190.0 MB.
-Total: 5.499300 ms (FindLiveObjects: 0.517300 ms CreateObjectMapping: 0.526900 ms MarkObjects: 4.185500 ms  DeleteObjects: 0.268300 ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 11.65 ms, found 11 plugins.
+Preloading 3 native plugins for Editor in 0.14 ms.
+Unloading 4993 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 77 unused Assets / (76.8 KB). Loaded Objects now: 5432.
+Memory consumption went from 190.5 MB to 190.4 MB.
+Total: 3.765300 ms (FindLiveObjects: 0.419900 ms CreateObjectMapping: 0.468300 ms MarkObjects: 2.745400 ms  DeleteObjects: 0.130500 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
   custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
@@ -214,273 +214,8 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Shader 'Scene/HighlightsAndShadows': fallback shader 'Off' not found
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 35.41 ms, found 11 plugins.
-Preloading 3 native plugins for Editor in 0.33 ms.
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 1 unused Assets / (3.1 KB). Loaded Objects now: 5427.
-Memory consumption went from 98.2 MB to 98.2 MB.
-Total: 6.543600 ms (FindLiveObjects: 0.624600 ms CreateObjectMapping: 0.591000 ms MarkObjects: 5.294000 ms  DeleteObjects: 0.032700 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 15305.390059 seconds.
-  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Materials/blue_light.mat
-  artifactKey: Guid(47791ffc03ec2c64fbd077752860cd51) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
-Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Materials/blue_light.mat using Guid(47791ffc03ec2c64fbd077752860cd51) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'c4933cbcb17ddc8042ca3a98f127c85f') in 0.159386 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Prefabs/lamp_pole_single_pink.prefab
-  artifactKey: Guid(ee320aa63aada0e44b3c3a900180121b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
-Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Prefabs/lamp_pole_single_pink.prefab using Guid(ee320aa63aada0e44b3c3a900180121b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '9572ec93c6606c7f9700738c5b82fb48') in 0.071509 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 13
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Models/hedge_with_base.fbx
-  artifactKey: Guid(8e079575efded7b488ca4313fcf6eeac) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
-Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Models/hedge_with_base.fbx using Guid(8e079575efded7b488ca4313fcf6eeac) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'e93b987d453addc4ba2ec473bda91631') in 0.065236 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 7
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Materials/asphalt_4_tracks.mat
-  artifactKey: Guid(3216e81dc42407948a4889aa3c979c6a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
-Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Materials/asphalt_4_tracks.mat using Guid(3216e81dc42407948a4889aa3c979c6a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'ad60e191c3cc341ee67a22a1005775e8') in 0.244802 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 4
-========================================================================
-Received Import Request.
-  Time since last request: 0.000049 seconds.
-  path: Assets/Resources/OVRPlatformToolSettings.asset
-  artifactKey: Guid(d7430eb478fba52439b1f3df6c6bfcd1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
-Start importing Assets/Resources/OVRPlatformToolSettings.asset using Guid(d7430eb478fba52439b1f3df6c6bfcd1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '4e8b3de18c6a81f8f779c7bb7bcf01d9') in 0.032917 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Models/factory_building_big_bgr.fbx
-  artifactKey: Guid(35b0f1d5aadbd0042aa23a08e76985d0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
-Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Models/factory_building_big_bgr.fbx using Guid(35b0f1d5aadbd0042aa23a08e76985d0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '0c60ca4e7455a0e30919689128773ded') in 0.035035 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 7
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Models/basement_big.fbx
-  artifactKey: Guid(14a3f32c76f649d47812dbec6c810180) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
-Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Models/basement_big.fbx using Guid(14a3f32c76f649d47812dbec6c810180) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'a8d92af35eca9d0117f0d61c9d64ab3b') in 0.037316 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 7
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Models/office_building_4_bgr.fbx
-  artifactKey: Guid(d7aeb709a3e64ad46b994291949d76e7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
-Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Models/office_building_4_bgr.fbx using Guid(d7aeb709a3e64ad46b994291949d76e7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '5d110978da121fa045e9b31a21535c0f') in 0.034610 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 7
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Prefabs/small_house_3.prefab
-  artifactKey: Guid(0392a9d92e15bdd4aa8c40dc637ec21f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
-Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Prefabs/small_house_3.prefab using Guid(0392a9d92e15bdd4aa8c40dc637ec21f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'a1b507222ee72b74dd088feeb14f4dc2') in 0.026861 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 13
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Textures/asphalt_4_tracks.png
-  artifactKey: Guid(ec737a25d469efb46a04424a34accbd3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
-Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Textures/asphalt_4_tracks.png using Guid(ec737a25d469efb46a04424a34accbd3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '9529c44a12e0643064b55e48c232e75c') in 0.113322 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Textures/asphalt_highway.png
-  artifactKey: Guid(daf1e92c0326ff746956666cff7510e1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
-Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Textures/asphalt_highway.png using Guid(daf1e92c0326ff746956666cff7510e1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '81ccf258f86af48bd7aae5706e780c03') in 0.086274 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Textures/asphalt_extra.png
-  artifactKey: Guid(559fde5e570141e4c8fcc6f96cd94dc2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
-Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Textures/asphalt_extra.png using Guid(559fde5e570141e4c8fcc6f96cd94dc2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'bbae9097cdfa5993f5b01180a23dc2af') in 0.075906 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Prefabs/office_building_3_bgr.prefab
-  artifactKey: Guid(5abd6f97766ead84397268c287892e4f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
-Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Prefabs/office_building_3_bgr.prefab using Guid(5abd6f97766ead84397268c287892e4f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '56a73e55d49c463774eb40f69bb68f70') in 0.026901 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 7
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Plugins/Android/AndroidManifest.xml
-  artifactKey: Guid(514cbcf8b0989974587a237d06230403) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
-Start importing Assets/Plugins/Android/AndroidManifest.xml using Guid(514cbcf8b0989974587a237d06230403) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'e90011e021481b33e6e22daed9493ebc') in 0.013903 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Prefabs/lamp_pole_dual_pink.prefab
-  artifactKey: Guid(0fe1af71a32bb6a44b4e93b941d82aa5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
-Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Prefabs/lamp_pole_dual_pink.prefab using Guid(0fe1af71a32bb6a44b4e93b941d82aa5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'da0a0584bf9e31b5b9ea9213cea18f2a') in 0.024583 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 19
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Materials/asphalt_extra.mat
-  artifactKey: Guid(48bf040ff1590a74782bf0210962cdee) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
-Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Materials/asphalt_extra.mat using Guid(48bf040ff1590a74782bf0210962cdee) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '2fa8a382fbe7e04fa86667556a9ee8f1') in 0.194850 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 4
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Textures/highrise_facades.png
-  artifactKey: Guid(a79a54e9a7d7c0b43a5953d27ed15f55) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
-Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Textures/highrise_facades.png using Guid(a79a54e9a7d7c0b43a5953d27ed15f55) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '9b7a619bdd5ec45df3477444e868bb1c') in 0.051097 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/KCDF/Toy/Models/Tuho/Material/M_Tuho_2.mat
-  artifactKey: Guid(0f472a191a9308b45b5505580b9539c9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
-Start importing Assets/KCDF/Toy/Models/Tuho/Material/M_Tuho_2.mat using Guid(0f472a191a9308b45b5505580b9539c9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '8478b911446a010cc73f47e48e77ccb9') in 0.075340 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000045 seconds.
-  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Textures/highrise_facades_em.png
-  artifactKey: Guid(63bd55654816cf744a276f50c1210d19) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
-Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Textures/highrise_facades_em.png using Guid(63bd55654816cf744a276f50c1210d19) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'c86d8df7fe2c8f366b4c54a29bbcb74b') in 0.049969 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Materials/orange_light.mat
-  artifactKey: Guid(faba0caff81e6d041a9f29d7045d39bf) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
-Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Materials/orange_light.mat using Guid(faba0caff81e6d041a9f29d7045d39bf) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '1d4334b02b98689c1c8dc484b52bc498') in 0.025041 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Materials/asphalt_2-5_tracks.mat
-  artifactKey: Guid(fd9c9ee73e2d66143b28564b9e869f9a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
-Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Materials/asphalt_2-5_tracks.mat using Guid(fd9c9ee73e2d66143b28564b9e869f9a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '1a95a30d60b984f755674110df325064') in 0.220856 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 4
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Prefabs/office_building_4_bgr.prefab
-  artifactKey: Guid(44f78b98bb705704a86127ce68d48b4e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
-Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Prefabs/office_building_4_bgr.prefab using Guid(44f78b98bb705704a86127ce68d48b4e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '2992d2d91ceeecc9bc7d85b9cfc0c0fc') in 0.023716 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 7
-========================================================================
-Received Import Request.
-  Time since last request: 0.000066 seconds.
-  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Models/office_building_2_bgr.fbx
-  artifactKey: Guid(5048a1cf7d715be43bafc4d676ab5eb3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
-Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Models/office_building_2_bgr.fbx using Guid(5048a1cf7d715be43bafc4d676ab5eb3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '3bd6e23e997e0b8934655c128881917c') in 0.031428 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 7
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Prefabs/mid_house_5.prefab
-  artifactKey: Guid(972492e6e936f8a4b8fd9e008339db74) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
-Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Prefabs/mid_house_5.prefab using Guid(972492e6e936f8a4b8fd9e008339db74) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '284abe2489156f1b1cb3c789709d134b') in 0.024442 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 13
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Prefabs/mid_house_3.prefab
-  artifactKey: Guid(e55db05c354298e419fe7c1c1cb11333) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
-Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Prefabs/mid_house_3.prefab using Guid(e55db05c354298e419fe7c1c1cb11333) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '4e5cff5fd0d11fc46373aa2534abc886') in 0.034263 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 13
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Textures/props_main.png
-  artifactKey: Guid(cf12b928bc9bd7c4f9c2c809047de444) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
-Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Textures/props_main.png using Guid(cf12b928bc9bd7c4f9c2c809047de444) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '8fb9798081004585c73cb4ff42bbb8a5') in 0.024865 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/KCDF/Toy/Models/Tuho/Material/M_Tuho_1.mat
-  artifactKey: Guid(b8b2da2c004258344b569b888815c045) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
-Start importing Assets/KCDF/Toy/Models/Tuho/Material/M_Tuho_1.mat using Guid(b8b2da2c004258344b569b888815c045) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '15af9912160e23859efd2cc0d071d0e2') in 0.254799 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 5
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Materials/pink_light.mat
-  artifactKey: Guid(dacfa358e9317634f9d90daba2a320f3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
-Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Materials/pink_light.mat using Guid(dacfa358e9317634f9d90daba2a320f3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '4a2f9a76d040e9abf0c6f4a62c953947') in 0.025509 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Materials/vegetation_main.mat
-  artifactKey: Guid(9413168c9f855e34dbc2ac601af593fe) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
-Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Materials/vegetation_main.mat using Guid(9413168c9f855e34dbc2ac601af593fe) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '9dd1829eda6d485251c08a29ccc4f96d') in 0.063679 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Models/building_lamp.fbx
-  artifactKey: Guid(decc49a5103de784e84ab781e9bf158d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
-Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Models/building_lamp.fbx using Guid(decc49a5103de784e84ab781e9bf158d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '9c40a2505313b5a33b12001cc6749ad6') in 0.029087 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 7
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: 스레드 종료 또는 응용 프로그램 요청 때문에 I/O 작업이 취소되었습니다.
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: ??? ?? ?? ?? ???? ?? ??? I/O ??? ???????.
 AssetImportWorker is now disconnected from the server
 Process exiting
 Exiting without the bug reporter. Application will terminate with return code 0

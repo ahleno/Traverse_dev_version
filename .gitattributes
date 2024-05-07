@@ -10,3 +10,4 @@ Packages filter=lfs diff=lfs merge=lfs -text
 Traverse.sln filter=lfs diff=lfs merge=lfs -text
 UserSettings filter=lfs diff=lfs merge=lfs -text
 *.assets filter=lfs diff=lfs merge=lfs -text
+Assembly-CSharp.csproj filter=lfs diff=lfs merge=lfs -text
