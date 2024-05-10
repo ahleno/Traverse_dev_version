@@ -1,26 +1,3 @@
-﻿using System;
-
-using UnityEngine;
-
-namespace Unity.PlasticSCM.Editor
-{
-    internal static class GetRelativePath
-    {
-        internal static string ToApplication(string path)
-        {
-            Uri relativeToUri = new Uri(ApplicationDataPath.Get());
-            Uri pathUri = new Uri(FixVolumeLetterPath(path));
-
-            return Uri.UnescapeDataString(
-                relativeToUri.MakeRelativeUri(pathUri).ToString());
-        }
-
-        static string FixVolumeLetterPath(string path)
-        {
-            string volumeLetter = new string(new char[] { path[0] });
-            volumeLetter = volumeLetter.ToUpperInvariant();
-
-            return string.Concat(volumeLetter, path.Substring(1));
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:762cbe0ace18b1eecdc4b011f5ad7604ac4b3c99cf817f313a78d186171aa0ed
+size 724
