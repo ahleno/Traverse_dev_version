@@ -1,17 +1,3 @@
-* [About Profile Analyzer](index.md)
-    * [What's new](whats-new.md)
-    * [Upgrade guide](upgrade-guide.md)
-* [Profile Analyzer window](profile-analyzer-window.md)
-    * [Single view](single-view.md)
-    * [Compare view](compare-view.md)
-    * [Frame Control pane](frame-range-selection.md)
-    * [Filters pane](filtering-system.md)
-    * [Frame Summary](frame-summary.md)
-    * [Thread Summary](thread-summary.md)
-    * [Marker Summary](marker-summary.md)
-    * [Statistics in the Profile Analyzer](statistics.md)
-* Workflows
-    * [Collecting and viewing data](collecting-and-viewing-data.md)
-    * [Comparing frames from the same data set](comparing-frames-same-dataset.md)
-    * [Comparing frames from different data sets](analyzing-mulitple-datasets.md)
-    * [Ordering frames by length](ordering-frames-by-cost.md)
+version https://git-lfs.github.com/spec/v1
+oid sha256:5e650c7e6caceef77572e27cdcdc75855500bf29858e3ebd94bdfa6fb80d9c73
+size 823

@@ -1,29 +1,3 @@
-namespace Unity.VisualScripting
-{
-    /// <summary>
-    /// Called before the machine is destroyed.
-    /// </summary>
-    [UnitCategory("Events/Lifecycle")]
-    [UnitOrder(7)]
-    public sealed class OnDestroy : MachineEventUnit<EmptyEventArgs>
-    {
-        protected override string hookName => EventHooks.OnDestroy;
-
-        public override void StopListening(GraphStack stack)
-        {
-            // StopListening is typically triggered when the object is disabled or destroyed
-            // OnDestroy is a special case event where we want it to continue listening even when the object
-            // is disabled. It only unregisters itself on destruction and not before.
-            // That's why this method is overriden to do nothing.
-        }
-
-        private protected override void InternalTrigger(GraphReference reference, EmptyEventArgs args)
-        {
-            base.InternalTrigger(reference, args);
-
-            // Stop listening for events after we're triggered (i.e when we're destroyed)
-            using var stack = reference.ToStackPooled();
-            base.StopListening(stack);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:c6063c0f8060f28b6dcfaf109d30ddbaa1e5a14943859aafa46c9e5b6ce32239
+size 1126

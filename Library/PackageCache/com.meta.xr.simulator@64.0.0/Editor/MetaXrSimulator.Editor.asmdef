@@ -1,29 +1,3 @@
-{
-    "name": "MetaXrSimulator.Editor",
-    "rootNamespace": "",
-    "references": [
-        "Oculus.VR"
-    ],
-    "includePlatforms": [
-        "Editor"
-    ],
-    "excludePlatforms": [],
-    "allowUnsafeCode": false,
-    "overrideReferences": false,
-    "precompiledReferences": [],
-    "autoReferenced": true,
-    "defineConstraints": [],
-    "versionDefines": [
-        {
-            "name": "com.meta.xr.sdk.core",
-            "expression": "63.0.0",
-            "define": "META_XR_SDK_CORE_SUPPORTS_TELEMETRY"
-        },
-        {
-            "define": "OVR_UNITY_PACKAGE_MANAGER",
-            "name": "com.meta.xr.simulator",
-            "expression": ""
-        }
-    ],
-    "noEngineReferences": false
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:e92e2018574542096f81e8b19e1bea1ae117d3145feb7d757f1660c2ab52c03c
+size 713

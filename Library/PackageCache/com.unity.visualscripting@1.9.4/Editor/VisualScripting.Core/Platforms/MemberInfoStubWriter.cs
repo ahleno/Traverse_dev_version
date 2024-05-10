@@ -1,20 +1,3 @@
-using System.Reflection;
-
-namespace Unity.VisualScripting
-{
-    public abstract class MemberInfoStubWriter<T> : AotStubWriter where T : MemberInfo
-    {
-        protected MemberInfoStubWriter(T memberInfo) : base(memberInfo)
-        {
-            stub = memberInfo;
-            manipulator = stub.ToManipulator();
-        }
-
-        public new T stub { get; }
-        protected Member manipulator { get; }
-
-        public override string stubMethodComment => stub.ReflectedType.CSharpFullName() + "." + stub.Name;
-
-        public override string stubMethodName => stubMethodComment.FilterReplace('_', true, symbols: false, whitespace: false, punctuation: false);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ac0c8fbd980ba468d7186a98b7ea879d22186768c1b4fc4f52262f62fb1e8f1f
+size 671

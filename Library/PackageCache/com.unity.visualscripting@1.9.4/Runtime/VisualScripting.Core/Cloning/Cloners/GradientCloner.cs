@@ -1,24 +1,3 @@
-using System;
-using UnityEngine;
-
-namespace Unity.VisualScripting
-{
-    internal sealed class GradientCloner : Cloner<Gradient>
-    {
-        public override bool Handles(Type type)
-        {
-            return type == typeof(Gradient);
-        }
-
-        public override Gradient ConstructClone(Type type, Gradient original)
-        {
-            return new Gradient();
-        }
-
-        public override void FillClone(Type type, ref Gradient clone, Gradient original, CloningContext context)
-        {
-            clone.mode = original.mode;
-            clone.SetKeys(original.colorKeys, original.alphaKeys);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:0e5d47992b2fc1a0fac6a9cff19c8c9a9088bcea1ea827f45d505773087a65cb
+size 630
