@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c61efed302b62c02c6788b04217ff0e3996491820100c8a49262673def021a37
-size 917
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{87241EDA-FD11-45CC-EF16-74A31D5D65BC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{87241EDA-FD11-45CC-EF16-74A31D5D65BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87241EDA-FD11-45CC-EF16-74A31D5D65BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87241EDA-FD11-45CC-EF16-74A31D5D65BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87241EDA-FD11-45CC-EF16-74A31D5D65BC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
