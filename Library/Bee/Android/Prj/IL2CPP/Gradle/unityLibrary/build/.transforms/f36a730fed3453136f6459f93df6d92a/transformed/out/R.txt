@@ -1,11 +1,3 @@
-int color staticSplashScreenBackgroundColor 0x0
-int id unitySurfaceView 0x0
-int string FreeformWindowOrientation_landscape 0x0
-int string FreeformWindowOrientation_portrait 0x0
-int string FreeformWindowSize_maximize 0x0
-int string FreeformWindowSize_phone 0x0
-int string FreeformWindowSize_tablet 0x0
-int style BaseUnityTheme 0x0
-int style UnityThemeSelector 0x0
-int style UnityThemeSelector_Translucent 0x0
-int xml network_sec_config 0x0
+version https://git-lfs.github.com/spec/v1
+oid sha256:a9a240e3cf25986040d6c4bd3835165b37daf8b9be9ec61af7b0889ce29caefd
+size 439

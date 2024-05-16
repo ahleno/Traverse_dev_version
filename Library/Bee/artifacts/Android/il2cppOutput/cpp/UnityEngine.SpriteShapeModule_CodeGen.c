@@ -1,35 +1,3 @@
-﻿#include "pch-c.h"
-#ifndef _MSC_VER
-# include <alloca.h>
-#else
-# include <malloc.h>
-#endif
-
-
-#include "codegen/il2cpp-codegen-metadata.h"
-
-
-
-
-
-IL2CPP_EXTERN_C const Il2CppCodeGenModule g_UnityEngine_SpriteShapeModule_CodeGenModule;
-const Il2CppCodeGenModule g_UnityEngine_SpriteShapeModule_CodeGenModule = 
-{
-	"UnityEngine.SpriteShapeModule.dll",
-	0,
-	NULL,
-	0,
-	NULL,
-	NULL,
-	0,
-	NULL,
-	0,
-	NULL,
-	0,
-	NULL,
-	NULL,
-	NULL,
-	NULL,
-	NULL,
-	NULL,
-};
+version https://git-lfs.github.com/spec/v1
+oid sha256:3bea07ad664adeb7140c2b2517d3ca4eeb0bc5150081dff887330a85e9ce72c9
+size 450

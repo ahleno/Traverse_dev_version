@@ -1,10 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <style name="BaseUnityTheme" parent="android:Theme.Holo.Light.NoActionBar.Fullscreen">
-    <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
-    <item name="android:windowSplashScreenAnimatedIcon">@color/staticSplashScreenBackgroundColor</item>
-    <item name="android:windowSplashScreenBackground">@color/staticSplashScreenBackgroundColor</item>
-    <item name="android:windowSplashScreenIconBackgroundColor">@color/staticSplashScreenBackgroundColor</item>
-    <item name="android:windowSplashScreenAnimationDuration">0</item>
-  </style>
-</resources>
+version https://git-lfs.github.com/spec/v1
+oid sha256:f4a04aaeda00a2b5a7c2f93b4dd4b194d76a7175ee8d9792229d9e1bcee3a4dc
+size 627

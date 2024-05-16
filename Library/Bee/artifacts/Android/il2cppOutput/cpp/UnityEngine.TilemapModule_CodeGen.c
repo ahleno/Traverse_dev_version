@@ -1,35 +1,3 @@
-﻿#include "pch-c.h"
-#ifndef _MSC_VER
-# include <alloca.h>
-#else
-# include <malloc.h>
-#endif
-
-
-#include "codegen/il2cpp-codegen-metadata.h"
-
-
-
-
-
-IL2CPP_EXTERN_C const Il2CppCodeGenModule g_UnityEngine_TilemapModule_CodeGenModule;
-const Il2CppCodeGenModule g_UnityEngine_TilemapModule_CodeGenModule = 
-{
-	"UnityEngine.TilemapModule.dll",
-	0,
-	NULL,
-	0,
-	NULL,
-	NULL,
-	0,
-	NULL,
-	0,
-	NULL,
-	0,
-	NULL,
-	NULL,
-	NULL,
-	NULL,
-	NULL,
-	NULL,
-};
+version https://git-lfs.github.com/spec/v1
+oid sha256:805c30d4e9dfedf0868175a29e6fead7be67ac377f054e3e274256bab7c6b161
+size 438
