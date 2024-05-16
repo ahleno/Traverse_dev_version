@@ -1,3 +1,15 @@
 version https://git-lfs.github.com/spec/v1
 oid sha256:7499f0e14a339b7be9fc34ea7793871465335daf92e37b879d01bff3b5027778
 size 777
+Assembly-CSharp.csproj filter=lfs diff=lfs merge=lfs -text
+Library filter=lfs diff=lfs merge=lfs -text
+Logs filter=lfs diff=lfs merge=lfs -text
+My[[:space:]]project.sln filter=lfs diff=lfs merge=lfs -text
+ProjectSettings filter=lfs diff=lfs merge=lfs -text
+README.md filter=lfs diff=lfs merge=lfs -text
+Traverse.sln filter=lfs diff=lfs merge=lfs -text
+Traverse_background.sln filter=lfs diff=lfs merge=lfs -text
+bfg-1.14.0.jar filter=lfs diff=lfs merge=lfs -text
+Assets filter=lfs diff=lfs merge=lfs -text
+Packages filter=lfs diff=lfs merge=lfs -text
+UserSettings filter=lfs diff=lfs merge=lfs -text

@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ee4295889bf41430fbcf1d8e90c8121b920f6580d0a9a3164eeab1f4458252fe
-size 452
+﻿@import "Base.uss";
+
+#windowContainer {
+    height: 100%;
+    flex-grow: 1;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+
+#loginContainer TextField {
+    flex-direction: column;
+    font-size: 14px;
+}
+
+#emailNotification, #passwordNotification {
+    height: 15px;
+    margin-bottom: 5px;
+}
+
+#progressContainer {
+    height: 15px;
+    margin-top: 15px;
+}
+
+#signIn,
+#back {
+    width: 125px;
+}
+
+#signUpNeededNotificationLabel{
+    color: red;
+}

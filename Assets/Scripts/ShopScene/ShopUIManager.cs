@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b721387289a3b8f87fb234fa417aa4b2df6ae93d19818b8bebf6141923b9d3a2
-size 442
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class ShopUIManager : MonoBehaviour
+{
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+
+    public void MoveToMainScene(){
+        SceneManager.LoadScene("MainScene");
+    }
+}

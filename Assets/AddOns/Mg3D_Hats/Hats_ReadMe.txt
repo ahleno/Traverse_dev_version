@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8bdc7b790cae75cf6685890c2ab5661dfef29a9fa269a642555d49f27d29d49c
-size 223
+11 Hat Models - Add-On for 3D Microgames
+========================================
+
+Changelog
+---------
+[2.0.0] - 2022-02-24
+Updated to the Universal Render Pipeline (URP).
+
+[1.0.0] - 2020-02-17
+The initial release.
