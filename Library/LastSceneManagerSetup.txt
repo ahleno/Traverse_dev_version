@@ -1,3 +1,5 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:568391eb611f1d788949fc992a5bb20e11cde6c93c9cf67b801859e4d605e207
-size 95
+sceneSetups:
+- path: Assets/Scenes/MainScene.unity
+  isLoaded: 1
+  isActive: 1
+  isSubScene: 0
