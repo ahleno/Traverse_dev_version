@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8f759e378af73f322adb1f8ef8b0e2e137d57cabe1697c0279f7b4b2356928e3
-size 406
+@import "Base.uss";
+
+.organization-section {
+    margin: 10px 0px;
+}
+
+.organization-right {
+    width: auto;
+    min-width: 70px;
+    margin-left: 0px;
+}
+
+.organization-left{
+    flex: auto;
+    margin-top: 3px;
+}
+
+#openUnityDashboardButton {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 30px;
+    color: white;
+    background-color: black;
+}
+
+#joinSingleOrganizationButton{
+    height: 19px;
+}

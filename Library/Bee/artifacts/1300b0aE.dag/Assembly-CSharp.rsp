@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 -target:library
 -out:"Library/Bee/artifacts/1300b0aE.dag/Assembly-CSharp.dll"
 -refout:"Library/Bee/artifacts/1300b0aE.dag/Assembly-CSharp.ref.dll"
@@ -480,3 +481,8 @@
 /utf8output
 /preferreduilang:en-US
 /additionalfile:"Library/Bee/artifacts/1300b0aE.dag/Assembly-CSharp.UnityAdditionalFile.txt"
+=======
+version https://git-lfs.github.com/spec/v1
+oid sha256:ac2e95cb3babbe173983c1f2bfa513d3e7a750a82c72330295b50e2f2a85801d
+size 40211
+>>>>>>> 6c013c4c46044d3dcc9a81e2ae5744753b9f0c90

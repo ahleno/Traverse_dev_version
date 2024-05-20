@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:36458389a288236fb69623e7d5eacc063155702830c006b8162893f4396ef48e
-size 351
+@import "Base.uss";
+
+#configurationServerInfoSection {
+    margin-bottom: 40px;
+}
+
+#spinnerLabel {
+    margin-left: 2px;
+}
+
+#connectedLabel {
+    -unity-text-align: middle-right;
+}
+
+#credentialsOk {
+    -unity-text-align: middle-right;
+}
+
+#plasticConfigurationTitle {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.credentials {
+    width: 265px;
+}
