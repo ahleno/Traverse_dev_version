@@ -1,3 +1,5 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:511a06d196039a07e35e6d7bccd30380c9a22975bb30e1ceda58bfa3661b9160
-size 93
+sceneSetups:
+- path: Assets/Scenes/Jachigi.unity
+  isLoaded: 1
+  isActive: 1
+  isSubScene: 0

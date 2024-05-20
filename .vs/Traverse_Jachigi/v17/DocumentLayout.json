@@ -1,3 +1,53 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:51e3dddea8160d8a8da9289b85d807befe5a240dd1dda345cfcbec142e41bad3
-size 1648
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Traverse_Jachigi\\Traverse_Jachigi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4B5E21B5-C2EE-1C45-2EA2-9DF53B65DFD0}|Assembly-CSharp.csproj|d:\\traverse_jachigi\\traverse_jachigi\\assets\\scripts\\shotwoodstickcollisionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B5E21B5-C2EE-1C45-2EA2-9DF53B65DFD0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\shotwoodstickcollisionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Traverse_Jachigi\\Traverse_Jachigi\\Library\\PackageCache\\com.meta.xr.sdk.core@64.0.0\\Scripts\\OVRManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.meta.xr.sdk.core@64.0.0\\Scripts\\OVRManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OVRManager.cs",
+              "DocumentMoniker": "D:\\Traverse_Jachigi\\Traverse_Jachigi\\Library\\PackageCache\\com.meta.xr.sdk.core@64.0.0\\Scripts\\OVRManager.cs",
+              "RelativeDocumentMoniker": "Library\\PackageCache\\com.meta.xr.sdk.core@64.0.0\\Scripts\\OVRManager.cs",
+              "ToolTip": "D:\\Traverse_Jachigi\\Traverse_Jachigi\\Library\\PackageCache\\com.meta.xr.sdk.core@64.0.0\\Scripts\\OVRManager.cs",
+              "RelativeToolTip": "Library\\PackageCache\\com.meta.xr.sdk.core@64.0.0\\Scripts\\OVRManager.cs",
+              "ViewState": "AQIAANYHAAAAAAAAAAAkwAAIAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T12:22:59.075Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "shotWoodStickCollisionHandler.cs",
+              "DocumentMoniker": "D:\\Traverse_Jachigi\\Traverse_Jachigi\\Assets\\Scripts\\shotWoodStickCollisionHandler.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\shotWoodStickCollisionHandler.cs",
+              "ToolTip": "D:\\Traverse_Jachigi\\Traverse_Jachigi\\Assets\\Scripts\\shotWoodStickCollisionHandler.cs",
+              "RelativeToolTip": "Assets\\Scripts\\shotWoodStickCollisionHandler.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAiwCwAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T09:49:30.247Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
