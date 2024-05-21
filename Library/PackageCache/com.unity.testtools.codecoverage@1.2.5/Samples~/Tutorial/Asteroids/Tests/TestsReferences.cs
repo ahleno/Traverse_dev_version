@@ -1,29 +1,3 @@
-﻿using UnityEngine;
-
-public class TestsReferences : MonoBehaviour
-{
-    #region SCENES
-    public Object asteroidsScene;
-    #endregion
-
-    #region CORE
-    public GameObject spaceshipPrefab;
-    public GameObject cameraPrefab;
-    public GameObject asteroidPrefab;
-    public GameObject gameManagerPrefab;
-    #endregion
-
-    #region WEAPONS
-    public GameObject projectilePrefab;
-    public GameObject laserPrefab;
-    #endregion
-
-    #region UI
-    public GameObject inGameMenuPrefab;
-    #endregion
-
-    #region FX
-    public GameObject spaceshipDebrisPrefab;
-    public GameObject explosionPrefab;
-    #endregion
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:49c8a8e387824ef0b87a4d0964142dd614e43d26941ef741c156dc6cbe450ccf
+size 624
