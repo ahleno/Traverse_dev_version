@@ -1,16 +1,3 @@
-using UnityEngine;
-
-namespace Unity.VisualScripting
-{
-#if MODULE_PHYSICS_2D_EXISTS
-    [AddComponentMenu("")]
-    [VisualScriptingHelpURL(typeof(UnityOnTriggerStay2DMessageListener))]
-    public sealed class UnityOnTriggerStay2DMessageListener : MessageListener
-    {
-        private void OnTriggerStay2D(Collider2D other)
-        {
-            EventBus.Trigger(EventHooks.OnTriggerStay2D, gameObject, other);
-        }
-    }
-#endif
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:304a143241d16aa2f09a1a37755ab05c582e41cff11fdfe68b608b576d26ef24
+size 435

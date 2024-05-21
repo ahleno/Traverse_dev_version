@@ -1,7 +1,3 @@
-{
-    "use_batch_mode": true,
-    "log_location": "c:/tmp/meta_xrsim.log",
-    "log_level": "verbose",
-    "scene_anchor_data": "anchors/scene_anchors_empty_room.json",
-    "app_anchor_data": "anchors/app_anchors.json"
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:7d9c614f8152f3bc2513632fca6ed5efdc31bb748c970232c0f59597ad13033f
+size 221

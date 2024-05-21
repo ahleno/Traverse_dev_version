@@ -1,14 +1,3 @@
-using UnityEngine.EventSystems;
-
-namespace Unity.VisualScripting
-{
-    [UnityEngine.AddComponentMenu("")]
-    [VisualScriptingHelpURL(typeof(UnityOnPointerEnterMessageListener))]
-    public sealed class UnityOnPointerEnterMessageListener : MessageListener, IPointerEnterHandler
-    {
-        public void OnPointerEnter(PointerEventData eventData)
-        {
-            EventBus.Trigger(EventHooks.OnPointerEnter, gameObject, eventData);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:3d272aa06b658b7128159e08d5f6715bb8262787fe37f4d5dc1837cb3bc5d78d
+size 455

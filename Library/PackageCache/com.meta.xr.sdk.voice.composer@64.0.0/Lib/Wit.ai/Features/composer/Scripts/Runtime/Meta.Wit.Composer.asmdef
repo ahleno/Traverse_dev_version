@@ -1,26 +1,3 @@
-{
-    "name": "Meta.Wit.Composer",
-    "rootNamespace": "",
-    "references": [
-        "Meta.WitAi.Lib",
-        "Meta.WitAi",
-        "Meta.WitAi.TTS",
-        "Meta.WitAI.Lib.Editor",
-        "Meta.WitAi.Conduit"
-    ],
-    "includePlatforms": [],
-    "excludePlatforms": [],
-    "allowUnsafeCode": false,
-    "overrideReferences": false,
-    "precompiledReferences": [],
-    "autoReferenced": true,
-    "defineConstraints": [],
-    "versionDefines": [
-        {
-            "define": "OVR_UNITY_PACKAGE_MANAGER",
-            "name": "com.meta.xr.sdk.voice.composer",
-            "expression": ""
-        }
-    ],
-    "noEngineReferences": false
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:b8fde0429b7d2664d839515bbcc47ddd30fcd4023ad334f908f00eb62f6bda7d
+size 650

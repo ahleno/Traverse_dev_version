@@ -1,16 +1,3 @@
-﻿using System.Collections.Generic;
-using UnityEngine;
-
-[CreateAssetMenu(fileName = "WeaponData", menuName = "Weapon List", order = 1)]
-public class WeaponList : ScriptableObject
-{
-    [System.Serializable]
-    public struct Weapon
-    {
-        public string weaponName;
-        public GameObject weaponPrefab;
-    };
-
-    [SerializeField]
-    public List<Weapon> weapons;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:16c2d5d7ed99a95c0ef3c47f6323137b3684647be2aaedc6ca5226b9ce8579fa
+size 377
