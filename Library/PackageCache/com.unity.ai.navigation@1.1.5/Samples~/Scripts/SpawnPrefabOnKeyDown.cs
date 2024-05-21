@@ -1,3 +1,38 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5b3234cc0dddb761b27c74c4d80a49a6d89485c8630ed7d7c71fca8cf816fcd5
-size 885
+using System;
+using UnityEngine;
+
+namespace Unity.AI.Navigation.Samples
+{
+    /// <summary>
+    /// Prefab spawner with a key input
+    /// </summary>
+    public class SpawnPrefabOnKeyDown : MonoBehaviour
+    {
+        [SerializeField]
+        GameObject prefab;
+        
+        [SerializeField]
+        KeyCode keyCode;
+        
+        [SerializeField]
+        Transform spawnedPrefabsHolder;
+
+        Transform m_Transform;
+
+        void Start()
+        {
+            m_Transform = transform;
+
+            if (spawnedPrefabsHolder == null)
+            {
+                spawnedPrefabsHolder = m_Transform;
+            }
+        }
+
+        void Update()
+        {
+            if (Input.GetKeyDown(keyCode) && prefab != null)
+                Instantiate(prefab, m_Transform.position, m_Transform.rotation, spawnedPrefabsHolder);
+        }
+    }
+}

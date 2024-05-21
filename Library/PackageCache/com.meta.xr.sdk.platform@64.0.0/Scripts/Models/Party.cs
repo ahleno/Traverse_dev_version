@@ -1,3 +1,63 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:71dc0baf73c2346690b061ec1b3b90c76be6a4bf347a1f95ebd61ecef5c198d5
-size 1702
+// This file was @generated with LibOVRPlatform/codegen/main. Do not modify it!
+
+#pragma warning disable 0618
+
+namespace Oculus.Platform.Models
+{
+  using System;
+  using System.Collections;
+  using Oculus.Platform.Models;
+  using System.Collections.Generic;
+  using UnityEngine;
+
+  public class Party
+  {
+    public readonly UInt64 ID;
+    // May be null. Check before using.
+    public readonly UserList InvitedUsersOptional;
+    [Obsolete("Deprecated in favor of InvitedUsersOptional")]
+    public readonly UserList InvitedUsers;
+    // May be null. Check before using.
+    public readonly User LeaderOptional;
+    [Obsolete("Deprecated in favor of LeaderOptional")]
+    public readonly User Leader;
+    // May be null. Check before using.
+    public readonly UserList UsersOptional;
+    [Obsolete("Deprecated in favor of UsersOptional")]
+    public readonly UserList Users;
+
+
+    public Party(IntPtr o)
+    {
+      ID = CAPI.ovr_Party_GetID(o);
+      {
+        var pointer = CAPI.ovr_Party_GetInvitedUsers(o);
+        InvitedUsers = new UserList(pointer);
+        if (pointer == IntPtr.Zero) {
+          InvitedUsersOptional = null;
+        } else {
+          InvitedUsersOptional = InvitedUsers;
+        }
+      }
+      {
+        var pointer = CAPI.ovr_Party_GetLeader(o);
+        Leader = new User(pointer);
+        if (pointer == IntPtr.Zero) {
+          LeaderOptional = null;
+        } else {
+          LeaderOptional = Leader;
+        }
+      }
+      {
+        var pointer = CAPI.ovr_Party_GetUsers(o);
+        Users = new UserList(pointer);
+        if (pointer == IntPtr.Zero) {
+          UsersOptional = null;
+        } else {
+          UsersOptional = Users;
+        }
+      }
+    }
+  }
+
+}

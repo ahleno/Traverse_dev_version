@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ab65e82d4ee282540fbbe4103e50cefa03d1a9321151f3495a8436b0066f47ac
-size 220
+using System.Collections;
+using System.Collections.Generic;
+using Unity.VisualScripting;
+using UnityEngine;
+
+namespace Unity.VisualScripting
+{
+    public class MacroScriptableObject : LudiqScriptableObject
+    {
+    }
+}

@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9d00d05c8534672d8205a90a1dba3cb2289fd610c7f0452a703b2cbf9e70dfd1
-size 517
+﻿/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using Meta.WitAi.Composer.Data.Info;
+using UnityEditor;
+
+namespace Meta.WitAi.Windows
+{
+    [CustomPropertyDrawer(typeof(WitComposerData))]
+    public class WitComposerInfoPropertyDrawer : WitPropertyDrawer
+    {
+        protected override bool FoldoutEnabled => false;    // Show only the name
+    }
+}

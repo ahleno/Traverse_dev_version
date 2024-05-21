@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1cf553c0e56fe7246069d92825ffdd89cb58408ded64b30e2d14c00720cd1aa6
-size 597
+﻿/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using System;
+using UnityEngine.Events;
+
+namespace Meta.WitAi.Events
+{
+    /// <summary>
+    /// An error event with two parameters.
+    ///
+    /// Param 1: error - the type of error that occurred
+    /// Param 2: message - A human readable message describing the error
+    /// </summary>
+    [Serializable]
+    public class WitErrorEvent : UnityEvent<string, string>
+    {
+    }
+}

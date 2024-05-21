@@ -1,3 +1,51 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bb6e01b5b717182577d3bf4b1ce5bf259ffdd0e21e5d65a4f3fbbfa22eb3d2b0
-size 1498
+/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using System;
+
+namespace Meta.WitAi.TTS.Data
+{
+    // TTS Cache disk location
+    public enum TTSDiskCacheLocation
+    {
+        /// <summary>
+        /// Does not cache
+        /// </summary>
+        Stream,
+        /// <summary>
+        /// Stores files in editor only & loads files from internal project location (Application.streamingAssetsPath)
+        /// </summary>
+        Preload,
+        /// <summary>
+        /// Stores files at persistent location (Application.persistentDataPath)
+        /// </summary>
+        Persistent,
+        /// <summary>
+        /// Stores files at temporary cache location (Application.temporaryCachePath)
+        /// </summary>
+        Temporary
+    }
+
+    [Serializable]
+    public class TTSDiskCacheSettings
+    {
+        /// <summary>
+        /// Where the TTS clip should be cached
+        /// </summary>
+        public TTSDiskCacheLocation DiskCacheLocation = TTSDiskCacheLocation.Stream;
+
+        /// <summary>
+        /// Where the TTS clip should streamed from cache
+        /// </summary>
+        public bool StreamFromDisk = false;
+        /// <summary>
+        /// Length of a streamed clip buffer in seconds
+        /// </summary>
+        public float StreamBufferLength = 5f;
+    }
+}

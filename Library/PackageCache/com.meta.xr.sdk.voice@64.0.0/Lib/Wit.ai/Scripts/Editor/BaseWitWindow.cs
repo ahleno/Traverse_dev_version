@@ -1,3 +1,46 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6341d1073cb90b3b26fd94cbf9ce82f79a737b804815f5d2cd3c56e84470319d
-size 1365
+/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using Meta.WitAi.Data.Configuration;
+using UnityEditor;
+using UnityEngine;
+
+namespace Meta.WitAi.Windows
+{
+    public abstract class BaseWitWindow : EditorWindow
+    {
+        // Scroll offset
+        private Vector2 ScrollOffset;
+
+        // Override values
+        protected abstract GUIContent Title { get; }
+        protected virtual Texture2D HeaderIcon => WitTexts.HeaderIcon;
+        protected virtual string HeaderUrl => WitTexts.WitUrl;
+        protected virtual string DocsUrl => WitTexts.Texts.WitDocsUrl;
+
+        // Window open
+        protected virtual void OnEnable()
+        {
+            titleContent = Title;
+            WitConfigurationUtility.ReloadConfigurationData();
+        }
+        // Window close
+        protected virtual void OnDisable()
+        {
+            ScrollOffset = Vector2.zero;
+        }
+        // Handle Layout
+        protected virtual void OnGUI()
+        {
+            Vector2 size;
+            WitEditorUI.LayoutWindow(Title.text, HeaderIcon, HeaderUrl, DocsUrl, LayoutContent, ref ScrollOffset, out size);
+        }
+        // Draw content of window
+        protected abstract void LayoutContent();
+    }
+}

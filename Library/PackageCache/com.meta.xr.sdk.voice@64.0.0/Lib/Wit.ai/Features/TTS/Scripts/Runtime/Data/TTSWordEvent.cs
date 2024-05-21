@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bc34715c4e1642797ac7562ad0cd9556b7ccb66d0954bec6c81eeaf630d419e3
-size 434
+/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using System;
+
+namespace Meta.WitAi.TTS.Data
+{
+    /// <summary>
+    /// An audio event with string data for words
+    /// </summary>
+    [Serializable]
+    public class TTSWordEvent : TTSStringEvent {}
+}

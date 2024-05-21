@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:79a1ade633738c37c35f0fc8d068f6fb64b0e4401431bc3b08e97a98913a049d
-size 591
+{
+    "name": "meta.xr.mrutilitykit",
+    "rootNamespace": "",
+    "references": [
+        "Oculus.VR",
+        "Unity.AI.Navigation",
+        "Unity.TextMeshPro"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "define": "OVR_UNITY_PACKAGE_MANAGER",
+            "name": "com.meta.xr.mrutilitykit",
+            "expression": ""
+        }
+    ],
+    "noEngineReferences": false
+}

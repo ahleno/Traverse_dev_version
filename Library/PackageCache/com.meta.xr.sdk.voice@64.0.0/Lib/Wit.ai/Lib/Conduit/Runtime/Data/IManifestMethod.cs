@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:26378809adf7c6fe621d590edfb44232f44b60266c89e54f6924e909d4f75c37
-size 607
+using System.Collections.Generic;
+
+namespace Meta.Conduit
+{
+    internal interface IManifestMethod
+    {
+        /// <summary>
+        /// This is the internal fully qualified name of the method in the codebase.
+        /// </summary>
+        string ID { get; set; }
+
+        /// <summary>
+        /// The parameters used by the action.
+        /// </summary>
+        List<ManifestParameter> Parameters { get; set; }
+        
+        /// <summary>
+        /// The fully qualified name of the assembly containing the code for the action.
+        /// </summary>
+        string Assembly { get; set; }
+
+    }
+}

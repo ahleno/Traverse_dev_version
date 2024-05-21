@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:87477e2b96562582bb7e21f4f549f80c9443645099a9d46d49bce5ee29a72e20
-size 695
+{
+    "name": "meta.xr.mrutilitykit.editor",
+    "rootNamespace": "",
+    "references": [
+        "Oculus.VR.Editor",
+        "Oculus.VR",
+        "meta.xr.mrutilitykit",
+        "UnityEditor.TestRunner",
+        "Meta.XR.BuildingBlocks.Editor"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "define": "OVR_UNITY_PACKAGE_MANAGER",
+            "name": "com.meta.xr.mrutilitykit",
+            "expression": ""
+        }
+    ],
+    "noEngineReferences": false
+}

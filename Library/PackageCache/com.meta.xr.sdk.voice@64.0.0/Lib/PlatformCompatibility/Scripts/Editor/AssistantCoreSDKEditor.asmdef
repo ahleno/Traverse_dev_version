@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:34b6aab04216636970353857aba7a9e1acf8afcccd8692cdf8bdbfa0a45e735e
-size 566
+{
+    "name": "AssistantCoreSDKEditor",
+    "rootNamespace": "",
+    "references": [
+        "AssistantCoreSDKRuntime"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "define": "OVR_UNITY_PACKAGE_MANAGER",
+            "name": "com.meta.xr.sdk.voice",
+            "expression": ""
+        }
+    ],
+    "noEngineReferences": false
+}

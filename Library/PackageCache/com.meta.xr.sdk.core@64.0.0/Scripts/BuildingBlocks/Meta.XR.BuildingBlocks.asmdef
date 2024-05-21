@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f30c1fec61fd0c0162d9119cfe434801fe77878516031ff7b4a8e783ffc6ec96
-size 529
+{
+    "name": "Meta.XR.BuildingBlocks",
+    "rootNamespace": "",
+    "references": [
+        "Oculus.VR"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "define": "OVR_UNITY_PACKAGE_MANAGER",
+            "name": "com.meta.xr.sdk.core",
+            "expression": ""
+        }
+    ],
+    "noEngineReferences": false
+}

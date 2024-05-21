@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7eb6a1e973a6e5bc24539460b04cbfb3df947e2b0b1579b5024ca50692b26039
-size 601
+/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using System;
+using UnityEngine;
+
+namespace Meta.WitAi.Data.Info
+{
+    [Serializable]
+    public struct WitTraitValueInfo
+    {
+        /// <summary>
+        /// Trait value contents
+        /// </summary>
+        [SerializeField] public string id;
+        /// <summary>
+        /// Trait value unique identifier
+        /// </summary>
+        [SerializeField] public string value;
+    }
+}

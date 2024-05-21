@@ -1,3 +1,38 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4e60df3291099d9f6a5c02124766165655abc0f5321273e65c5ba24e2b475f69
-size 1296
+﻿/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using System;
+using UnityEngine;
+
+namespace Meta.WitAi.TTS.Events
+{
+    /// <summary>
+    /// Events related to web requests
+    /// </summary>
+    [Serializable]
+    public class TTSWebRequestEvents
+    {
+        [Tooltip("Called when a web request begins transmission")]
+        public TTSClipEvent OnRequestBegin = new TTSClipEvent();
+
+        [Tooltip("Called when a web request is cancelled")]
+        public TTSClipEvent OnRequestCancel = new TTSClipEvent();
+
+        [Tooltip("Called when a web request fails")]
+        public TTSClipErrorEvent OnRequestError = new TTSClipErrorEvent();
+
+        [Tooltip("Called when a web request receives first data")]
+        public TTSClipEvent OnRequestFirstResponse = new TTSClipEvent();
+
+        [Tooltip("Called when a web request is ready for playback")]
+        public TTSClipEvent OnRequestReady = new TTSClipEvent();
+
+        [Tooltip("Called when a web request is completed via success, cancellation or failure")]
+        public TTSClipEvent OnRequestComplete = new TTSClipEvent();
+    }
+}

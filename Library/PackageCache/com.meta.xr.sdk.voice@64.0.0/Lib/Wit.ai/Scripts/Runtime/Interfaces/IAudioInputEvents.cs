@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b0a11f7092c434a3c06cc521eac4edc36cb31cb4fb3d9b13ac465cc49961bfe3
-size 514
+/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using Meta.WitAi.Events;
+using UnityEngine.Events;
+
+namespace Meta.WitAi.Interfaces
+{
+    public interface IAudioInputEvents
+    {
+        WitMicLevelChangedEvent OnMicAudioLevelChanged { get; }
+        UnityEvent OnMicStartedListening { get; }
+        UnityEvent OnMicStoppedListening { get; }
+    }
+}

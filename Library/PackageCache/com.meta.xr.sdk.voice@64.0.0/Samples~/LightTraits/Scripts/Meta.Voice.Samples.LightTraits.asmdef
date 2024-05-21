@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8bfa7455ddc254fb50232547c2a6311173787d5429884267923b04c10a52d8cb
-size 565
+{
+    "name": "Meta.Voice.Samples.LightTraits",
+    "rootNamespace": "",
+    "references": [
+        "Meta.WitAi",
+        "Meta.WitAi.Lib"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "define": "OVR_UNITY_PACKAGE_MANAGER",
+            "name": "com.meta.xr.sdk.voice",
+            "expression": ""
+        }
+    ],
+    "noEngineReferences": false
+}

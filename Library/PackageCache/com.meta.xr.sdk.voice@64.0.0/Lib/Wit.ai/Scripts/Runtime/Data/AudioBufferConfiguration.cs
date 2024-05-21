@@ -1,3 +1,31 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2af0617626d08ff0cd50026498d91cd39e7fc0b7fb036aba4d0a3eff2de59dc9
-size 1043
+﻿/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using System;
+using UnityEngine;
+
+namespace Meta.WitAi.Data
+{
+    [Serializable]
+    public class AudioBufferConfiguration
+    {
+        [Tooltip("The length of the individual samples read from the audio source")]
+        [Range(10, 500)]
+        [SerializeField]
+        public int sampleLengthInMs = 10;
+
+        [Tooltip(
+            "The total audio data that should be buffered for lookback purposes on sound based activations.")]
+        [SerializeField]
+        public float micBufferLengthInSeconds = 1;
+
+        [Tooltip("The audio encoding to be used for transmission of audio data, should keep as default in almost all scenarios.  Adjust encoding directly on IAudioInput script such as Mic to capture at different rates.")]
+        [SerializeField]
+        public AudioEncoding encoding = new AudioEncoding();
+    }
+}

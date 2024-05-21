@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0919c648453152524c00668acb4cbe00ac0efb743d1d3ff8300ed38738613454
-size 593
+namespace Unity.VisualScripting
+{
+    /// <summary>
+    /// Sets the value of a scene variable.
+    /// </summary>
+    [UnitSurtitle("Scene")]
+    public sealed class SetSceneVariable : SetVariableUnit, ISceneVariableUnit
+    {
+        public SetSceneVariable() : base() { }
+
+        public SetSceneVariable(string defaultName) : base(defaultName) { }
+
+        protected override VariableDeclarations GetDeclarations(Flow flow)
+        {
+            var scene = flow.stack.scene;
+
+            if (scene == null) return null;
+
+            return Variables.Scene(scene.Value);
+        }
+    }
+}

@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8e89e2faf32f08d162047c00ba2ca35bce8f746f0c62e1f10a9daa486cc50b55
-size 597
+﻿/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using System;
+using UnityEngine;
+
+namespace Meta.WitAi.Data.Info
+{
+    [Serializable]
+    public struct WitEntityRoleInfo
+    {
+        /// <summary>
+        /// Entity display name
+        /// </summary>
+        [SerializeField] public string name;
+        /// <summary>
+        /// Entity unique identifier
+        /// </summary>
+        [SerializeField] public string id;
+    }
+}

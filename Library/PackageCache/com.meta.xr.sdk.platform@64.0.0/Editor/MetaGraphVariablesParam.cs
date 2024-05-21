@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:06a08e63dae1675644f189abff6b2b87981b77b5a016004e7913401186070d63
-size 834
+// (c) Meta Platforms, Inc. and affiliates. Confidential and proprietary.
+
+namespace Oculus.Platform
+{
+  using System;
+  using System.Collections.Generic;
+
+  [Serializable]
+  public class MetaGraphVariablesParam
+  {
+    public MetaGraphInputParam input;
+
+    public MetaGraphVariablesParam(string client_mutation_id, string profile_type, string app_id) {
+        input = new MetaGraphInputParam(client_mutation_id, profile_type, app_id);
+    }
+  }
+
+  [Serializable]
+  public class MetaGraphInputParam {
+    public string client_mutation_id;
+    public string profile_type;
+    public string app_id;
+
+    public MetaGraphInputParam(string client_mutation_id, string profile_type, string app_id) {
+        this.client_mutation_id = client_mutation_id;
+        this.profile_type = profile_type;
+        this.app_id = app_id;
+    }
+  }
+}

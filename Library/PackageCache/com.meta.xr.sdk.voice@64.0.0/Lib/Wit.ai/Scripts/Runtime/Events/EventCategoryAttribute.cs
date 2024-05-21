@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1e634f9c7d86035d532e60172fe3b564d99b199690ca3ab2c1ae6f3920d285b2
-size 595
+/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using System;
+using UnityEngine;
+
+namespace Meta.WitAi.Events
+{
+    [AttributeUsage(AttributeTargets.Field, AllowMultiple = true)]
+    public class EventCategoryAttribute : PropertyAttribute
+    {
+        public readonly string Category;
+
+        public EventCategoryAttribute(string category = "")
+        {
+            Category = category;
+        }
+    }
+}

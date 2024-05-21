@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d5abe6b2429f99ffa7506ab94797aa77d7f9c2e18e11d3239dbeec1bec683024
-size 642
+using System.Collections.Generic;
+using System.Text;
+
+namespace Packages.Rider.Editor.Util
+{
+  internal static class StringBuilderExtensions
+  {
+    // StringBuilder.AppendJoin is very useful, but not available in 2019.2
+    // It requires netstandard 2.1
+    public static StringBuilder CompatibleAppendJoin(this StringBuilder stringBuilder, char separator, IEnumerable<string> parts)
+    {
+      var first = true;
+      foreach (var part in parts)
+      {
+        if (!first) stringBuilder.Append(separator);
+        stringBuilder.Append(part);
+        first = false;
+      }
+
+      return stringBuilder;
+    }
+  }
+}

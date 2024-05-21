@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:59d6825599076553bf21d34abb6b4430c6409b835907096d16cc50ab7c003efd
-size 433
+﻿/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using System.Runtime.CompilerServices;
+
+[assembly:InternalsVisibleTo("Meta.WitAi.Editor")]
+[assembly:InternalsVisibleTo("Meta.WitAi.Tests.Editor")]
+[assembly:InternalsVisibleTo("DynamicProxyGenAssembly2")]

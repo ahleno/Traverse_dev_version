@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1c384f2cc4dffdf22095de2f92ddbb1afa9b978e5a536d99d24fda3f1f3fe343
-size 342
+/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+namespace Meta.WitAi.Data.Configuration
+{
+    public class WitApplicationDetailProvider : IApplicationDetailProvider
+    {
+    }
+}

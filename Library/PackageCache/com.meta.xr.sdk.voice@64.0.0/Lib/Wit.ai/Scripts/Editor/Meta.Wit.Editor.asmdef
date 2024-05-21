@@ -1,3 +1,36 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:93cf8051e6088c661a344ea36416990ec3e8bec522033b74e870ce07d5b34b20
-size 930
+{
+    "name": "Meta.WitAi.Editor",
+    "rootNamespace": "",
+    "references": [
+        "Meta.WitAi.Lib",
+        "Meta.WitAi",
+        "Meta.WitAi.Conduit",
+        "Meta.WitAi.Conduit.Editor",
+        "Meta.WitAI.Lib.Editor",
+        "Meta.VoiceSDK.Mic.Other",
+        "VoiceSDK.Telemetry",
+        "Meta.VoiceSDK.Mic.Common"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.meta.xr.sdk.voice.telemetry",
+            "expression": "",
+            "define": "VSDK_TELEMETRY_AVAILABLE"
+        },
+        {
+            "define": "OVR_UNITY_PACKAGE_MANAGER",
+            "name": "com.meta.xr.sdk.voice",
+            "expression": ""
+        }
+    ],
+    "noEngineReferences": false
+}

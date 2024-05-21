@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5305aeb47d71b755910c552b7f43578f41375f1bb04c6ff4acc7e95411332442
-size 695
+{
+    "name": "Unity.XR.Oculus",
+    "references": [
+        "Unity.XR.Management",
+        "Unity.ugui",
+        "Unity.InputSystem"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.unity.inputsystem",
+            "expression": "",
+            "define": "UNITY_INPUT_SYSTEM"
+        },
+        {
+            "name": "com.unity.xr.management",
+            "expression": "3.2.0",
+            "define": "XR_MGMT_GTE_320"
+        }
+    ],
+    "noEngineReferences": false
+}

@@ -1,3 +1,63 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3b1f8e48721408042cf506a4a41493b2b2f4829d66d4fbe9e16b587f6e3a202f
-size 1629
+using UnityEditor;
+using UnityEngine;
+
+using PlasticGui;
+using Unity.PlasticSCM.Editor;
+
+namespace Unity.Cloud.Collaborate
+{
+    [InitializeOnLoad]
+    internal static class ToolbarBootstrap
+    {
+        static ToolbarBootstrap()
+        {
+            ToolbarButton.InitializeIfNeeded();
+        }
+    }
+
+    internal class ToolbarButton : SubToolbar
+    {
+        internal static void InitializeIfNeeded()
+        {
+            if (CollabPlugin.IsEnabled())
+                return;
+
+            ToolbarButton toolbar = new ToolbarButton { Width = 32f };
+            Toolbar.AddSubToolbar(toolbar);
+        }
+
+        ToolbarButton()
+        {
+            PlasticPlugin.OnNotificationUpdated += OnPlasticNotificationUpdated;
+        }
+
+        ~ToolbarButton()
+        {
+            PlasticPlugin.OnNotificationUpdated -= OnPlasticNotificationUpdated;
+        }
+
+        void OnPlasticNotificationUpdated()
+        {
+            Toolbar.RepaintToolbar();
+        }
+
+        public override void OnGUI(Rect rect)
+        {
+            Texture icon = PlasticPlugin.GetPluginStatusIcon();
+            EditorGUIUtility.SetIconSize(new Vector2(16, 16));
+
+            mButtonGUIContent.image = icon;
+
+            if (GUI.Button(rect, mButtonGUIContent, "AppCommand"))
+            {
+                PlasticPlugin.OpenPlasticWindowDisablingOfflineModeIfNeeded();
+            }
+
+            EditorGUIUtility.SetIconSize(Vector2.zero);
+        }
+
+        static GUIContent mButtonGUIContent = new GUIContent(
+            string.Empty, PlasticLocalization.GetString(
+                PlasticLocalization.Name.UnityVersionControl));
+    }
+}

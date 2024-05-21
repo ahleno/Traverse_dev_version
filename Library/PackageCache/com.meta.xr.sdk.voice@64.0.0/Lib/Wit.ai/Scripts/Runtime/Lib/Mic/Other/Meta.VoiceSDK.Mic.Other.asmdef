@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:093d53794caba317c44f7fb230262d7411067f00f2b41ad4aad63f35f6970411
-size 593
+{
+    "name": "Meta.VoiceSDK.Mic.Other",
+    "rootNamespace": "",
+    "references": [
+        "Meta.VoiceSDK.Mic.Common",
+        "Meta.WitAi.Lib"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [
+        "WebGL"
+    ],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "define": "OVR_UNITY_PACKAGE_MANAGER",
+            "name": "com.meta.xr.sdk.voice",
+            "expression": ""
+        }
+    ],
+    "noEngineReferences": false
+}

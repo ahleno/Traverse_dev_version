@@ -1,3 +1,36 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1e442298d324256621a3042ab9a991af0dd956f25d780a38cd62910982c82645
-size 1065
+/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using System;
+using Meta.WitAi.Data;
+using Meta.Conduit.Editor;
+using Meta.WitAi.Json;
+
+namespace Meta.WitAi.Windows
+{
+    /// <summary>
+    /// Filters out parameters of specific types.
+    /// </summary>
+    internal class WitParameterFilter : IParameterFilter
+    {
+        /// <summary>
+        /// Tests if a parameter type should be filtered out.
+        /// </summary>
+        /// <param name="type">The data type.</param>
+        /// <returns>True if the parameter type should be filtered out. False otherwise.</returns>
+        public bool ShouldFilterOut(Type type)
+        {
+            return type == typeof(WitResponseNode) || type == typeof(VoiceSession);
+        }
+
+        public bool ShouldFilterOut(string typeName)
+        {
+            return typeName == nameof(WitResponseNode) || typeName == nameof(VoiceSession);
+        }
+    }
+}

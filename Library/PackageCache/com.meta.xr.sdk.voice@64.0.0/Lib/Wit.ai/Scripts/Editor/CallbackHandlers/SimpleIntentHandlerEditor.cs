@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6ae7c94773fdfaa739daa4104e7edb65bd436b0dd03ed3cc39e70412cf85f81f
-size 889
+﻿/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using UnityEditor;
+
+namespace Meta.WitAi.CallbackHandlers
+{
+    [CustomEditor(typeof(SimpleIntentHandler))]
+    public class SimpleIntentHandlerEditor : WitIntentMatcherEditor
+    {
+        protected override void OnEnable()
+        {
+            base.OnEnable();
+            _fieldGUI.onAdditionalGuiLayout = OnInspectorAdditionalGUI;
+        }
+        private void OnInspectorAdditionalGUI()
+        {
+            EditorGUILayout.Space();
+            EditorGUILayout.LabelField("Output", EditorStyles.boldLabel);
+            var eventProperty = serializedObject.FindProperty("onIntentTriggered");
+            EditorGUILayout.PropertyField(eventProperty);
+        }
+    }
+}

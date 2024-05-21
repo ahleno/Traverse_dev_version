@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:86da3d7a6670ec649c4e68c46b1296433cd7572dfb2f3fd54e9f8b9d5da7ac50
-size 681
+#if UNITY_2022_2_OR_NEWER
+using Unity.AI.Navigation.Editor.Converter;
+using UnityEditor;
+using UnityEngine;
+
+namespace Unity.AI.Navigation.Updater
+{
+    internal static class NavMeshUpdaterEditor
+    {
+        [MenuItem("Window/AI/NavMesh Updater", false, 50)]
+        public static void ShowWindow()
+        {
+            SystemConvertersEditor wnd = EditorWindow.GetWindow<SystemConvertersEditor>();
+            wnd.titleContent = new GUIContent("NavMesh Updater");
+            wnd.DontSaveToLayout(wnd);
+            wnd.maxSize = new Vector2(650f, 4000f);
+            wnd.minSize = new Vector2(650f, 400f);
+            wnd.Show();
+        }
+    }
+}
+#endif

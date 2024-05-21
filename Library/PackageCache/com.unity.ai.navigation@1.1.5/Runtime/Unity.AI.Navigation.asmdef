@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:24cfd567c118308d160985c63b018927809fa41a77059fbd99cc82e8989ddcaf
-size 527
+{
+    "name": "Unity.AI.Navigation",
+    "rootNamespace": "",
+    "references": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.unity.modules.terrain",
+            "expression": "1.0.0",
+            "define": "NMC_CAN_ACCESS_TERRAIN"
+        }
+    ],
+    "noEngineReferences": false
+}

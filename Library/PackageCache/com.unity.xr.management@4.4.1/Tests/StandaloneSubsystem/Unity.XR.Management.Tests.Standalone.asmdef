@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a912b7c8faddc893ac57f0f819ed993ed07894e13d3a2a83d81debd509d210f6
-size 498
+{
+    "name": "Unity.XR.Management.Tests.Standalone",
+    "references": [
+        "Unity.Subsystem.Registration",
+        "Unity.XR.Management"
+    ],
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ],
+    "defineConstraints": [
+        "UNITY_INCLUDE_TESTS"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "versionDefines": [
+        {
+            "name": "com.unity.subsystemregistration",
+            "define": "USE_LEGACY_SUBSYS_REGISTRATION"
+        }
+    ]
+}

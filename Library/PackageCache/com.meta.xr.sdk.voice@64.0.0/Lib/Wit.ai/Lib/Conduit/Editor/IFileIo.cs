@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fb458e5d03b092b4cfc9760ba1600f891f1051e2050f320321c26839efc6273c
-size 508
+﻿/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using System.IO;
+
+namespace Meta.Conduit
+{
+    internal interface IFileIo
+    {
+        bool Exists(string fileName);
+        string ReadAllText(string fileName);
+        void WriteAllText(string path, string contents);
+        TextReader OpenText(string fileName);
+    }
+}

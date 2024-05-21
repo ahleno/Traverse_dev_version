@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:74d22da4a08aa17d75c6c58c8ed04fcdfa74c024104ad7df26c1a828c4ca02c5
-size 530
+// This file was @generated with LibOVRPlatform/codegen/main. Do not modify it!
+
+namespace Oculus.Platform.Models
+{
+  using System;
+  using System.Collections;
+  using Oculus.Platform.Models;
+  using System.Collections.Generic;
+  using UnityEngine;
+
+  public class UserAccountAgeCategory
+  {
+    /// Age category of the user in Meta account.
+    public readonly AccountAgeCategory AgeCategory;
+
+
+    public UserAccountAgeCategory(IntPtr o)
+    {
+      AgeCategory = CAPI.ovr_UserAccountAgeCategory_GetAgeCategory(o);
+    }
+  }
+
+}

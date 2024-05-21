@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8640a65118d15379bf10be8bd04f545a39cd43cabc68ee56ef918d21386bcf2b
-size 612
+﻿/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+namespace Meta.Conduit
+{
+    /// <summary>
+    /// A step in processing or query.
+    /// </summary>
+    /// <param name="success">True if the step succeeded. False otherwise (with error in data field)</param>
+    /// <param name="data">The optional data returned in success or the error data on failure.</param>
+    internal delegate void StepResult(bool success, string data);
+}

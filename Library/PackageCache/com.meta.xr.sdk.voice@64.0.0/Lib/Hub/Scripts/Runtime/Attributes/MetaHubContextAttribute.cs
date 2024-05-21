@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a879eae140966385a21bbc3fc5fe02b317375759d2e8ab93f35adf6fd32334f4
-size 789
+﻿/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using System;
+
+namespace Meta.Voice.Hub.Attributes
+{
+    [AttributeUsage(AttributeTargets.Class)]
+    public class MetaHubContextAttribute : Attribute
+    {
+        public string Context { get; private set; }
+        public int Priority { get; private set; }
+        public string LogoPath { get; private set; }
+        
+        public MetaHubContextAttribute(string context, int priority = 1000, string pathToLogo = "")
+        {
+            Context = context;
+            Priority = priority;
+            LogoPath = pathToLogo;
+        }
+    }
+}

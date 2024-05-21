@@ -1,3 +1,53 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:82b26cb6774690decded2059fa50da4c69e9192be93c5a103b5d2028ea14d576
-size 1621
+/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using UnityEngine;
+using UnityEngine.Serialization;
+
+namespace Meta.WitAi.TTS.LipSync
+{
+    /// <summary>
+    /// A class for swapping out mouth textures during an audio animation based on the current viseme
+    /// </summary>
+    [RequireComponent(typeof(VisemeLipSyncAnimator))]
+    public class VisemeTextureFlipLipSync : BaseTextureFlipLipSync
+    {
+        [FormerlySerializedAs("renderer")] [SerializeField] private Renderer visemeRenderer;
+        
+        private VisemeLipSyncAnimator _lipSyncAnimator;
+
+        public override Renderer Renderer => visemeRenderer;
+
+        protected override void Awake()
+        {
+            base.Awake();
+            _lipSyncAnimator = GetComponent<VisemeLipSyncAnimator>();
+            if (!visemeRenderer)
+            {
+                visemeRenderer = GetComponent<Renderer>();
+            }
+        }
+
+        protected virtual void OnEnable()
+        {
+            if (!visemeRenderer)
+            {
+                VLog.E($"No renderer has been set on {name}. Viseme texture flipping will not be visible.");
+                enabled = false;
+                return;
+            }
+
+            _lipSyncAnimator.OnVisemeLerp?.AddListener(OnVisemeLerp);
+        }
+
+        protected virtual void OnDisable()
+        {
+            _lipSyncAnimator.OnVisemeLerp?.RemoveListener(OnVisemeLerp);
+        }
+    }
+}

@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:dc97b94fb20600a53955680abc19a00be35150243b2a266e841dcf6f043f94ca
-size 593
+/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+#if UNITY_EDITOR
+using System;
+
+namespace Meta.WitAi
+{
+    // Wit Settings
+    [Serializable]
+    public struct WitSettings
+    {
+        public WitConfigSettings[] configSettings;
+    }
+    // Wit Config Settings
+    [Serializable]
+    public struct WitConfigSettings
+    {
+        public string appID;
+        public string serverToken;
+    }
+}
+#endif

@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:030a0db6ec312338114869318ed872c99c3e854ad13ed05640861b43c4bdabf9
-size 383
+using System;
+using UnityEngine;
+
+namespace Unity.AI.Navigation.Samples
+{
+    /// <summary>
+    /// Destroy GameObjects upon collision
+    /// </summary>
+    [RequireComponent(typeof(Collider))]
+    public class Despawner : MonoBehaviour
+    {
+        void OnCollisionEnter(Collision collision)
+        {
+            Destroy(collision.gameObject);
+        }
+    }
+}

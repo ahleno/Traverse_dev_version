@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:266ea67550610752abbeb7099f1401f2ea53357d447c9b2266503eda75ef3be9
-size 676
+// This file was @generated with LibOVRPlatform/codegen/main. Do not modify it!
+
+namespace Oculus.Platform.Models
+{
+  using System;
+  using System.Collections;
+  using Oculus.Platform.Models;
+  using System.Collections.Generic;
+  using UnityEngine;
+
+  public class CowatchViewerUpdate
+  {
+    /// List of viewer data of all cowatch participants.
+    public readonly CowatchViewerList DataList;
+    /// User ID of the user with updated viewer data.
+    public readonly UInt64 Id;
+
+
+    public CowatchViewerUpdate(IntPtr o)
+    {
+      DataList = new CowatchViewerList(CAPI.ovr_CowatchViewerUpdate_GetDataList(o));
+      Id = CAPI.ovr_CowatchViewerUpdate_GetId(o);
+    }
+  }
+
+}

@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:412aaa54585783426b603844302520cf06f4cc9656465eafbca44358c978f31f
-size 678
+{
+    "name": "Meta.Voice.VSDKHub.Editor",
+    "rootNamespace": "Meta.Voice.VSDKHub",
+    "references": [
+        "Meta.Voice.Hub.Editor",
+        "Meta.Voice.Hub.Runtime",
+        "VoiceSDK.Telemetry",
+        "Meta.WitAi.Editor"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "define": "OVR_UNITY_PACKAGE_MANAGER",
+            "name": "com.meta.xr.sdk.voice",
+            "expression": ""
+        }
+    ],
+    "noEngineReferences": false
+}

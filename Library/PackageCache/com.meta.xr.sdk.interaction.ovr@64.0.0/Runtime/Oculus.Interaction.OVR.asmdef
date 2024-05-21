@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d993425bf200ac0477b01dc1859c81f926904d7600f35c73a0435c727d843c44
-size 616
+{
+    "name": "Oculus.Interaction.OVR",
+    "rootNamespace": "",
+    "references": [
+        "GUID:2a230cb87a1d3ba4a98bdc0ddae76e6c",
+        "GUID:f64c9ebcd7899c3448a08dc9f9ddbe30"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "define": "OVR_UNITY_PACKAGE_MANAGER",
+            "name": "com.meta.xr.sdk.interaction.ovr",
+            "expression": ""
+        }
+    ],
+    "noEngineReferences": false
+}

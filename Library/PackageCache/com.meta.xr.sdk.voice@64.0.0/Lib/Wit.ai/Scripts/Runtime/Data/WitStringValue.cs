@@ -1,3 +1,35 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3f63ab9a4725b8bc30afed3c5707213e40b53f8e39e81120d2f3a81efa9ab470
-size 877
+﻿/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using Meta.WitAi.Json;
+
+namespace Meta.WitAi.Data
+{
+    public class WitStringValue : WitValue
+    {
+        public override object GetValue(WitResponseNode response)
+        {
+            return GetStringValue(response);
+        }
+
+        public override bool Equals(WitResponseNode response, object value)
+        {
+            if (value is string sValue)
+            {
+                return GetStringValue(response) == sValue;
+            }
+
+            return "" + value == GetStringValue(response);
+        }
+
+        public string GetStringValue(WitResponseNode response)
+        {
+            return Reference.GetStringValue(response);
+        }
+    }
+}

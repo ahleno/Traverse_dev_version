@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8c1a252109e3bf8c04b608c8c53230addcccdb60636e5a994893f6d109016b66
-size 767
+# NavMesh Building Components
+
+The NavMesh-building components provide you with controls that allow you to automatically generate and use NavMeshes at runtime and in the Unity Editor.
+
+Here we introduce four high level components for the navigation system:
+
+* [NavMeshSurface](NavMeshSurface.md) - Use for building and enabling a NavMesh surface for one type of Agent.
+* [NavMeshModifier](NavMeshModifier.md) - Use for affecting the NavMesh generation of NavMesh area types based on the transform hierarchy.
+* [NavMeshModifierVolume](NavMeshModifierVolume.md) - Use for affecting the NavMesh generation of NavMesh area types based on volume.
+* [NavMeshLink](NavMeshLink.md) - Use for connecting the same or different NavMesh surfaces for one type of Agent.

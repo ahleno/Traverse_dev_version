@@ -1,3 +1,57 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:927e5f189b52d19244469cfdb76111913cb8cf389094b95d844dce6535c39667
-size 1668
+{
+    "name": "Unity.VisualScripting.Flow",
+    "references": [
+        "Unity.VisualScripting.Core",
+        "Unity.InputSystem"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.unity.inputsystem",
+            "expression": "1.0.1",
+            "define": "PACKAGE_INPUT_SYSTEM_EXISTS"
+        },
+        {
+            "name": "com.unity.inputsystem",
+            "expression": "1.2.0",
+            "define": "PACKAGE_INPUT_SYSTEM_1_2_0_OR_NEWER_EXISTS"
+        },
+        {
+            "name": "com.unity.inputsystem",
+            "expression": "1.4.0",
+            "define": "PACKAGE_INPUT_SYSTEM_1_4_0_OR_NEWER_EXISTS"
+        },
+        {
+            "name": "com.unity.modules.ai",
+            "expression": "1.0.0",
+            "define": "MODULE_AI_EXISTS"
+        },
+        {
+            "name": "com.unity.modules.animation",
+            "expression": "1.0.0",
+            "define": "MODULE_ANIMATION_EXISTS"
+        },
+        {
+            "name": "com.unity.modules.physics",
+            "expression": "1.0.0",
+            "define": "MODULE_PHYSICS_EXISTS"
+        },
+        {
+            "name": "com.unity.modules.physics2d",
+            "expression": "1.0.0",
+            "define": "MODULE_PHYSICS_2D_EXISTS"
+        },
+        {
+            "name": "com.unity.modules.particlesystem",
+            "expression": "1.0.0",
+            "define": "MODULE_PARTICLE_SYSTEM_EXISTS"
+        }
+    ],
+    "noEngineReferences": false
+}

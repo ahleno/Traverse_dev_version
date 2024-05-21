@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2d94c58d6ad7ff5d7184ae4b4dd71a3feebc056cc138bcc6797e5a0b46ab9ca1
-size 504
+﻿/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using UnityEngine;
+
+namespace Meta.WitAi.Attributes
+{
+    public class TooltipBoxAttribute : PropertyAttribute
+    {
+        public string Text { get; private set; }
+
+        public TooltipBoxAttribute(string text)
+        {
+            Text = text;
+        }
+    }
+}

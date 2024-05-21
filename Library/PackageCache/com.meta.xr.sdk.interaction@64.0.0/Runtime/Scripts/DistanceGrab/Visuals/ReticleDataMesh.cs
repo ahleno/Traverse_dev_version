@@ -1,3 +1,55 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6cd774062372954377b5c432a63233d9f1cc1de6df744ec1f7975b342d1d5139
-size 1755
+/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * Licensed under the Oculus SDK License Agreement (the "License");
+ * you may not use the Oculus SDK except in compliance with the License,
+ * which is provided at the time of installation or download, or which
+ * otherwise accompanies this software in either electronic or hard copy form.
+ *
+ * You may obtain a copy of the License at
+ *
+ * https://developer.oculus.com/licenses/oculussdk/
+ *
+ * Unless required by applicable law or agreed to in writing, the Oculus SDK
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+using UnityEngine;
+
+namespace Oculus.Interaction.DistanceReticles
+{
+    /// <summary>
+    /// Part of the ghost mesh reticle used for distance grabs. Attached to each GameObject that should be outlined in your hand during a hover. Pairs with ReticleMeshDrawer.
+    /// </summary>
+    public class ReticleDataMesh : MonoBehaviour, IReticleData
+    {
+    /// <summary>
+    /// The mesh of the GameObject to outline.
+    /// </summary>
+    [Tooltip("The mesh of the GameObject to outline.")]
+        [SerializeField]
+        private MeshFilter _filter;
+        public MeshFilter Filter
+        {
+            get
+            {
+                return _filter;
+            }
+            set
+            {
+                _filter = value;
+            }
+        }
+
+        public Transform Target => _filter.transform;
+
+        public Vector3 ProcessHitPoint(Vector3 hitPoint)
+        {
+            return _filter.transform.position;
+        }
+    }
+}

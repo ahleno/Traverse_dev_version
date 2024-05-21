@@ -1,3 +1,4 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3da7e47063e21dccd81c8a533fec2c9893af78ca3e01326ba497beaa83c50380
-size 72
+system: jira
+server: jira.unity3d.com
+project: XRLIH
+issuetype: Bug

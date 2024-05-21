@@ -1,3 +1,38 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8a1b5b33ce33824aaa6a852f6d6e97cc8bba6e7989e0cffad7f46d7625c4d7be
-size 1016
+{
+    "name": "Meta.XR.BuildingBlocks.Editor",
+    "rootNamespace": "",
+    "references": [
+        "Oculus.VR",
+        "Oculus.VR.Editor",
+        "Meta.XR.BuildingBlocks",
+        "Meta.XR.Editor.Tags",
+        "Oculus.VR.Scripts.Editor",
+        "Oculus.Platform",
+        "Meta.XR.Editor.UserInterface",
+        "Meta.XR.Editor.StatusMenu",
+        "Meta.XR.Editor.Callbacks",
+        "Meta.XR.GuidedSetups.Editor"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.meta.xr.sdk.platform",
+            "expression": "",
+            "define": "USING_META_XR_PLATFORM_SDK"
+        },
+        {
+            "define": "OVR_UNITY_PACKAGE_MANAGER",
+            "name": "com.meta.xr.sdk.core",
+            "expression": ""
+        }
+    ],
+    "noEngineReferences": false
+}

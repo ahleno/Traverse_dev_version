@@ -1,3 +1,60 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7f3687485d74e600914889847d45f9c8d15139ac55854a1618d052c37d9776b8
-size 1897
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Unity Technologies.
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+using System.Collections.Generic;
+using System.IO;
+
+namespace Microsoft.Unity.VisualStudio.Editor
+{
+	internal static class Discovery
+	{
+		public static IEnumerable<IVisualStudioInstallation> GetVisualStudioInstallations()
+		{
+#if UNITY_EDITOR_WIN
+			foreach (var installation in VisualStudioForWindowsInstallation.GetVisualStudioInstallations())
+				yield return installation;
+#elif UNITY_EDITOR_OSX
+			foreach (var installation in VisualStudioForMacInstallation.GetVisualStudioInstallations())
+				yield return installation;
+#endif
+
+			foreach (var installation in VisualStudioCodeInstallation.GetVisualStudioInstallations())
+				yield return installation;
+		}
+
+		public static bool TryDiscoverInstallation(string editorPath, out IVisualStudioInstallation installation)
+		{
+			try
+			{
+#if UNITY_EDITOR_WIN
+				if (VisualStudioForWindowsInstallation.TryDiscoverInstallation(editorPath, out installation))
+					return true;
+#elif UNITY_EDITOR_OSX
+				if (VisualStudioForMacInstallation.TryDiscoverInstallation(editorPath, out installation))
+					return true;
+#endif
+				if (VisualStudioCodeInstallation.TryDiscoverInstallation(editorPath, out installation))
+					return true;
+			}
+			catch (IOException)
+			{
+				installation = null;
+			}
+
+			return false;
+		}
+
+		public static void Initialize()
+		{
+#if UNITY_EDITOR_WIN
+			VisualStudioForWindowsInstallation.Initialize();
+#elif UNITY_EDITOR_OSX
+			VisualStudioForMacInstallation.Initialize();
+#endif
+			VisualStudioCodeInstallation.Initialize();
+		}
+	}
+}

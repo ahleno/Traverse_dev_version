@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:de560457052dec10ab859596ff0740c384959f403cbaba41962bf911c3ce2e3d
-size 431
+﻿/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+namespace Meta.Voice.TelemetryUtilities
+{
+    /// <summary>
+    /// The keys used to mark an annotation.
+    /// </summary>
+    public enum TelemetryAnnotationKey : short
+    {
+        Error
+    }
+}

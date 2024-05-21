@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8d3b72bf551d18908bec6dd3316d35b15ff152a130a0bfe7009b9053d8f41ee9
-size 475
+/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using UnityEngine;
+
+namespace Meta.Voice.Audio
+{
+    /// <summary>
+    /// A simple interface for receiving a Unity AudioSource
+    /// </summary>
+    public interface IAudioSourceProvider
+    {
+        AudioSource AudioSource { get; }
+    }
+}

@@ -1,3 +1,37 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:02f550eed74fbb33ed433c48d05a5e5aa43d17be4a47b29f34e8d8792ad8a398
-size 979
+apiRules:
+  - exclude:
+      # inherited Object methods
+      uidRegex: ^System\.Object\..*$
+      type: Method
+  - exclude:
+      # mentioning types from System.* namespace
+      uidRegex: ^System\..*$
+      type: Type
+  - exclude:
+      hasAttribute:
+        uid: System.ObsoleteAttribute
+      type: Member
+  - exclude:
+      hasAttribute:
+        uid: System.ObsoleteAttribute
+      type: Type
+  - exclude:
+      hasAttribute:
+        uid: System.ComponentModel.EditorBrowsableAttribute
+        ctorArguments:
+          - System.ComponentModel.EditorBrowsableState.Never
+  - exclude:
+      uidRegex: ^OpenCover\.Framework\.Model
+      type: namespace
+  - exclude:
+      uidRegex: ^Mono\.Reflection
+      type: namespace
+  - exclude:
+      uidRegex: Unity.TestTools.CodeCoverage.Editor.Test*
+      type: namespace
+  - exclude:
+      uidRegex: UnityEditor.TestTools.CodeCoverage.Tests
+      type: namespace
+  - exclude:
+      uidRegex: ^Global Namespace*
+      type: namespace

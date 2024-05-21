@@ -1,3 +1,38 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:330da598eaa7b3b6730449db843f97c6e39617b5177e82d401a14612c3f32ddc
-size 1221
+/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using System.Linq;
+
+namespace Meta.WitAi
+{
+    internal static class EnumerableExtensions
+    {
+        /// <summary>
+        /// Compares two collections while handling null cases and returns true if they are equal or both null.
+        /// </summary>
+        /// <param name="first">The first collection.</param>
+        /// <param name="second">The second collection.</param>
+        /// <typeparam name="TSource">The type of the collection.</typeparam>
+        /// <returns>True if both have the same elements or are both null.</returns>
+        internal static bool Equivalent<TSource>(this System.Collections.Generic.IEnumerable<TSource> first,
+            System.Collections.Generic.IEnumerable<TSource> second)
+        {
+            if (first == null && second == null)
+            {
+                return true;
+            }
+
+            if (first == null || second == null)
+            {
+                return false;
+            }
+
+            return first.SequenceEqual(second);
+        }
+    }
+}

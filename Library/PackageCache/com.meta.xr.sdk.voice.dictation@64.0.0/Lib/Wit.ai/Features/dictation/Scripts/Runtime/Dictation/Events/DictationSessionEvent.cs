@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:032f28c2a71915fd8092947606dbd56d0b9315541317010aeb427fe46b50b3cf
-size 460
+﻿/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using System;
+using Meta.WitAi.Dictation.Data;
+using UnityEngine.Events;
+
+namespace Meta.WitAi.Dictation.Events
+{
+    [Serializable]
+    public class DictationSessionEvent : UnityEvent<DictationSession>
+    {
+        
+    }
+}

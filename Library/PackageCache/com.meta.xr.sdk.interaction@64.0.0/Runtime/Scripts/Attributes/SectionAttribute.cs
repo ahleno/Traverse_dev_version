@@ -1,3 +1,37 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fa3a34e42e27f1a220c4a12bc50dcc7596f5785bb8196e31c358bdb1ed1e9e35
-size 1233
+/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * Licensed under the Oculus SDK License Agreement (the "License");
+ * you may not use the Oculus SDK except in compliance with the License,
+ * which is provided at the time of installation or download, or which
+ * otherwise accompanies this software in either electronic or hard copy form.
+ *
+ * You may obtain a copy of the License at
+ *
+ * https://developer.oculus.com/licenses/oculussdk/
+ *
+ * Unless required by applicable law or agreed to in writing, the Oculus SDK
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+using UnityEngine;
+
+namespace Oculus.Interaction
+{
+    /// <summary>
+    /// Used on a SerializedField  tags the field to be added to a custom section
+    /// </summary>
+    public class SectionAttribute : PropertyAttribute
+    {
+        public string SectionName { get; private set; } = string.Empty;
+
+        public SectionAttribute(string sectionName)
+        {
+            SectionName = sectionName;
+        }
+    }
+}

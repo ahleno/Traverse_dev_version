@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:29254303ae3694ecfe9be428ff9df2ca667204660fcb94a00eb02918845b7d92
-size 447
+﻿/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+namespace Meta.Voice.VSDKHub
+{
+    public class VoiceHubConstants
+    {
+        public const string CONTEXT_VOICE = "Voice SDK";
+        
+        public static string PAGE_WIT_CONFIGS = "Wit Configurations";
+    }
+}

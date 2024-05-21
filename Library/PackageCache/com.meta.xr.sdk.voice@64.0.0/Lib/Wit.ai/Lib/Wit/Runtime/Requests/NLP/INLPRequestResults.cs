@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:34a2f31022b22fd862427fb85e6db3ea1d23b8067fd296047d64906451943090
-size 934
+/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+namespace Meta.Voice
+{
+    /// <summary>
+    /// Interface for NLP request results
+    /// </summary>
+    /// <typeparam name="TResponseData">Type of NLP data received from the request</typeparam>
+    public interface INLPRequestResults<TResponseData> : ITranscriptionRequestResults
+    {
+        /// <summary>
+        /// Processed data from the request
+        /// Should only be set by NLPRequests
+        /// </summary>
+        TResponseData ResponseData { get; }
+
+        /// <summary>
+        /// A setter for response data
+        /// </summary>
+        /// <param name="responseData">The response data to be set</param>
+        void SetResponseData(TResponseData responseData);
+    }
+}

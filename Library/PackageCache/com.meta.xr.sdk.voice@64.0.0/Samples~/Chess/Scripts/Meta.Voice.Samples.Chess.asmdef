@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bcad475989ba448c942f61638398fe7ecf1e586d6fa632ce944ce7ef5e2b72b6
-size 617
+{
+    "name": "Meta.Voice.Samples.Chess",
+    "rootNamespace": "",
+    "references": [
+        "Meta.WitAi",
+        "VoiceSDK.Runtime",
+        "Meta.WitAi.Conduit",
+        "Meta.WitAi.Lib"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "define": "OVR_UNITY_PACKAGE_MANAGER",
+            "name": "com.meta.xr.sdk.voice",
+            "expression": ""
+        }
+    ],
+    "noEngineReferences": false
+}

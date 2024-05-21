@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:174347cf989590c21dd2c125ca222d313ca1e947a183399c3145d926cbdf5bf5
-size 682
+﻿/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+namespace Meta.WitAi.Json
+{
+    /// <summary>
+    /// Class for custom json serializing
+    /// </summary>
+    public interface IJsonSerializer
+    {
+        /// <summary>
+        /// Method for performing custom Json object serialization
+        /// </summary>
+        /// <param name="jsonObject">Initial json object to be encoded</param>
+        /// <returns>True if successfully encoded</returns>
+        bool SerializeObject(WitResponseClass jsonObject);
+    }
+}

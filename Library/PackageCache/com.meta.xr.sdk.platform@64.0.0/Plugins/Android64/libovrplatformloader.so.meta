@@ -1,3 +1,33 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b290c692fc35ff9d65b3d0740e546dfff572daea8e15b2bc6bf946f74b594147
-size 624
+fileFormatVersion: 2
+guid: 99bbb7d19d4903c42bd7efc63067b16c
+PluginImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  iconMap: {}
+  executionOrder: {}
+  defineConstraints: []
+  isPreloaded: 0
+  isOverridable: 0
+  isExplicitlyReferenced: 0
+  validateReferences: 1
+  platformData:
+  - first:
+      Android: Android
+    second:
+      enabled: 1
+      settings:
+        CPU: ARM64
+  - first:
+      Any: 
+    second:
+      enabled: 0
+      settings: {}
+  - first:
+      Editor: Editor
+    second:
+      enabled: 0
+      settings:
+        DefaultValueInitialized: true
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

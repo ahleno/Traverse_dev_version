@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ea95d4c38988c69a05e829f3b64cbc9dbc2f7a2fde70e7111e7e81eb460895f2
-size 951
+This package contains third-party software components governed by the license(s) indicated below:
+---------
+
+Component Name: AudioPluginOculusSpatializer
+
+License Type: Oculus SDK License Agreement
+
+Copyright © Facebook Technologies, LLC and its affiliates. All rights reserved.
+
+No url for component available
+
+Copyright (c) Facebook Technologies, LLC and its affiliates. All rights reserved.
+Your use of this SDK or tool is subject to the Oculus SDK License Agreement, available at https://developer.oculus.com/licenses/oculussdk/
+
+---------
+Component Name: OVRPlugin
+
+License Type: Oculus SDK License Agreement
+
+Copyright © Facebook Technologies, LLC and its affiliates. All rights reserved.
+
+No url for component available
+
+Copyright (c) Facebook Technologies, LLC and its affiliates. All rights reserved.
+Your use of this SDK or tool is subject to the Oculus SDK License Agreement, available at https://developer.oculus.com/licenses/oculussdk/

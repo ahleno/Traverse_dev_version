@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d24a4265ca2274cdcbec7db1c820ec570abba5eec0400638019ca9f87e4feb07
-size 535
+namespace Unity.VisualScripting
+{
+    /// <summary>
+    /// Sets the value of an application variable.
+    /// </summary>
+    [UnitSurtitle("Application")]
+    public sealed class SetApplicationVariable : SetVariableUnit, IApplicationVariableUnit
+    {
+        public SetApplicationVariable() : base() { }
+
+        public SetApplicationVariable(string defaultName) : base(defaultName) { }
+
+        protected override VariableDeclarations GetDeclarations(Flow flow)
+        {
+            return Variables.Application;
+        }
+    }
+}

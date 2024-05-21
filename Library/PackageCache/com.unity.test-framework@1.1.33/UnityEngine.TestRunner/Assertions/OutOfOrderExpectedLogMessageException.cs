@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3625c5a18348b7915a0e89744a3afd3b72778e866ad2ef1f7bee9d042e0ff5ba
-size 865
+using NUnit.Framework;
+using NUnit.Framework.Interfaces;
+using UnityEngine.TestTools.Logging;
+
+namespace UnityEngine.TestTools.TestRunner
+{
+    internal class OutOfOrderExpectedLogMessageException : ResultStateException
+    {
+        public OutOfOrderExpectedLogMessageException(LogEvent log, LogMatch nextExpected)
+            : base(BuildMessage(log, nextExpected))
+        {
+        }
+
+        private static string BuildMessage(LogEvent log, LogMatch nextExpected)
+        {
+            return $"Expected {log.LogType} with '{log.Message}' arrived out of order. Expected {nextExpected.LogType} with '{nextExpected.Message}' next.";
+        }
+
+        public override ResultState ResultState
+        {
+            get { return ResultState.Failure; }
+        }
+
+        public override string StackTrace { get { return null; } }
+    }
+}

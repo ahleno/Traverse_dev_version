@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3c15dcd08fb735d15d8653208be04ea1472366a45ef878f693d257803e3b67db
-size 728
+﻿using UnityEngine;
+
+namespace Unity.XR.Oculus
+{
+    public static partial class Utils
+    {
+        /// <summary>
+        /// Set the color scale and color offset of the eye texture layers
+        /// </summary>
+        /// <param name="colorScale">Scales the eye layer texture color by this Vector4.</param>
+        /// <param name="colorOffset">Offsets the eye layer texture color by this Vector4</param>
+        public static void SetColorScaleAndOffset(Vector4 colorScale, Vector4 colorOffset)
+        {
+            NativeMethods.SetColorScale(colorScale.x, colorScale.y, colorScale.z, colorScale.w);
+            NativeMethods.SetColorOffset(colorOffset.x, colorOffset.y, colorOffset.z, colorOffset.w);
+        }
+    }
+}

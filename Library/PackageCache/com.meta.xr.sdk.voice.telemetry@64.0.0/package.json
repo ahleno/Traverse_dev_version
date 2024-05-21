@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:27d7f531a6d5952e9601eb899a93e51be5d47d75b6944760a60f3f70227a69ae
-size 896
+{
+  "name": "com.meta.xr.sdk.voice.telemetry",
+  "displayName": "Meta - Voice SDK - Telemetry",
+  "version": "64.0.0",
+  "description": "The telemetry package provides insights into the operation of the VoiceSDK and its related packages so that we can improve the experience for everyone.",
+  "samples": [],
+  "unity": "2021.3",
+  "unityRelease": "26f1",
+  "author": {
+    "name": "Meta - Voice SDK",
+    "url": "https://wit.ai"
+  },
+  "documentationUrl": "https://developer.oculus.com/documentation/unity/",
+  "changelogUrl": "https://developer.oculus.com/downloads/package/unity-integration/",
+  "licensesUrl": "https://developer.oculus.com/licenses/oculussdk",
+  "licenseMessage": "By adding or using this package you agree to the terms and conditions of the Meta Platforms Technologies SDK License Agreement: https://developer.oculus.com/licenses/oculussdk",
+  "keywords": [
+    "Meta"
+  ]
+}

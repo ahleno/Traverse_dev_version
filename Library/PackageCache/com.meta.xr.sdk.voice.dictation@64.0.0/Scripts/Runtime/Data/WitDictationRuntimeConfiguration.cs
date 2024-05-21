@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e368f35fff39f8e03d1bdcae38a4c7641676534e886379e8631439733792a470
-size 627
+﻿/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using System;
+using Oculus.Voice.Dictation.Configuration;
+using UnityEngine;
+
+namespace Meta.WitAi.Configuration
+{
+    [Serializable]
+    public class WitDictationRuntimeConfiguration : WitRuntimeConfiguration
+    {
+        [Header("Dictation")]
+        [SerializeField] public DictationConfiguration dictationConfiguration;
+
+        protected override Vector2 RecordingTimeRange => new Vector2(-1, 300);
+    }
+}

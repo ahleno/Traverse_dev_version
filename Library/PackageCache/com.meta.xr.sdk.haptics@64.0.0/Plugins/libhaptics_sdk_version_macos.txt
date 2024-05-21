@@ -1,3 +1,1 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9b5263fa47dddc8b8eb5308dacd41148d066f13dc5c3de1bfea2889eed37cd6f
-size 89
+Haptics Native SDK 1.0.0-beta.2 (ff2683c7dd89+), built on 2024-02-09T14:03:46Z for macOS

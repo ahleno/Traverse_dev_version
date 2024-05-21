@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c0385e02a8128e3c2be5b5a96913e7c9b972cd40991720d8b3d5effcbdd9deca
-size 324
+Shader "Interaction/UnlitTransparentColor" {
+Properties {
+    _Color ("Main Color", Color) = (1,1,1,1)
+}
+
+SubShader {
+    Tags {"Queue"="Transparent" "IgnoreProjector"="True" "RenderType"="Transparent"}
+    LOD 100
+    Fog {Mode Off}
+
+    ZTest Always
+    Blend SrcAlpha OneMinusSrcAlpha
+    Color [_Color]
+
+    Pass {}
+}
+}

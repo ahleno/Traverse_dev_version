@@ -1,3 +1,39 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a0c9d4cc8446f5bbd6e46d07bc6340f1ae7a38e8c58d43264c4a4a02f8d6c3d3
-size 1394
+/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * Licensed under the Oculus SDK License Agreement (the "License");
+ * you may not use the Oculus SDK except in compliance with the License,
+ * which is provided at the time of installation or download, or which
+ * otherwise accompanies this software in either electronic or hard copy form.
+ *
+ * You may obtain a copy of the License at
+ *
+ * https://developer.oculus.com/licenses/oculussdk/
+ *
+ * Unless required by applicable law or agreed to in writing, the Oculus SDK
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+using UnityEngine;
+using Oculus.Interaction.Editor.QuickActions;
+using Oculus.Interaction.Input;
+
+namespace Oculus.Interaction.Editor.BuildingBlocks
+{
+    public class OVRInteractionHandTrackingBlockData : OVRInteractionBaseBlockData
+    {
+        protected override bool TryGetPreexistingNonBlock(out GameObject nonBlockObject)
+        {
+            return TryGetInteractorBase<Hand>(InteractorUtils.HAND_INTERACTOR_PARENT_NAME,
+                out nonBlockObject);
+        }
+
+        protected override void ApplyAdditionalHooks(GameObject blockObject)
+        {
+        }
+    }
+}

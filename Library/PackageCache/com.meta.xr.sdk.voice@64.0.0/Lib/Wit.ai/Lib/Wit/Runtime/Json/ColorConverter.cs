@@ -1,3 +1,43 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:317adc3e843878fd05e2ce4e06a2b85ea9fdc0041a82148d57db9c1b05e51ce1
-size 1240
+/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using System;
+using UnityEngine;
+
+namespace Meta.WitAi.Json
+{
+    public class ColorConverter : JsonConverter
+    {
+        // Reads and Writes
+        public override bool CanRead => true;
+        public override bool CanWrite => true;
+
+        // Can convert to color
+        public override bool CanConvert(Type objectType)
+        {
+            return typeof(Color) == objectType;
+        }
+
+        // Decode into color
+        public override object ReadJson(WitResponseNode serializer, Type objectType, object existingValue)
+        {
+            if (ColorUtility.TryParseHtmlString(serializer.Value, out var result))
+            {
+                return result;
+            }
+            return existingValue;
+        }
+
+        // Decode from color
+        public override WitResponseNode WriteJson(object existingValue)
+        {
+            Color result = (Color)existingValue;
+            return new WitResponseData(ColorUtility.ToHtmlStringRGBA(result));
+        }
+    }
+}

@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:64e038b9d6b89bbaa264e9eef6876f0d0e99ea18e3f78be652c37930d7f57a20
-size 532
+{
+    "name": "Meta.XR.Editor.UserInterface",
+    "rootNamespace": "",
+    "references": [],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "define": "OVR_UNITY_PACKAGE_MANAGER",
+            "name": "com.meta.xr.sdk.core",
+            "expression": ""
+        }
+    ],
+    "noEngineReferences": false
+}

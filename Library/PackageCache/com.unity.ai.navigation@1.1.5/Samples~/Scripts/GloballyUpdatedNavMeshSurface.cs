@@ -1,3 +1,37 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:10a6c90d40eeee160d88878d978238060499403bea63499a10c54f80f41cdbb8
-size 919
+using System;
+using System.Collections.Generic;
+using UnityEngine;
+
+namespace Unity.AI.Navigation.Samples
+{
+    /// <summary>
+    /// NavMeshSurface that updates only once per frame upon request
+    /// </summary>
+    [RequireComponent(typeof(NavMeshSurface))]
+    public class GloballyUpdatedNavMeshSurface : MonoBehaviour
+    {
+        static bool s_NeedsNavMeshUpdate;
+
+        NavMeshSurface m_Surface;
+
+        public static void RequestNavMeshUpdate()
+        {
+            s_NeedsNavMeshUpdate = true;
+        }
+
+        void Start()
+        {
+            m_Surface = GetComponent<NavMeshSurface>();
+            m_Surface.BuildNavMesh();
+        }
+
+        void Update()
+        {
+            if (s_NeedsNavMeshUpdate)
+            {
+                m_Surface.UpdateNavMesh(m_Surface.navMeshData);
+                s_NeedsNavMeshUpdate = false;
+            }
+        }
+    }
+}

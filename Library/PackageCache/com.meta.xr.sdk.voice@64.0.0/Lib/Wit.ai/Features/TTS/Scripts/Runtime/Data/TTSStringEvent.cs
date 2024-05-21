@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0770c1abacff4013c71aa87646dc7936e713738d7f896bb4725914e9e525f77f
-size 425
+/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using System;
+
+namespace Meta.WitAi.TTS.Data
+{
+    /// <summary>
+    /// A tts event with string data
+    /// </summary>
+    [Serializable]
+    public class TTSStringEvent : TTSEvent<string> {}
+}

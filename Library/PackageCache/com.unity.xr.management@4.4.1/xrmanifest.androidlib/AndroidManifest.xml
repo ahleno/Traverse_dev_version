@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bd9884fbd5c5039923ae391b09cd12a8d3914c3e1db7176fda17146d49f285e6
-size 294
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.UnityTechnologies.XR.Manifest">
+    <application>
+        <activity android:name="com.unity3d.player.UnityPlayerActivity">
+        </activity>
+    </application>
+</manifest>

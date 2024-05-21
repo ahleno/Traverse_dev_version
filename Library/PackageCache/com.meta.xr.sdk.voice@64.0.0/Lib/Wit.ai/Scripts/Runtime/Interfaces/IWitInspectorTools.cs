@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5bed579239fac7d1fc3fd2e57d1b8f21da67a700be9fca07c409a0b709ef66c8
-size 395
+﻿﻿/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+ namespace Meta.WitAi.Interfaces
+{
+    /// <summary>
+    /// Enable custom editor inspector tools
+    /// </summary>
+    public interface IWitInspectorTools { }
+}

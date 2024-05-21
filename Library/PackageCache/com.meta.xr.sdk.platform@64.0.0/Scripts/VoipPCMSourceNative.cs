@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b7ae7c435f108f2dd0b4a2fd5dd6d4b88339d75e81e825c47b917c4dc36fb588
-size 613
+using UnityEngine;
+using System.Collections;
+using System;
+
+namespace Oculus.Platform
+{
+    public class VoipPCMSourceNative : IVoipPCMSource
+    {
+        ulong senderID;
+
+        public int GetPCM(float[] dest, int length)
+        {
+            return (int)CAPI.ovr_Voip_GetPCMFloat(senderID, dest, (UIntPtr)length);
+        }
+
+        public void SetSenderID(ulong senderID)
+        {
+            this.senderID = senderID;
+        }
+
+        public int PeekSizeElements()
+        {
+            return (int)CAPI.ovr_Voip_GetPCMSize(senderID);
+        }
+
+        public void Update()
+        {
+        }
+    }
+}

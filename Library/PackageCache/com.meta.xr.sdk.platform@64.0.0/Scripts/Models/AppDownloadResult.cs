@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:16f6924da4e7a8ccb98eb4381ef870d0fea582a988386a37e53e0fab7b7aeb55
-size 508
+// This file was @generated with LibOVRPlatform/codegen/main. Do not modify it!
+
+namespace Oculus.Platform.Models
+{
+  using System;
+  using System.Collections;
+  using Oculus.Platform.Models;
+  using System.Collections.Generic;
+  using UnityEngine;
+
+  public class AppDownloadResult
+  {
+    /// Timestamp in milliseconds when the operation finished.
+    public readonly long Timestamp;
+
+
+    public AppDownloadResult(IntPtr o)
+    {
+      Timestamp = CAPI.ovr_AppDownloadResult_GetTimestamp(o);
+    }
+  }
+
+}

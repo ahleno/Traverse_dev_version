@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d65b484470293ec4f46b2aaa62a2eee8c1457c57dbb2ac09cc811603778cbd10
-size 731
+{
+    "name": "Unity.AI.Navigation.Editor.Tests",
+    "rootNamespace": "",
+    "references": [
+        "GUID:27619889b8ba8c24980f49ee34dbb44a",
+        "GUID:0acc523941302664db1f4e527237feb3",
+        "GUID:8c4dd21966739024fbd72155091d199e",
+        "GUID:86c9d8e67265f41469be06142c397d17",
+        "GUID:1664e92176d434ccd902c1705fefe682"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "nunit.framework.dll"
+    ],
+    "autoReferenced": false,
+    "defineConstraints": [
+        "UNITY_INCLUDE_TESTS"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

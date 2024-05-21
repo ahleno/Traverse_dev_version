@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:feb1b1e334086da0d255d5e942f5b1a3d3459533b9c46dfabc972e9ba57adc71
-size 300
+/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using System.Runtime.CompilerServices;
+
+[assembly:InternalsVisibleTo("VoiceSDK.Editor")]

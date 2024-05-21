@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1627b1f581f6da7891bed0949bc1abd14758ea42e9c05ac0305ee1ee609beaa5
-size 495
+// (c) Meta Platforms, Inc. and affiliates. Confidential and proprietary.
+
+using UnityEngine;
+
+namespace Oculus.Assistant.VoiceCommand.Configuration
+{
+    [CreateAssetMenu(fileName = "Action-VoiceCommandActionName", menuName = "Voice SDK/Voice Command Action")]
+    public class VoiceCommand : ScriptableObject
+    {
+        public string actionId;
+
+        public virtual byte[] InputData { get; }
+
+        public override string ToString()
+        {
+            return name;
+        }
+    }
+}

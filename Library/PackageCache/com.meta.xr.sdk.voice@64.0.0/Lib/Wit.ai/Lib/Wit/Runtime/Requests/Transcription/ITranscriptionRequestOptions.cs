@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:938978007041b5c2cbff14a1e654a5723b5e41b0a70254747aacdb2405a07902
-size 670
+/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+namespace Meta.Voice
+{
+    /// <summary>
+    /// Interface for audio transcription specific options
+    /// </summary>
+    public interface ITranscriptionRequestOptions : IVoiceRequestOptions
+    {
+        /// <summary>
+        /// The audio threshold that must be surpassed to begin an activation.
+        /// If less than or equal to 0, then always Send immediately
+        /// </summary>
+        float AudioThreshold { get; }
+    }
+}

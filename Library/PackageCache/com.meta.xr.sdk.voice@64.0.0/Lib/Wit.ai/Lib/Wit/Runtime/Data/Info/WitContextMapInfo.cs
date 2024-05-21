@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f8fc952b98bfbc279ba62c5cc4ceaf39ae81ce7bca8083dcd3e429a971362293
-size 439
+/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using System;
+using UnityEngine;
+
+namespace Meta.WitAi.Data.Info
+{
+    [Serializable]
+    public struct WitContextMapInfo
+    {
+
+        [SerializeField] public string key;
+
+        [SerializeField] public string value;
+    }
+}
