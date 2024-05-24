@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d7a7ccaeeabb5d13822ad9c98e4e7b39735f27068df1e4dc111ca3f4f08e2e00
-size 144
+@import "Base.uss";
+
+#wait {
+    margin-top: 20px;
+    padding-top: 40px;
+}
+
+#progressContainer {
+    padding-top: 3px;
+    margin-right: 50%;
+}

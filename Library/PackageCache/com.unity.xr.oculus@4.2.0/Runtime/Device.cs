@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:660b182159776e68c34190631e4deb5c50fa7d9ff2b6416e1f574e35ed6bae92
-size 424
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+namespace Unity.XR.Oculus
+{
+    public static partial class Utils
+    {
+        /// <summary>
+        /// Returns the type of the current headset
+        /// </summary>
+        /// <returns></returns>
+        public static SystemHeadset GetSystemHeadsetType()
+        {
+            return NativeMethods.GetSystemHeadsetType();
+        }
+    }
+}

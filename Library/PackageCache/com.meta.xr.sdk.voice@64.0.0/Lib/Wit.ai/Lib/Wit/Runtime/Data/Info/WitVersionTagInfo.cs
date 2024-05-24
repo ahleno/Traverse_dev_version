@@ -1,3 +1,45 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:81b79ed0daee59f186f370769372b6265b2c09421a91b64f94e5b8327b76ae5a
-size 1248
+﻿/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using System;
+using UnityEngine;
+
+namespace Meta.WitAi.Data.Info
+{
+    [Serializable]
+    public struct WitVersionTagInfo
+    {
+        public WitVersionTagInfo(string name, string createdAt, string updatedAt, string description)
+        {
+            this.name = name;
+            this.created_at = createdAt;
+            this.updated_at = updatedAt;
+            this.desc = description;
+        }
+
+        /// <summary>
+        /// The assigned name of this version tag
+        /// </summary>
+        [SerializeField] public string name;
+
+        /// <summary>
+        /// Date and time of the tag creation (ISO8601).
+        /// </summary>
+        [SerializeField] public string created_at;
+
+        /// <summary>
+        /// Date and time of the last update (move, rename or update description) (ISO8601).
+        /// </summary>
+        [SerializeField] public string updated_at;
+
+        /// <summary>
+        /// Short sentence describing the version.
+        /// </summary>
+        [SerializeField] public string desc;
+    }
+}

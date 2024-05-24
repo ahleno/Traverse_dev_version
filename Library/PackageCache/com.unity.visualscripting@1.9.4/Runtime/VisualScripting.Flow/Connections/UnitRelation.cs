@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:99ec5f052c18ec673c42d6da2f06ee6142cc7480ada0b288b77cbe0f6740f7b4
-size 669
+using System;
+
+namespace Unity.VisualScripting
+{
+    public sealed class UnitRelation : IUnitRelation
+    {
+        public UnitRelation(IUnitPort source, IUnitPort destination)
+        {
+            Ensure.That(nameof(source)).IsNotNull(source);
+            Ensure.That(nameof(destination)).IsNotNull(destination);
+
+            if (source.unit != destination.unit)
+            {
+                throw new NotSupportedException("Cannot create relations across nodes.");
+            }
+
+            this.source = source;
+            this.destination = destination;
+        }
+
+        public IUnitPort source { get; }
+
+        public IUnitPort destination { get; }
+    }
+}

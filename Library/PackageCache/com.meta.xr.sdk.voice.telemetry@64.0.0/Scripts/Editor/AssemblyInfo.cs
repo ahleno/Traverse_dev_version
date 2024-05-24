@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d4bc9471db1338cd14b36211576796eb5c0af58990510820937038f2729650b0
-size 586
+﻿/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using System.Runtime.CompilerServices;
+
+[assembly: InternalsVisibleTo("Meta.WitAi.Editor")]
+[assembly: InternalsVisibleTo("Meta.Voice.Internal.Editor")]
+[assembly: InternalsVisibleTo("Meta.Voice.Hub.Editor")]
+[assembly: InternalsVisibleTo("Meta.Voice.VSDKHub.Editor")]
+[assembly: InternalsVisibleTo("VoiceSDK.Editor")]
+[assembly: InternalsVisibleTo("Meta.WitAi.Conduit")]

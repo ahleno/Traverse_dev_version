@@ -1,3 +1,43 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cd50d0231889dabdb692586d05ca9197b60e312f6f065e5d317782a9b9d40a08
-size 1046
+﻿/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using System;
+using UnityEngine;
+
+namespace Meta.WitAi.Data.Info
+{
+    [Serializable]
+    public struct WitIntentEntityInfo
+    {
+        /// <summary>
+        /// Entity name
+        /// </summary>
+        [SerializeField] public string name;
+        /// <summary>
+        /// Entity unique id
+        /// </summary>
+        [SerializeField] public string id;
+    }
+
+    [Serializable]
+    public struct WitIntentInfo
+    {
+        /// <summary>
+        /// Intent display name
+        /// </summary>
+        [SerializeField] public string id;
+        /// <summary>
+        /// Intent unique identifier
+        /// </summary>
+        [SerializeField] public string name;
+        /// <summary>
+        /// Entities used with this intent
+        /// </summary>
+        [SerializeField] public WitIntentEntityInfo[] entities;
+    }
+}

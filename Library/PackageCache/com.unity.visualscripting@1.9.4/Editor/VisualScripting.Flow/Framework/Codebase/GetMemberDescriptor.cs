@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ab4a3ccd1b3361d0b5f3251e8854417c281ad7744703a2fa21f22bee062a8940
-size 595
+namespace Unity.VisualScripting
+{
+    [Descriptor(typeof(GetMember))]
+    public class GetMemberDescriptor : MemberUnitDescriptor<GetMember>
+    {
+        public GetMemberDescriptor(GetMember unit) : base(unit) { }
+
+        protected override ActionDirection direction => ActionDirection.Get;
+
+        protected override void DefinedPort(IUnitPort port, UnitPortDescription description)
+        {
+            base.DefinedPort(port, description);
+
+            if (port == unit.value)
+            {
+                description.summary = unit.member.info.Summary();
+            }
+        }
+    }
+}

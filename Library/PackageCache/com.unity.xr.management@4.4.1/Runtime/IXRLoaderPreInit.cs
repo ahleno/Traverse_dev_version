@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:32938a1f3c5aeff625bbc05a3a5c7f332b942dce7a33fae3560e9a57dbff7683
-size 785
+#if UNITY_EDITOR
+using UnityEditor;
+
+namespace UnityEngine.XR.Management
+{
+    /// <summary>
+    /// XRLoader interface for retrieving the XR PreInit library name from an XRLoader instance
+    /// </summary>
+    public interface IXRLoaderPreInit
+    {
+        /// <summary>
+        /// Get the library name, if any, to use for XR PreInit.
+        /// </summary>
+        ///
+        /// <param name="buildTarget">An enum specifying which platform this build is for.</param>
+        /// <param name="buildTargetGroup">An enum specifying which platform group this build is for.</param>
+        /// <returns>A string specifying the library name used for XR PreInit.</returns>
+        string GetPreInitLibraryName(BuildTarget buildTarget, BuildTargetGroup buildTargetGroup);
+    }
+}
+#endif

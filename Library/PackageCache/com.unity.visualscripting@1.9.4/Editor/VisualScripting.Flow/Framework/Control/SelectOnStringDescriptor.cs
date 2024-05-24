@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a91cffb0e21ef254e481330c096fa97e627d583c3f2562545a4a476108054cba
-size 478
+namespace Unity.VisualScripting
+{
+    [Descriptor(typeof(SelectOnString))]
+    public class SelectOnStringDescriptor : SelectUnitDescriptor<string>
+    {
+        public SelectOnStringDescriptor(SelectOnString unit) : base(unit) { }
+
+        protected override string GetLabelForOption(string option)
+        {
+            if (string.IsNullOrEmpty(option))
+            {
+                return "Null / Empty";
+            }
+
+            return $"\"{option}\"";
+        }
+    }
+}

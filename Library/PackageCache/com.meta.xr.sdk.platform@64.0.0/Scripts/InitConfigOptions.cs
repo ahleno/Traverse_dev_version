@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9135114c018a2887b72e5d8975c675e44fc099ab8c60e606cdcdea353e05a8e7
-size 483
+// This file was @generated with LibOVRPlatform/codegen/main. Do not modify it!
+
+namespace Oculus.Platform
+{
+
+  public enum InitConfigOptions : uint
+  {
+    /// Disables the initialization of the WebRTC networking stack, when you don't
+    /// need to use any of the ovr_Voip_* or ovr_Net_* functions.
+    DisableP2pNetworking = 0x1CDE5DDE,
+
+    /// Enables the initialization of cowatching stack to use ovr_Cowatching_*
+    /// functions.
+    EnableCowatching = 0x7DD1C46E,
+
+  }
+
+}

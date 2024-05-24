@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:addd6dc159253176f52b0452382930c7ba8e6563c597ae585c78494f4b4d7f7d
-size 373
+{
+  "name": "com.meta.xr.sdk.voice.hub",
+  "displayName": "Meta - Voice SDK - Hub - Core",
+  "version": "64.0.0",
+  "samples": [],
+  "unity": "2019.4",
+  "author": {
+    "name": "Meta - Voice SDK",
+    "url": "https://wit.ai"
+  },
+  "description": "The Hub Core is a menu window which provides access to documentation, tutorials, and samples for components of Voice SDK"
+}

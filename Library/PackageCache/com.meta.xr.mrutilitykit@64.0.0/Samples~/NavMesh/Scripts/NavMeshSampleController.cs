@@ -1,3 +1,40 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e9da5d68c3f580734b73d262a21fca47e5ba4ea3c17e579e2dcf6aa565915cad
-size 1314
+/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * Licensed under the Oculus SDK License Agreement (the "License");
+ * you may not use the Oculus SDK except in compliance with the License,
+ * which is provided at the time of installation or download, or which
+ * otherwise accompanies this software in either electronic or hard copy form.
+ *
+ * You may obtain a copy of the License at
+ *
+ * https://developer.oculus.com/licenses/oculussdk/
+ *
+ * Unless required by applicable law or agreed to in writing, the Oculus SDK
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+using Meta.XR.MRUtilityKit;
+using UnityEngine;
+
+public class NavMeshSampleController : MonoBehaviour
+{
+    public SceneNavigation SceneNavigation;
+    public bool useGlobalMesh = false;
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (OVRInput.GetDown(OVRInput.RawButton.B))
+        {
+            if (!SceneNavigation)
+                return;
+            useGlobalMesh = !useGlobalMesh;
+            SceneNavigation.ToggleGlobalMeshNavigation(useGlobalMesh);
+        }
+    }
+}

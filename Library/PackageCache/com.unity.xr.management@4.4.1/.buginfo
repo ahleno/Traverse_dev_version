@@ -1,3 +1,5 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:79cbf35bb7a2ff90ea915f81d8ca8ac58417cf3a0ebc96fb369b2f9e30a95934
-size 90
+system: jira
+server: jira.unity3d.com
+project: XRMB
+issuetype: Bug
+package: XR Management

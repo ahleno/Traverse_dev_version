@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:06226da47ef33f309f96461120723b8cd94bfb2b9c0fadd36c7893317d76602d
-size 405
+﻿/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using System;
+using Meta.WitAi.Json;
+using UnityEngine.Events;
+
+namespace Meta.WitAi.Events
+{
+    [Serializable]
+    public class WitResponseEvent : UnityEvent<WitResponseNode>
+    {
+    }
+}

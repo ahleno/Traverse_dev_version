@@ -1,3 +1,40 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:79b48767374710435c5c2a323fa4e1c90e230d4d16c181a2f3a735f565ad2cf4
-size 608
+ExpressionEvaluator
+UnityEditor
+NumericFieldDraggerUtility
+PixelPerfectRendering
+UnityEngine
+Experimental
+U2D
+SpriteBone
+Profiler
+PhotoCaptureFileOutputFormat
+XR
+WSA
+WebCam
+PhotoCapture
+PhotoCaptureFrame
+VideoCapture
+CapturePixelFormat
+WebCamMode
+CameraParameters
+PlayerLoopSystemInternal
+LowLevel
+PlayerLoopSystem
+PlayerLoop
+Initialization
+EarlyUpdate
+FixedUpdate
+PreUpdate
+Update
+PreLateUpdate
+PostLateUpdate
+ConnectionTarget
+Networking
+PlayerConnection
+IConnectionState
+VertexAttribute
+Rendering
+RenderingThreadingMode
+RendererList
+RendererUtils
+RendererListStatus

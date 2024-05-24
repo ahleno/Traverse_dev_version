@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6e822fab0d9af4387400a367c1f9ee3b3c9d21242516ee28bda410cfb889db35
-size 513
+{
+    "name": "Oculus.Haptics",
+    "rootNamespace": "Oculus.Haptics",
+    "references": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "define": "OVR_UNITY_PACKAGE_MANAGER",
+            "name": "com.meta.xr.sdk.haptics",
+            "expression": ""
+        }
+    ],
+    "noEngineReferences": false
+}

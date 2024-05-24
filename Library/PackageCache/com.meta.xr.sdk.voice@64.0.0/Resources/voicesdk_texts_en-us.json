@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b8fa62dbfc37fa1b32cf82b8da006299f4a7dc740e570b87218fca7047ffc982
-size 1005
+{
+  "LanguageID": "en-us",
+  "SetupTitleLabel": "Welcome to Voice SDK",
+  "SetupHeaderLabel": "Build Natural Language Experiences",
+  "SetupSubheaderLabel": "Empower people to use your product with voice and text.",
+  "SetupLanguageLabel": "Select language to use Built-In NLP",
+  "AboutTitleLabel": "About",
+  "AboutCloseLabel": "Close",
+  "AboutVoiceSdkVersionLabel": "Voice SDK Version",
+  "AboutWitSdkVersionLabel": "Wit.ai SDK Version",
+  "AboutWitApiVersionLabel": "Wit.ai API Version",
+  "AboutTutorialButtonLabel": "Tutorials Website",
+  "AboutTutorialButtonUrl": "https://developer.oculus.com/documentation/unity/voice-sdk-tutorials-overview/",
+  "SettingsTitleLabel": "Voice SDK Settings",
+  "UnderstandingViewerTitleLabel": "Understanding Viewer",
+  "BuiltInAppBtnLabel": "Open Built-In NLP Documentation",
+  "BuiltInAppUrl": "https://developer.oculus.com/documentation/unity/voice-sdk-built-in",
+  "VoiceDocsUrl": "https://developer.oculus.com/documentation/unity/voice-sdk-integrate-voice"
+}

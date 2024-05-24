@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:044c13f8f5b21e200fb35f8dc5ee644f3345bc3cf73689e5896e45d64707d215
-size 563
+{
+    "name": "Unity.XR.Management.Editor",
+    "rootNamespace": "",
+    "references": [
+        "Unity.XR.Management"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "Unity",
+            "expression": "2022.3.15f1",
+            "define": "UNITY_XR_VISIONOS_SUPPORTED"
+        }
+    ],
+    "noEngineReferences": false
+}

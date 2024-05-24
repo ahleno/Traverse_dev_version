@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:aa7833ca8cc44af81c23c79881c0bb5801fd2cb32cd433031d13567362e5c37b
-size 322
+@import "Base.uss";
+
+.sign-in-buttons {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 30px;
+}
+
+#iconUnity, #iconEmail {
+    width: 32px;
+    height: 32px
+}
+
+#unityIDButton {
+    color: white;
+    background-color: black;
+}
+
+#signUpLabel{
+    margin-top: 3px;
+}
+
+#privacyStatement {
+    align-self: flex-start;
+}

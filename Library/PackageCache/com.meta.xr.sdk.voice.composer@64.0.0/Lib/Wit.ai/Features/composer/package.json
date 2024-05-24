@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ad0d7466f74587424eb12239d6cf04e979a5900a647347403c619ea1e5116d32
-size 346
+{
+  "name": "com.meta.witai.composer",
+  "displayName": "Meta - Wit.ai - Composer",
+  "version": "64.0.0",
+  "author": {
+    "name": "Meta - Wit.ai",
+    "url": "https://wit.ai"
+  },
+  "description": "Composer is an add on to the Wit.ai VoiceService that routes all audio & text activations into the web based conversational composer diagram."
+}

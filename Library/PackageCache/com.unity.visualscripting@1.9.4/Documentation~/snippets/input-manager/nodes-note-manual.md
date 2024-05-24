@@ -1,3 +1,5 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7eae0078bd30d6b370073bea3ef7adc98eb9cc1e34b90c95b0743fdef5c38bb9
-size 281
+---
+title: nodes-note-manual
+---
+
+node is an [Input Manager](https://docs.unity3d.com/Manual/class-InputManager.html) node. For more information about how to use the Input Manager with Visual Scripting, see [Capture user input in an application](../../vs-capture-player-input.md). 

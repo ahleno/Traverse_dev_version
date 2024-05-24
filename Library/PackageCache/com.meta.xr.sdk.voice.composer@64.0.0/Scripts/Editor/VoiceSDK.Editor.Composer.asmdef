@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f74ea9ecc393ee4abe66a6b36b3f44a7063414e6b1048d561b59ac75467b7ccf
-size 811
+{
+    "name": "VoiceSDK.Editor.Composer",
+    "rootNamespace": "",
+    "references": [
+        "AssistantCoreSDKRuntime",
+        "Meta.WitAi",
+        "Meta.WitAi.Conduit",
+        "VoiceSDK.Runtime",
+        "Meta.Wit.Composer",
+        "VoiceSDK.Runtime.Composer",
+        "Meta.WitAi.TTS",
+        "Meta.WitAi.TTS.Editor",
+        "Meta.WitAi.Editor"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "define": "OVR_UNITY_PACKAGE_MANAGER",
+            "name": "com.meta.xr.sdk.voice.composer",
+            "expression": ""
+        }
+    ],
+    "noEngineReferences": false
+}

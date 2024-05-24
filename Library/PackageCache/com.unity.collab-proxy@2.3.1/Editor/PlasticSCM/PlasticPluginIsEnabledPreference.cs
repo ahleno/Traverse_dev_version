@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9ba3b480251202ee65a1e4378fb482a8e24a0e1fe557df4f6483edd3f3415ec2
-size 695
+﻿using Unity.PlasticSCM.Editor.UI;
+
+namespace Unity.PlasticSCM.Editor
+{
+    internal static class PlasticPluginIsEnabledPreference
+    {
+        internal static bool IsEnabled()
+        {
+            return BoolSetting.Load(
+                UnityConstants.PLASTIC_PLUGIN_IS_ENABLED_KEY_NAME,
+                true);
+        }
+
+        internal static void Enable()
+        {
+            BoolSetting.Save(
+                true,
+                UnityConstants.PLASTIC_PLUGIN_IS_ENABLED_KEY_NAME);
+        }
+
+        internal static void Disable()
+        {
+            BoolSetting.Save(
+                false,
+                UnityConstants.PLASTIC_PLUGIN_IS_ENABLED_KEY_NAME);
+        }
+    }
+}

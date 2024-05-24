@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c6ffe02e166380d1d7c09d83b58fdf31957b385739c4d28f34a9116cd631b6d0
-size 365
+/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+namespace Meta.WitAi.Interfaces
+{
+    public interface ITranscriptionEventProvider
+    {
+        ITranscriptionEvent TranscriptionEvents { get; }
+    }
+}

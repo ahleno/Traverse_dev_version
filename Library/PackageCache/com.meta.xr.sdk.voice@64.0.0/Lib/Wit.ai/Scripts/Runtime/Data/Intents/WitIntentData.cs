@@ -1,3 +1,35 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ed4b04bb43f97c740dae3914198edc16959f4a0b3cf45e1d202c67b0b61be542
-size 816
+﻿/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using Meta.WitAi.Json;
+using UnityEngine.Scripting;
+
+namespace Meta.WitAi.Data.Intents
+{
+    public class WitIntentData
+    {
+        public WitResponseNode responseNode;
+
+        [Preserve]
+        public string id;
+        public string name;
+        public float confidence;
+
+        public WitIntentData() {}
+
+        public WitIntentData(WitResponseNode node)
+        {
+            FromIntentWitResponseNode(node);
+        }
+
+        public WitIntentData FromIntentWitResponseNode(WitResponseNode node)
+        {
+            return JsonConvert.DeserializeIntoObject(this, node);
+        }
+    }
+}

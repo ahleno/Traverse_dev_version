@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9064ab7a0b0c6d3428a13816fe730cd2f3e796bb29015a3e2b903fa1c153434b
-size 325
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!134 &13400000
+PhysicMaterial:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Ball
+  dynamicFriction: 0.01
+  staticFriction: 0.01
+  bounciness: 0.6
+  frictionCombine: 1
+  bounceCombine: 0

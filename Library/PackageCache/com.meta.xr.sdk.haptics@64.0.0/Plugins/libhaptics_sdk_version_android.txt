@@ -1,3 +1,1 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:52dee31d571e026257c2d1d6061802c9a297ef0b6f4de8836b216d60d0148931
-size 91
+Haptics Native SDK 1.0.0-beta.2 (ff2683c7dd89+), built on 2024-02-09T14:03:46Z for Android

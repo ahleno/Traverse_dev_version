@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a2d2703c1af5d62cd1b29a819bcd16b77ab2564c31869999ec278c21adce9f44
-size 379
+﻿/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using System;
+using UnityEngine.Events;
+
+namespace Meta.WitAi.Events
+{
+    [Serializable]
+    public class WitMicLevelChangedEvent : UnityEvent<float>
+    {
+    }
+}

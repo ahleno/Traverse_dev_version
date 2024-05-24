@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a0163d22e36e42be91959a48f5911609cf3988b94fa2a08c65430061b742e2bb
-size 687
+﻿/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using Meta.WitAi.Events;
+
+namespace Meta.WitAi.Interfaces
+{
+    public interface ITranscriptionEvent
+    {
+        /// <summary>
+        /// Message fired when a partial transcription has been received.
+        /// </summary>
+        WitTranscriptionEvent OnPartialTranscription { get; }
+
+        /// <summary>
+        /// Message received when a complete transcription is received.
+        /// </summary>
+        WitTranscriptionEvent OnFullTranscription { get; }
+    }
+}

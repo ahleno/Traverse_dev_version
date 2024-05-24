@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:05d026965013b76677bad94cec9fec833f79ec581ceae376b00f24523da89d06
-size 305
+using UnityEditor;
+
+namespace Unity.XR.Management.TestPackage.Editor
+{
+    [CustomEditor(typeof(TestSettings))]
+    public class TestSettingsEditor : UnityEditor.Editor
+    {
+        public override void OnInspectorGUI()
+        {
+            EditorGUILayout.LabelField("Test only...");
+        }
+    }
+}

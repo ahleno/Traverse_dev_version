@@ -1,3 +1,63 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:56ad0b9e7ac18abd4b1f4043724551280f6f2ab3098861256bc16c8f7a96dc1d
-size 1884
+﻿using Codice.CM.Common;
+using Unity.PlasticSCM.Editor.AssetUtils;
+
+namespace Unity.PlasticSCM.Editor.AssetsOverlays.Cache
+{
+    internal interface IAssetStatusCache
+    {
+        AssetStatus GetStatus(string fullPath);
+        LockStatusData GetLockStatusData(string fullPath);
+        void Clear();
+    }
+
+    internal class AssetStatusCache : IAssetStatusCache
+    {
+        internal AssetStatusCache(
+            WorkspaceInfo wkInfo,
+            bool isGluonMode)
+        {
+            mLocalStatusCache = new LocalStatusCache(wkInfo);
+
+            mRemoteStatusCache = new RemoteStatusCache(
+                wkInfo,
+                isGluonMode,
+                ProjectWindow.Repaint,
+                RepaintInspector.All);
+
+            mLockStatusCache = new LockStatusCache(
+                wkInfo,
+                ProjectWindow.Repaint,
+                RepaintInspector.All);
+        }
+
+        AssetStatus IAssetStatusCache.GetStatus(string fullPath)
+        {
+            AssetStatus localStatus = mLocalStatusCache.GetStatus(fullPath);
+
+            if (!ClassifyAssetStatus.IsControlled(localStatus))
+                return localStatus;
+
+            AssetStatus remoteStatus = mRemoteStatusCache.GetStatus(fullPath);
+
+            AssetStatus lockStatus = mLockStatusCache.GetStatus(fullPath);
+
+            return localStatus | remoteStatus | lockStatus;
+        }
+
+        LockStatusData IAssetStatusCache.GetLockStatusData(string fullPath)
+        {
+            return mLockStatusCache.GetLockStatusData(fullPath);
+        }
+
+        void IAssetStatusCache.Clear()
+        {
+            mLocalStatusCache.Clear();
+            mRemoteStatusCache.Clear();
+            mLockStatusCache.Clear();
+        }
+
+        readonly LocalStatusCache mLocalStatusCache;
+        readonly RemoteStatusCache mRemoteStatusCache;
+        readonly LockStatusCache mLockStatusCache;
+    }
+}

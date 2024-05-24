@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6f8c9b1d9790dbe7d4186b0a0a2bca1b2d49705f595730c2fb2b1a65a28db234
-size 465
+#if !UNITY_2020_2_OR_NEWER
+
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Threading;
+
+using UnityEditor;
+using UnityEditor.PackageManager;
+
+namespace UnityEditor.XR.Management.Legacy
+{
+    [InitializeOnLoad]
+    class XRLegacyStandaloneSubsystem
+    {
+        static XRLegacyStandaloneSubsystem()
+        {
+            PackageManager.Client.Add("com.unity.subsystemregistration");
+        }
+    }
+}
+
+#endif // !UNITY_2020_2_OR_NEWER

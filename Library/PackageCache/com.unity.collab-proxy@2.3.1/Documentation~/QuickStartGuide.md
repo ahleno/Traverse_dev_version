@@ -1,3 +1,5 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5fddd80288055f956895de214f22ed9d9023158074e753cfc7f43245bcd867ec
-size 210
+# Quick start guide
+
+The Version Control package provides an integration of Unity Version Control (Unity VCS, formerly Plastic SCM) in the Unity Editor.
+
+[Get started with Unity Version Control](GetStarted.md)
