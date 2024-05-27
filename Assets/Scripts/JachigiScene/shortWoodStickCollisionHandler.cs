@@ -10,6 +10,7 @@ public class shortWoodStickCollisionHandler : MonoBehaviour
 {
     public Rigidbody rigidbody;
     public int force_up;
+    public int force_forward;
     private int cnt = 0;
     public int gravity;
     public int torqueValue;
@@ -43,8 +44,8 @@ public class shortWoodStickCollisionHandler : MonoBehaviour
             }
             else
             {
-                rigidbody.AddForce(longStickRigidbody.velocity, ForceMode.Impulse);
-                //rigidbody.AddForce(Vector3.forward * 5, ForceMode.Impulse);
+                //rigidbody.AddForce(longStickRigidbody.velocity, ForceMode.Impulse);
+                rigidbody.AddForce(Vector3.forward * force_forward, ForceMode.Impulse);
                 Debug.Log("추후 충돌, 자유 힘");
                 Debug.Log(longStickRigidbody.velocity);
             }
