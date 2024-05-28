@@ -6,11 +6,12 @@ TagManager:
   tags:
   - TargetPoint
   - Circle
+  - Bullet
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Plane
   - Water
   - UI
   - 

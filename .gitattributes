@@ -25,3 +25,18 @@ size 953
 >>>>>>> 93d1a2c29acd4e2d1ccdcf4b279d4e497bdc4043
 Assembly-CSharp-Editor.csproj filter=lfs diff=lfs merge=lfs -text
 new-Traverse-0521.sln filter=lfs diff=lfs merge=lfs -text
+PhotonUnityNetworking.csproj filter=lfs diff=lfs merge=lfs -text
+PunDemos.DemoSlotcarEditor.csproj filter=lfs diff=lfs merge=lfs -text
+PhotonUnityNetworking.Editor.csproj filter=lfs diff=lfs merge=lfs -text
+PhotonUnityNetworking.Utilities.PhotonPlayer.Editor.csproj filter=lfs diff=lfs merge=lfs -text
+PasserVR.HumanoidControl.RuntimeTests.csproj filter=lfs diff=lfs merge=lfs -text
+UpgradeLog2.htm filter=lfs diff=lfs merge=lfs -text
+PasserVR.HumanoidControl.csproj filter=lfs diff=lfs merge=lfs -text
+PhotonUnityNetworking.Utilities.Culling.Editor.csproj filter=lfs diff=lfs merge=lfs -text
+PasserVR.HumanoidControl.EditorTests.csproj filter=lfs diff=lfs merge=lfs -text
+PasserVR.HumanoidControl.Editor.csproj filter=lfs diff=lfs merge=lfs -text
+PhotonChat.csproj filter=lfs diff=lfs merge=lfs -text
+PhotonRealtime.csproj filter=lfs diff=lfs merge=lfs -text
+PhotonUnityNetworking.Demos.csproj filter=lfs diff=lfs merge=lfs -text
+PhotonUnityNetworking.Utilities.csproj filter=lfs diff=lfs merge=lfs -text
+PunDemos.DemoHubEditor.csproj filter=lfs diff=lfs merge=lfs -text
