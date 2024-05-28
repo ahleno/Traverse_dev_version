@@ -1,1 +1,3 @@
-{"root":[{"assemblyName":"Unity.VisualScripting.Core","nameSpace":"Unity.VisualScripting","className":"RuntimeVSUsageUtility","methodName":"RuntimeInitializeOnLoadBeforeSceneLoad","loadTypes":1,"isUnityClass":true},{"assemblyName":"Oculus.VR","nameSpace":"","className":"OVRSpatialAnchor","methodName":"InitializeOnLoad","loadTypes":4,"isUnityClass":false}]}
+version https://git-lfs.github.com/spec/v1
+oid sha256:95132c350c1fd71158e74f6e58e5874d51c6df47c04dbfab2ac0c2d91262e269
+size 360

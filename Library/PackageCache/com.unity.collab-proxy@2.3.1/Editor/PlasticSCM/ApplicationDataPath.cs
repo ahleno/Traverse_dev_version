@@ -1,24 +1,3 @@
-﻿using UnityEngine;
-
-namespace Unity.PlasticSCM.Editor
-{
-    internal static class ApplicationDataPath
-    {
-        internal static string Get()
-        {
-            return mApplicationDataPath ?? Application.dataPath;
-        }
-
-        internal static void InitializeForTesting(string applicationDataPath)
-        {
-            mApplicationDataPath = applicationDataPath;
-        }
-
-        internal static void Reset()
-        {
-            mApplicationDataPath = null;
-        }
-
-        static string mApplicationDataPath;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:1397aeeca0e36effad239d018020acb19e70b5468033a19bb80d783ed9f8a18b
+size 540

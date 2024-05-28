@@ -1,18 +1,3 @@
-using UnityEngine;
-
-namespace UnityEditor.TestTools.CodeCoverage
-{
-    internal static class EditorIcons
-    {
-        public static Texture2D FolderOpened { get; private set; }
-        public static Texture2D CoverageWindow { get; private set; }
-
-        static EditorIcons()
-        {
-            FolderOpened = GetTexture("FolderOpened.png");
-            CoverageWindow = GetTexture("CodeCoverage.png");
-        }
-
-        static Texture2D GetTexture(string path) => EditorGUIUtility.FindTexture("Packages/com.unity.testtools.codecoverage/Editor/Icons/" + path);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:8c423da36f9880d636be16f076875335cd402c64ea3a9de9aed9fc7ce96c6862
+size 573

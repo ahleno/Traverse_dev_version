@@ -1,15 +1,3 @@
-using UnityEngine.UI;
-
-namespace Unity.VisualScripting
-{
-    [UnityEngine.AddComponentMenu("")]
-    [VisualScriptingHelpURL(typeof(UnityOnDropdownValueChangedMessageListener))]
-    public sealed class UnityOnDropdownValueChangedMessageListener : MessageListener
-    {
-        private void Start()
-        {
-            GetComponent<Dropdown>()?.onValueChanged?.AddListener((value) =>
-                EventBus.Trigger(EventHooks.OnDropdownValueChanged, gameObject, value));
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:f14763088812c325344027647cbfbfa48f98f8b5c30c41afdd42d43b731dc768
+size 491

@@ -1,17 +1,3 @@
-namespace UnityEditor.TestTools.CodeCoverage
-{
-    /// <summary>
-    /// The code coverage session mode.
-    /// </summary>
-    public enum SessionMode
-    {
-        /// <summary>
-        /// Describes a code coverage session triggered by automated testing, using the Test Runner.
-        /// </summary>
-        TestRunner = 0,
-        /// <summary>
-        /// Describes a code coverage session triggered by Coverage Recording.
-        /// </summary>
-        Recording = 1
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d9f866dbbd2a3dfd0720a73623ed82b476e80ad0900712a10580ef2bbb0e61eb
+size 482

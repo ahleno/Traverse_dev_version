@@ -1,4 +1,3 @@
-#if UNITY_2022_2_OR_NEWER
-using System.Runtime.CompilerServices;
-[assembly: InternalsVisibleTo("Unity.AI.Navigation.Updater")]
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:128c0f725f824e4940e6c5dcd04830d8da73ef65304c73feeecde3e462bfa29a
+size 138

@@ -1,16 +1,3 @@
-using UnityEngine;
-
-namespace Unity.VisualScripting
-{
-#if MODULE_PHYSICS_2D_EXISTS
-    [AddComponentMenu("")]
-    [VisualScriptingHelpURL(typeof(UnityOnJointBreak2DMessageListener))]
-    public sealed class UnityOnJointBreak2DMessageListener : MessageListener
-    {
-        private void OnJointBreak2D(Joint2D brokenJoint)
-        {
-            EventBus.Trigger(EventHooks.OnJointBreak2D, gameObject, brokenJoint);
-        }
-    }
-#endif
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:55c5a79b66576508ed3f65fb2b849833a67a248d40e9a5065a22e42bc109b23b
+size 440

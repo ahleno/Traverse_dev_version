@@ -1,25 +1,3 @@
-using NUnit.Framework;
-using UnityEditor.Performance.ProfileAnalyzer;
-using System.Collections.Generic;
-
-public class UnitsTestFixture
-{
-    internal DisplayUnits displayUnits;
-
-    public struct TestData
-    {
-        public readonly float value;
-        public readonly string expectedOutput;
-
-        public TestData(float value, string expectedOutput)
-        {
-            this.value = value;
-            this.expectedOutput = expectedOutput;
-        }
-
-        public override string ToString()
-        {
-            return string.Format("{0} becomes {1}", value, expectedOutput);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:5b7b8f1aeaabddc5d8bd682973eeb982a8cbd766c4f7f5d39a401006617a4f57
+size 605

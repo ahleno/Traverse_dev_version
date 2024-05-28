@@ -1,21 +1,3 @@
-﻿/*
- * Copyright (c) Meta Platforms, Inc. and affiliates.
- * All rights reserved.
- *
- * This source code is licensed under the license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-using UnityEditor;
-
-namespace Meta.WitAi.Data.Configuration
-{
-    public class WitConfigurationPostprocessor : AssetPostprocessor
-    {
-        private static void OnPostprocessAllAssets(string[] importedAssets, string[] deletedAssets, string[] movedAssets,
-            string[] movedFromAssetPaths)
-        {
-            WitConfigurationUtility.NeedsConfigReload();
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:6b430f11614dff0797f6d380a35001d443492a1a1b71529b91f0ec89c200365f
+size 599
