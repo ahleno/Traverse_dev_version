@@ -16,3 +16,5 @@ Traverse-0521-test.sln filter=lfs diff=lfs merge=lfs -text
 UpgradeLog.htm filter=lfs diff=lfs merge=lfs -text
 Assets filter=lfs diff=lfs merge=lfs -text
 Library filter=lfs diff=lfs merge=lfs -text
+Library/PackageCache/com.meta.xr.simulator@64.0.0/MetaXRSimulator/.synth_env_server/synth_env_server_Data/sharedassets3.assets filter=lfs diff=lfs merge=lfs -text
+Library/Artifacts/6e/6e626dd4b5434245acc6306c72bde401 filter=lfs diff=lfs merge=lfs -text
