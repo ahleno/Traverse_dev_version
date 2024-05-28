@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ad35969076319e2ec13198bc99427467b4410da8406095cfe800df0d381f9dc2
-size 1229
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          android:installLocation="auto">
+    <application
+        android:label="@string/app_name"
+        android:icon="@mipmap/app_icon">
+        <activity
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            android:configChanges="locale|fontScale|keyboard|keyboardHidden|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
+            android:launchMode="singleTask"
+            android:name="com.unity3d.player.UnityPlayerActivity"
+            android:excludeFromRecents="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <meta-data android:name="unityplayer.SkipPermissionsDialog" android:value="false" />
+        <meta-data android:name="com.samsung.android.vr.application.mode" android:value="vr_only" />
+    </application>
+</manifest>

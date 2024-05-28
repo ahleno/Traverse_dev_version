@@ -1,3 +1,46 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8f8f2d72c371c036773fcf455656ef9ee2b7f9b9cc8e249f191f377a42971268
-size 1293
+﻿using UnityEngine;
+using System;
+
+namespace Unity.XR.Oculus
+{
+    public class InputFocus
+    {
+        /// <summary>
+        /// Occurs when Input Focus is acquired. The application is the foreground application and receives input.
+        /// </summary>
+        public static event Action InputFocusAcquired;
+
+        /// <summary>
+        /// Occurs when Input Focus is lost. The application is in the background (but possibly still visible), while the Universal Menu is up.
+        /// </summary>
+        public static event Action InputFocusLost;
+
+        private static bool hadInputFocus = false;
+
+        internal static bool hasInputFocus
+        {
+            get
+            {
+                return NativeMethods.GetHasInputFocus();
+            }
+        }
+        
+        internal static void Update()
+        {
+            bool appHasInputFocus = hasInputFocus;
+            if (!appHasInputFocus && hadInputFocus)
+            {
+                if (InputFocusLost != null)
+                    InputFocusLost();
+            }
+        
+            if (appHasInputFocus && !hadInputFocus)
+            {
+                if (InputFocusAcquired != null)
+                    InputFocusAcquired();
+            }
+        
+            hadInputFocus = appHasInputFocus;
+        }
+    }
+}

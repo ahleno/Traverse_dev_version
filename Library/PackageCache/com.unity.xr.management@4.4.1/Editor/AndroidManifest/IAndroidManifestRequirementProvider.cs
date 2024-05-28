@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ecd13b0f93daaedc456b14c7343596f6a9212d214746284a70a3b844b8a57d58
-size 772
+namespace Unity.XR.Management.AndroidManifest.Editor
+{
+    /// <summary>
+    /// Interface for classes providing Android manifest entries.
+    ///
+    /// All implementers must be top level classes for the Android manifest processsor to call them
+    /// Nested classes aren't supported.
+    /// </summary>
+    public interface IAndroidManifestRequirementProvider
+    {
+        /// <summary>
+        /// Provides a <see cref="ManifestRequirement"/> object with the required Android manifest elements and its attributes needed to be
+        /// added, overriden or removed.
+        /// 
+        /// </summary>
+        /// <returns><see cref="ManifestRequirement"/> with element requirements data.</returns>
+        ManifestRequirement ProvideManifestRequirement();
+    }
+}

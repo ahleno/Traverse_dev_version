@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a2735d7995f66f50bc49619fdb724290b410e1f39fee464f82c29d99a3e49f1e
-size 917
+﻿using System.Collections;
+using UnityEngine;
+using UnityEditor;
+
+#if ENABLE_VR || ENABLE_AR
+using UnityEngine.XR;
+
+namespace UnityEditor.XR.LegacyInputHelpers
+{
+    [CustomEditor(typeof(CameraOffset))]
+    class CameraOffsetHelperEditor : Editor
+    {
+        public override void OnInspectorGUI()
+        {
+            GUI.enabled = false;
+            EditorGUILayout.ObjectField("Script", MonoScript.FromMonoBehaviour((CameraOffset)target), typeof(CameraOffset), false);
+            GUI.enabled = true;
+
+            EditorGUILayout.PropertyField(serializedObject.FindProperty("m_CameraFloorOffsetObject"));
+
+            EditorGUILayout.PropertyField(serializedObject.FindProperty("m_RequestedTrackingMode"));
+
+            EditorGUILayout.PropertyField(serializedObject.FindProperty("m_CameraYOffset"));
+
+            serializedObject.ApplyModifiedProperties();
+        }
+    }
+}
+#endif

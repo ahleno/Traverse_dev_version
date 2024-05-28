@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:220649eb9aaad83a222a845bb70bc818bf728085ae643597bed3031014e61163
-size 887
+using System;
+
+namespace UnityEditor.TestTools.TestRunner
+{
+    internal interface ITestSettings : IDisposable
+    {
+        ScriptingImplementation? scriptingBackend { get; set; }
+
+        string Architecture { get; set; }
+
+        ApiCompatibilityLevel? apiProfile { get; set; }
+
+        bool? appleEnableAutomaticSigning { get; set; }
+        string appleDeveloperTeamID { get; set; }
+        ProvisioningProfileType? iOSManualProvisioningProfileType { get; set; }
+        string iOSManualProvisioningProfileID { get; set; }
+        ProvisioningProfileType? tvOSManualProvisioningProfileType { get; set; }
+        string tvOSManualProvisioningProfileID { get; set; }
+        string[] playerGraphicsAPIs { get; set; }
+        bool autoGraphicsAPIs { get; set; }
+        bool? androidBuildAppBundle { get; set; }
+
+        void SetupProjectParameters();
+    }
+}

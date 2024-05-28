@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b6d03f0b55f40445ead4e4db4e8d1dbec7349f6012e9fc352eeebc6f6f3edddb
-size 604
+﻿using System.Collections;
+using UnityEngine;
+
+public class EngineTrail : MonoBehaviour
+{
+    ParticleSystem ps;
+    ParticleSystem.EmissionModule em;
+
+    void Start()
+    {
+        if (!GameManager.effectsEnabled)
+            gameObject.SetActive(false);
+
+        ps = GetComponent<ParticleSystem>();
+        em = ps.emission;
+        em.enabled = true;
+    }
+
+    public void ClearParticles()
+    {
+        StartCoroutine(Clear());
+    }
+
+    IEnumerator Clear()
+    {
+        em.enabled = false;
+        ps.Clear();
+        yield return null;
+        em.enabled = true;
+        ps.Clear();
+    }
+}

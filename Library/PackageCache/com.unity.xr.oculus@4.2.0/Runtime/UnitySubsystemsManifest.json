@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f6c5e1d41c27267655897918693dab4d75b77bdf3267e1e684f3f357aac7ece7
-size 365
+{
+  "name": "OculusXRPlugin",
+  "version": "1.0.0-preview",
+  "libraryName": "OculusXRPlugin",
+
+  "displays": [
+    {
+      "id": "oculus display",
+      "disablesLegacyVr" : true,
+      "supportedMirrorBlitReservedModes" : ["leftEye","rightEye", "sideBySide","occlusionMesh"]
+    }
+  ],
+  "inputs": [
+    {
+      "id": "oculus input"
+    }
+  ]
+}

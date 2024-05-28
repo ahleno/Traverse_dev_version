@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:deca1b92fe2dc7c0390deb5257080d7ecd56db5c6f639d05848dc796a71c331c
-size 563
+using System;
+using System.Security.Cryptography;
+using System.Text;
+
+namespace Packages.Rider.Editor.ProjectGeneration
+{
+  internal static class SolutionGuidGenerator
+  {
+    public static string GuidForProject(string projectName)
+    {
+      return ComputeGuidHashFor(projectName + "salt");
+    }
+
+    private static string ComputeGuidHashFor(string input)
+    {
+      using (var md5 = MD5.Create())
+      {
+        var hash = md5.ComputeHash(Encoding.Default.GetBytes(input));
+        return new Guid(hash).ToString();
+      }
+    }
+  }
+}

@@ -1,3 +1,38 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8e9b5232bdd341f69e5ca9cf17b924a61188cb94663c01540411568723d70c39
-size 675
+Shader "MixedReality/InvisibleOccluder" {
+  Properties {
+  }
+  SubShader {
+    Tags{"RenderType" = "Transparent"}
+    LOD 100
+    Cull off
+    ZWrite On
+    ZTest Less
+    Blend Zero One, Zero One
+    Pass {
+      CGPROGRAM
+#pragma vertex vert
+#pragma fragment frag
+#pragma multi_compile_fog
+#include "UnityCG.cginc"
+
+      struct appdata {
+        float4 vertex : POSITION;
+      };
+
+      struct v2f {
+        float4 vertex : SV_POSITION;
+      };
+
+      v2f vert(appdata v) {
+        v2f o;
+        o.vertex = UnityObjectToClipPos(v.vertex);
+        return o;
+      }
+
+      fixed4 frag(v2f i) : SV_Target {
+        return float4(0,0,0,0);
+      }
+      ENDCG
+    }
+  }
+}

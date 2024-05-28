@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7c97c591f334317b107cee7443359383f0fa4a036c4ecdbaa1ebdd94e0178cf2
-size 591
+/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using System;
+
+namespace Meta.WitAi.Json
+{
+    /// <summary>
+    /// An attribute to be used to tag a field/property that should not be serialized/deserialized via JsonConvert
+    /// </summary>
+    [AttributeUsage(validOn:AttributeTargets.Field|AttributeTargets.Property, AllowMultiple = false)]
+    public class JsonIgnoreAttribute : Attribute
+    {
+    }
+}

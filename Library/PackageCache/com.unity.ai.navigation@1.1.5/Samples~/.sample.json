@@ -1,3 +1,5 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:85d6f9d9a28d562fa8415d5493a0b13e12655501e0b6ad2e0ee8431f14a95992
-size 247
+{
+  "displayName": "Build And Connect NavMesh Surfaces",
+  "description": "A set of examples on how to build and use a dynamic navigation space made of NavMesh surfaces and segment-to-segment connections.",
+  "createSeparatePackage": false
+}

@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5ab85c3b1d33303bbaea4a2a4161b764e086e30ee15bb6fab1033c30c2ae8943
-size 476
+/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+namespace Meta.Voice.Samples.WitShapes
+{
+    public enum Color
+    {
+        Black,
+        White,
+        Red,
+        Green,
+        Yellow,
+        Blue,
+        Pink,
+        Gray,
+        Brown,
+        Orange,
+        Purple,
+    }
+}

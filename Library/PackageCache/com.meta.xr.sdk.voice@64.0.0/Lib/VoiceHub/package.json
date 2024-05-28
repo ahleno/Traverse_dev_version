@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3adcf6e356f5ed8c55bbc3cf2ed558a524d631e0dd9cc2e41c86ff4894d2fbb9
-size 375
+{
+  "name": "com.meta.xr.sdk.voice.hub.vsdk",
+  "displayName": "Meta - Voice SDK - Hub - Voice",
+  "version": "64.0.0",
+  "samples": [],
+  "unity": "2019.4",
+  "author": {
+    "name": "Meta - Voice SDK",
+    "url": "https://wit.ai"
+  },
+  "description": "This is the extension package for Hub which provides documentation and sample access for the main Voice SDK package."
+}

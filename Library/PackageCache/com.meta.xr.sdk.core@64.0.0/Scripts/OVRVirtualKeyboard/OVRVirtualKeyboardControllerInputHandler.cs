@@ -1,3 +1,34 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:69b005b0f028c80d00e5369c940329adb37e79360e267c64c78aa5cd49614b2f
-size 1131
+/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * Licensed under the Oculus SDK License Agreement (the "License");
+ * you may not use the Oculus SDK except in compliance with the License,
+ * which is provided at the time of installation or download, or which
+ * otherwise accompanies this software in either electronic or hard copy form.
+ *
+ * You may obtain a copy of the License at
+ *
+ * https://developer.oculus.com/licenses/oculussdk/
+ *
+ * Unless required by applicable law or agreed to in writing, the Oculus SDK
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+using System;
+using UnityEngine;
+
+
+[Obsolete]
+[ExecuteInEditMode]
+[HelpURL("https://developer.oculus.com/reference/unity/latest/class_o_v_r_virtual_keyboard_controller_input_handler")]
+public class OVRVirtualKeyboardControllerInputHandler : MonoBehaviour
+{
+    void Awake()
+    {
+        DestroyImmediate(this);
+    }
+}

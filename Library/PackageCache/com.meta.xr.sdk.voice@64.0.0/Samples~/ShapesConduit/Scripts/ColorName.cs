@@ -1,3 +1,43 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ff0bc9755114be2bc511f55c265ae70f708a95b76f5b60e2fd5b14be37a4bb03
-size 1202
+/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * Licensed under the Oculus SDK License Agreement (the "License");
+ * you may not use the Oculus SDK except in compliance with the License,
+ * which is provided at the time of installation or download, or which
+ * otherwise accompanies this software in either electronic or hard copy form.
+ *
+ * You may obtain a copy of the License at
+ *
+ * https://developer.oculus.com/licenses/oculussdk/
+ *
+ * Unless required by applicable law or agreed to in writing, the Oculus SDK
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+namespace Meta.Voice.Samples.ShapesConduit
+{
+    /// <summary>
+    /// enum of the colors that matches intents on wit.ai
+    /// </summary>
+    public enum ColorName
+    {
+        black,
+        blue,
+        brown,
+        gold,
+        green,
+        magenta,
+        maroon,
+        orange,
+        pink,
+        purple,
+        red,
+        violet,
+        white,
+        yellow
+    }
+}

@@ -1,3 +1,68 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:901f139ee3bf6d4a2ce4d36c2fdd7a6506f1d70ce94ea33c66b0c70b9312287e
-size 2333
+﻿/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using System;
+using System.IO;
+using System.Net;
+using UnityEngine;
+
+namespace Meta.WitAi
+{
+    public class WrapHttpWebRequest : IRequest
+    {
+        HttpWebRequest _httpWebRequest;
+
+        public WrapHttpWebRequest(HttpWebRequest httpWebRequest)
+        {
+            if (Application.isBatchMode)
+            {
+                httpWebRequest.KeepAlive = false;
+            }
+            _httpWebRequest = httpWebRequest;
+        }
+
+        public WebHeaderCollection Headers { get => _httpWebRequest.Headers; set => _httpWebRequest.Headers = value; }
+        public string Method { get => _httpWebRequest.Method; set => _httpWebRequest.Method = value; }
+        public string ContentType { get => _httpWebRequest.ContentType; set => _httpWebRequest.ContentType = value; }
+        public long ContentLength { get => _httpWebRequest.ContentLength; set => _httpWebRequest.ContentLength = value; }
+        public bool SendChunked { get => _httpWebRequest.SendChunked; set => _httpWebRequest.SendChunked = value; }
+        public string UserAgent { get => _httpWebRequest.UserAgent; set => _httpWebRequest.UserAgent = value; }
+        public int Timeout { get => _httpWebRequest.Timeout; set => _httpWebRequest.Timeout = value; }
+
+        public void Abort()
+        {
+            _httpWebRequest.Abort();
+        }
+
+        public void Dispose()
+        {
+            _httpWebRequest.Abort();
+            _httpWebRequest = null;
+        }
+
+        public IAsyncResult BeginGetRequestStream(AsyncCallback callback, object state)
+        {
+            return _httpWebRequest.BeginGetRequestStream(callback, state);
+        }
+
+        public IAsyncResult BeginGetResponse(AsyncCallback callback, object state)
+        {
+            return _httpWebRequest.BeginGetResponse(callback, state);
+        }
+
+        public Stream EndGetRequestStream(IAsyncResult asyncResult)
+        {
+            return _httpWebRequest.EndGetRequestStream(asyncResult);
+        }
+
+        public WebResponse EndGetResponse(IAsyncResult asyncResult)
+        {
+            return (_httpWebRequest).EndGetResponse(asyncResult);
+        }
+    }
+}

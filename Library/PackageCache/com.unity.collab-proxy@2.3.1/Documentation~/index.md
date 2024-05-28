@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f94ce687363e6497664d1c09ea2a56c85510bb1f3b23c4e3ae862ce44f8fbe0c
-size 431
+# About the Version Control package
+
+The Version Control package provides an integration of Unity Version Control (Unity VCS, formerly Plastic SCM) in the Unity Editor.
+
+It is installed by default with the Editor, and follows the Unity support schedule. Currently, the minimum supported version of the Unity Editor is 2021.3 LTS.
+
+* [Quick start guide](QuickStartGuide.md)
+* [Get started with Unity Version Control](GetStarted.md)

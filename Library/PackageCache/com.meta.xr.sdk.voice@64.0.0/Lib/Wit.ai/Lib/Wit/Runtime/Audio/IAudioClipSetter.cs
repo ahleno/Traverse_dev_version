@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ff2daf2b1b827233b56cd2cdc4be6306a78f1076d8e8064aa63994cdf6f5b313
-size 689
+/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using UnityEngine;
+
+namespace Meta.Voice.Audio
+{
+    /// <summary>
+    /// A simple interface for receiving an AudioClip
+    /// </summary>
+    public interface IAudioClipSetter
+    {
+        /// <summary>
+        /// A method for setting an audio clip
+        /// </summary>
+        /// <param name="clip">The audio clip to be set</param>
+        /// <returns>False if the new clip cannot be set</returns>
+        bool SetClip(AudioClip clip);
+    }
+}

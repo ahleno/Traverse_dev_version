@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:335308e86eaddd675cb93b43a86cf9869d1490589f4c8a69a9c5a3146f74511c
-size 701
+using UnityEngine;
+using UnityEngine.AI;
+
+namespace Unity.AI.Navigation.Samples
+{
+    /// <summary>
+    /// Walk to a random position and repeat
+    /// </summary>
+    [RequireComponent(typeof(NavMeshAgent))]
+    public class RandomWalk : MonoBehaviour
+    {
+        public float m_Range = 25.0f;
+        NavMeshAgent m_Agent;
+    
+        void Start()
+        {
+            m_Agent = GetComponent<NavMeshAgent>();
+        }
+    
+        void Update()
+        {
+            if (m_Agent.pathPending || !m_Agent.isOnNavMesh || m_Agent.remainingDistance > 0.1f)
+                return;
+    
+            m_Agent.destination = m_Range * Random.insideUnitCircle;
+        }
+    }
+}

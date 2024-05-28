@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a28510148dd65d7104069b0dc3b43981468084a45bd8f141583ec41bee8904d3
-size 552
+{
+    "name": "Unity.AI.Navigation.Updater",
+    "rootNamespace": "",
+    "references": [
+        "GUID:8c4dd21966739024fbd72155091d199e",
+        "GUID:86c9d8e67265f41469be06142c397d17",
+        "GUID:c57630adab7a340ec94f10e4fcac12f1"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:80d3b069aab76fc6aadb0de9edafaf783c842e47bf0a6046305ae8f52bcc50e2
-size 634
+﻿/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using UnityEngine;
+
+namespace Meta.WitAi.Attributes
+{
+    /// <summary>
+    /// Hides text with a Password field unless the user clicks the visibility icon to toggle between password and text mode.
+    ///
+    /// NOTE: Like any password inspector field, this is serialized in plain text. This is purely about visual obfuscation
+    /// </summary>
+    public class HiddenTextAttribute : PropertyAttribute
+    {
+
+    }
+}

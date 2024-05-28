@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c5ed0ef00b5a32c593aede51176995c99a6382ee0636dc71bc5ce99e0517c444
-size 845
+/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using System;
+using System.Collections.Generic;
+using UnityEditor;
+using UnityEngine;
+
+namespace Meta.WitAi.Windows.Components
+{
+  public static class WitMultiSelectionPopup
+  {
+    public static void Show(IList<string> options, HashSet<string> disabledOptions, Action<IList<string>> callback) {
+      // TODO It should be a rect of a button which triggers this popup, so the popup is shown next to that button.
+      Rect parentRect = new Rect(0, 0, 50, 50);
+      WitMultiSelectionPopupContent content = new WitMultiSelectionPopupContent(options, disabledOptions, callback);
+      PopupWindow.Show(parentRect, content);
+    }
+  }
+}

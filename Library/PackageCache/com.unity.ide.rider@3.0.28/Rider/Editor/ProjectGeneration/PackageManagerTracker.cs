@@ -1,3 +1,41 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c2816701ec0861c86243bd4ba4a4c33dfe371de5c54cccd95bdc9ca1ad4c6416
-size 1365
+using System.IO;
+
+#if UNITY_2020_1_OR_NEWER
+using UnityEditor.PackageManager;
+#endif
+
+namespace Packages.Rider.Editor.ProjectGeneration
+{
+  internal static class PackageManagerTracker
+  {
+    private static bool HasManifestJsonLastWriteTimeChanged()
+    {
+      if (!LastWriteTracker.IsUnityCompatible()) return false;
+      var directoryInfo = new DirectoryInfo(Directory.GetCurrentDirectory());
+      var manifestFile = new FileInfo(Path.Combine(directoryInfo.FullName, "Packages/manifest.json"));
+      if (manifestFile.Exists)
+      {
+        // for the manifest.json, we store the LastWriteTime here
+        var res = manifestFile.LastWriteTime > RiderScriptEditorPersistedState.instance.ManifestJsonLastWrite;
+        if (res) RiderScriptEditorPersistedState.instance.ManifestJsonLastWrite = manifestFile.LastWriteTime;
+        return res;
+      }
+
+      return false;
+    }
+
+    /// <summary>
+    /// If the manifest.json was changed outside Unity and Rider calls Unity to Refresh, we should call PM to Refresh its state also
+    /// </summary>
+    /// <param name="checkProjectFiles"></param>
+    internal static void SyncIfNeeded(bool checkProjectFiles)
+    {
+#if UNITY_2020_1_OR_NEWER
+      if (checkProjectFiles && HasManifestJsonLastWriteTimeChanged())
+      {
+        Client.Resolve();
+      }
+#endif
+    }
+  }
+}

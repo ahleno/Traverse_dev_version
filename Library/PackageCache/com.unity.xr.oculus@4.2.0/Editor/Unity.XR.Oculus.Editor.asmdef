@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e75009ab1f7901f0088937bf867c98007cd83fcb9a07da328b8c65fc9a3cf617
-size 797
+{
+    "name": "Unity.XR.Oculus.Editor",
+    "rootNamespace": "",
+    "references": [
+        "Unity.XR.Oculus",
+        "Unity.XR.Management",
+        "Unity.XR.Management.Editor",
+        "Unity.XR.CoreUtils.Editor"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.unity.xr.management",
+            "expression": "3.2.0",
+            "define": "XR_MGMT_GTE_320"
+        },
+        {
+            "name": "com.unity.xr.core-utils",
+            "expression": "",
+            "define": "XR_CORE_UTILS"
+        }
+    ],
+    "noEngineReferences": false
+}

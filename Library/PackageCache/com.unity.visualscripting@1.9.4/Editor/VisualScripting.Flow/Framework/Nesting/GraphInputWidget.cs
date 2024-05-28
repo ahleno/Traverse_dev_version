@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0a17b0653334e96643079ee7596e420738aa51fdd55bb0ebb74ba57efd33aade
-size 321
+namespace Unity.VisualScripting
+{
+    [Widget(typeof(GraphInput))]
+    public sealed class GraphInputWidget : UnitWidget<GraphInput>
+    {
+        public GraphInputWidget(FlowCanvas canvas, GraphInput unit) : base(canvas, unit) { }
+
+        protected override NodeColorMix baseColor => NodeColorMix.TealReadable;
+    }
+}

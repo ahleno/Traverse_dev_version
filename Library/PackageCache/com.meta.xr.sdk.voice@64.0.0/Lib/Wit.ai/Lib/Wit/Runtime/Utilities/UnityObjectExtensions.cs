@@ -1,3 +1,37 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:86d5e440bc7889a7b656908519114fbf87bf47a6e9a3b8b189c45851d5eb5ed1
-size 899
+﻿/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using UnityEngine;
+
+namespace Meta.WitAi
+{
+    public static class UnityObjectExtensions
+    {
+        // Safely destroys
+        public static void DestroySafely(this Object unityObject)
+        {
+            // Ignore null
+            if (unityObject == null)
+            {
+                return;
+            }
+
+            #if UNITY_EDITOR
+            // Editor only destroy
+            if (!Application.isPlaying)
+            {
+                MonoBehaviour.DestroyImmediate(unityObject);
+                return;
+            }
+            #endif
+
+            // Destroy object
+            MonoBehaviour.Destroy(unityObject);
+        }
+    }
+}

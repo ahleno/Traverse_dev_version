@@ -1,3 +1,33 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a60060519386476fb8f0030d78b2b3be11c53ccb1c6f6da292087f4a156e15d8
-size 1183
+/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * Licensed under the Oculus SDK License Agreement (the "License");
+ * you may not use the Oculus SDK except in compliance with the License,
+ * which is provided at the time of installation or download, or which
+ * otherwise accompanies this software in either electronic or hard copy form.
+ *
+ * You may obtain a copy of the License at
+ *
+ * https://developer.oculus.com/licenses/oculussdk/
+ *
+ * Unless required by applicable law or agreed to in writing, the Oculus SDK
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+using System.Collections.Generic;
+using UnityEngine;
+
+namespace Meta.XR.BuildingBlocks.Editor
+{
+    public class SharedSpatialAnchorCoreBlockData : BlockData
+    {
+        internal override List<GameObject> Install(GameObject selectedGameObject = null)
+        {
+            return InstallBlock<SharedSpatialAnchorCoreBuildingBlock>(selectedGameObject);
+        }
+    }
+}

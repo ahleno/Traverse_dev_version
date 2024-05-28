@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2a9dfb8e0c14b1269d5cd415959ba7809d0ab50b550a51a4783376950b77cd37
-size 681
+{
+    "name": "Oculus.Interaction.OVR.Samples",
+    "rootNamespace": "",
+    "references": [
+        "GUID:f64c9ebcd7899c3448a08dc9f9ddbe30",
+        "GUID:6055be8ebefd69e48b49212b09b47b2f",
+        "GUID:2a230cb87a1d3ba4a98bdc0ddae76e6c"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "define": "OVR_UNITY_PACKAGE_MANAGER",
+            "name": "com.meta.xr.sdk.interaction.ovr.samples",
+            "expression": ""
+        }
+    ],
+    "noEngineReferences": false
+}

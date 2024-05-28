@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8491f369f152efca4f5baaf32298c909ec21b14462fdc5b5c8c595e3af400ca9
-size 725
+﻿/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using System;
+using UnityEngine.Events;
+
+namespace Meta.WitAi.Events
+{
+    /// <summary>
+    /// An event including raw float sample data from an input mic
+    /// <param name="samples">The raw float sample buffer</param>
+    /// <param name="sampleCount">The number of samples in the buffer</param>
+    /// <param name="maxLevel">The max volume in this sample</param>
+    /// </summary>
+    [Serializable]
+    public class WitSampleEvent : UnityEvent<float[], int, float>
+    {
+    }
+}

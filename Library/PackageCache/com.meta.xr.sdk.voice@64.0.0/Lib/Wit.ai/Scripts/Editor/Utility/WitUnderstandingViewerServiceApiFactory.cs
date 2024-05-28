@@ -1,3 +1,38 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ebac76be17a5b50ad8747137c2dcd9ba58d2691adfdd39ed1a3cfddcb367a9c3
-size 1165
+/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using System.Collections.Generic;
+using UnityEngine;
+
+namespace Meta.WitAi.Windows
+{
+    public static class WitUnderstandingViewerServiceApiFactory
+    {
+        public delegate WitUnderstandingViewerServiceAPI Create(MonoBehaviour m);
+
+        private static Dictionary<string, Create> factoryMethods = new Dictionary<string, Create>();
+
+        public static void Register(string interfaceName, Create method)
+        {
+            factoryMethods.Add(interfaceName, method);
+        }
+
+        public static WitUnderstandingViewerServiceAPI CreateWrapper(MonoBehaviour service)
+        {
+            foreach (var interfaceType in service.GetType().GetInterfaces())
+            {
+                if (factoryMethods.ContainsKey(interfaceType.Name))
+                {
+                    return factoryMethods[interfaceType.Name](service);
+                }
+            }
+
+            return null;
+        }
+    }
+}

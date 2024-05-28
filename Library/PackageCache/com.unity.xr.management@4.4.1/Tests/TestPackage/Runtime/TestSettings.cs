@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c706b1323dbf44a49a9cc52cbb2ca842603be11ce518c11403617f41bb64587b
-size 383
+using UnityEngine;
+using UnityEngine.XR.Management;
+
+namespace Unity.XR.Management.TestPackage
+{
+    [XRConfigurationData("Test Settings", Constants.k_SettingsKey)]
+    public class TestSettings : ScriptableObject
+    {
+
+#if !UNITY_EDITOR
+        internal static TestSettings s_Settings;
+
+        public void Awake()
+        {
+            s_Settings = this;
+        }
+#endif
+    }
+}

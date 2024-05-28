@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8134658b501041e5ffcb930e669a53710e4aff80850b7fda10a8f42d3946ef43
-size 440
+﻿/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using UnityEditor;
+using Meta.WitAi.Data.Info;
+
+namespace Meta.WitAi.Windows
+{
+    [CustomPropertyDrawer(typeof(WitVoiceInfo))]
+    public class WitVoiceInfoPropertyDrawer : WitPropertyDrawer
+    {
+
+    }
+}

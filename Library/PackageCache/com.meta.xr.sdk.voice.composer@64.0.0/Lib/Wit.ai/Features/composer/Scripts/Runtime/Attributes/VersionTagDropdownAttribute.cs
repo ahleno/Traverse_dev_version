@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fea5c054d5d9588186d3ddbaa640918a9167c2c99c6b58e968b1ef222b6da252
-size 468
+﻿/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using UnityEngine;
+
+namespace Meta.WitAi.Composer.Attributes
+{
+    /// <summary>
+    /// Provides a tag version dropdown in place of a string field
+    /// </summary>
+    public class VersionTagDropdownAttribute : PropertyAttribute {}
+}

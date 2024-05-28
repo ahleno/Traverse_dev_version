@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2634b98f57e19ecb221fbde1bec95b7ee4274135e598a9b5be34c43fe51ff694
-size 545
+using System.IO;
+
+namespace Packages.Rider.Editor.ProjectGeneration
+{
+  internal interface IFileIO
+  {
+    bool Exists(string path);
+
+    TextReader GetReader(string path);
+    string ReadAllText(string path);
+    void WriteAllText(string path, string content);
+
+    // rootDirectoryFullPath is assumed to be the result of Path.GetFullPath
+    // Passing the directory with a trailing slash (Path.DirectorySeparatorChar) will avoid an allocation
+    string EscapedRelativePathFor(string path, string rootDirectoryFullPath);
+  }
+}

@@ -1,3 +1,33 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:db3d852bd2928d04c049f4a62a1cba7caa0de21284e91d52d2b8f875ec01c26f
-size 1025
+/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using System;
+
+namespace Meta.Conduit.Editor
+{
+    /// <summary>
+    /// Filters out parameters of specific types.
+    /// </summary>
+    internal interface IParameterFilter
+    {
+        /// <summary>
+        /// Tests if a parameter type should be filtered out.
+        /// </summary>
+        /// <param name="type">The data type.</param>
+        /// <returns>True if the parameter type should be filtered out. False otherwise.</returns>
+        bool ShouldFilterOut(Type type);
+
+        /// <summary>
+        /// Tests if a parameter type should be filtered out.
+        /// </summary>
+        /// <param name="typeName">The name of the data type.</param>
+        /// <returns>True if the parameter type should be filtered out. False otherwise.</returns>
+        bool ShouldFilterOut(string typeName);
+
+    }
+}

@@ -1,13 +1,21 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Unity\\Traverse\\",
+  "WorkspaceRootPath": "D:\\Traverse_Jachigi\\Traverse\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Unity\\Traverse\\Assets\\Scripts\\ShopScene\\ShopUIManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Traverse_Jachigi\\Traverse\\Assets\\Scripts\\JachigiScene\\shortWoodStickCollisionHandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\JachigiScene\\shortWoodStickCollisionHandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Traverse_Jachigi\\Traverse\\Assets\\Scripts\\JachigiScene\\EnemyMoveHandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\JachigiScene\\EnemyMoveHandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Traverse_Jachigi\\Traverse\\Assets\\Scripts\\ShopScene\\ShopUIManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\ShopScene\\ShopUIManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Unity\\Traverse\\Assets\\Scripts\\ShopScene\\Item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Traverse_Jachigi\\Traverse\\Assets\\Scripts\\ShopScene\\Item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\ShopScene\\Item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -23,28 +31,52 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ShopUIManager.cs",
-              "DocumentMoniker": "D:\\Unity\\Traverse\\Assets\\Scripts\\ShopScene\\ShopUIManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\ShopScene\\ShopUIManager.cs",
-              "ToolTip": "D:\\Unity\\Traverse\\Assets\\Scripts\\ShopScene\\ShopUIManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\ShopScene\\ShopUIManager.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAAAAAA",
+              "Title": "shortWoodStickCollisionHandler.cs",
+              "DocumentMoniker": "D:\\Traverse_Jachigi\\Traverse\\Assets\\Scripts\\JachigiScene\\shortWoodStickCollisionHandler.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\JachigiScene\\shortWoodStickCollisionHandler.cs",
+              "ToolTip": "D:\\Traverse_Jachigi\\Traverse\\Assets\\Scripts\\JachigiScene\\shortWoodStickCollisionHandler.cs",
+              "RelativeToolTip": "Assets\\Scripts\\JachigiScene\\shortWoodStickCollisionHandler.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAAC0AAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T04:22:56.299Z",
+              "WhenOpened": "2024-05-27T12:51:09.641Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "EnemyMoveHandler.cs",
+              "DocumentMoniker": "D:\\Traverse_Jachigi\\Traverse\\Assets\\Scripts\\JachigiScene\\EnemyMoveHandler.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\JachigiScene\\EnemyMoveHandler.cs",
+              "ToolTip": "D:\\Traverse_Jachigi\\Traverse\\Assets\\Scripts\\JachigiScene\\EnemyMoveHandler.cs",
+              "RelativeToolTip": "Assets\\Scripts\\JachigiScene\\EnemyMoveHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T12:36:26.583Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ShopUIManager.cs",
+              "DocumentMoniker": "D:\\Traverse_Jachigi\\Traverse\\Assets\\Scripts\\ShopScene\\ShopUIManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ShopScene\\ShopUIManager.cs",
+              "ToolTip": "D:\\Traverse_Jachigi\\Traverse\\Assets\\Scripts\\ShopScene\\ShopUIManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ShopScene\\ShopUIManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T04:22:56.299Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Item.cs",
-              "DocumentMoniker": "D:\\Unity\\Traverse\\Assets\\Scripts\\ShopScene\\Item.cs",
+              "DocumentMoniker": "D:\\Traverse_Jachigi\\Traverse\\Assets\\Scripts\\ShopScene\\Item.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ShopScene\\Item.cs",
-              "ToolTip": "D:\\Unity\\Traverse\\Assets\\Scripts\\ShopScene\\Item.cs",
+              "ToolTip": "D:\\Traverse_Jachigi\\Traverse\\Assets\\Scripts\\ShopScene\\Item.cs",
               "RelativeToolTip": "Assets\\Scripts\\ShopScene\\Item.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T04:11:54.579Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-24T04:11:54.579Z"
             }
           ]
         }

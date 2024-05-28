@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8a0104610ac210e1b0c02bae7deb2d2e67aaa64e2172f2ce4db7983aeafb7d6b
-size 498
+namespace Unity.AI.Navigation
+{
+    /// <summary>
+    /// Helper for compile-time constant strings for the [HelpURL](xref:UnityEngine.HelpURLAttribute) attribute.
+    /// </summary>
+    static class HelpUrls
+    {
+        const string Version = "1.1";
+
+        const string BaseUrl = "https://docs.unity3d.com/Packages/com.unity.ai.navigation@" + Version;
+
+        internal const string Manual = BaseUrl + "/manual/";
+
+        internal const string Api = BaseUrl + "/api/";
+    }
+}

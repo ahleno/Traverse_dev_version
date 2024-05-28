@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:260e8e991f2489eb960f025c414963f7fb0504e6fdc4735fd0aae9cf8cd213ed
-size 617
+﻿/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using Meta.WitAi.Configuration;
+using Meta.WitAi.Data.Configuration;
+using Meta.WitAi.Requests;
+
+namespace Meta.WitAi.Interfaces
+{
+    public interface IWitRequestProvider
+    {
+        WitRequest CreateWitRequest(WitConfiguration config, WitRequestOptions requestOptions, VoiceServiceRequestEvents requestEvents, IDynamicEntitiesProvider[] additionalEntityProviders = null);
+    }
+}

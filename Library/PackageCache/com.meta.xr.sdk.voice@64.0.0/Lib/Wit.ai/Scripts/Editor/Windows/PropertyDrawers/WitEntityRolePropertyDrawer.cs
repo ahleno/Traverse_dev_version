@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7c8d1be04a2ca90c2bc11c6ed48f53f9c66431fe5cf3adf2bd2f957e26cf3e93
-size 702
+﻿/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using UnityEditor;
+using Meta.WitAi.Data.Info;
+
+namespace Meta.WitAi.Windows
+{
+    [CustomPropertyDrawer(typeof(WitEntityRoleInfo))]
+    public class WitEntityRolePropertyDrawer : WitSimplePropertyDrawer
+    {
+        // Key = Name
+        protected override string GetKeyFieldName()
+        {
+            return "name";
+        }
+        // Value = ID
+        protected override string GetValueFieldName()
+        {
+            return "id";
+        }
+    }
+}

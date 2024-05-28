@@ -1,3 +1,33 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9dfe4421a3d2e6d290cea878e7fa01b1fcae77c4c0a748941f041d8387e5aaa1
-size 940
+/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using Meta.WitAi;
+using Meta.WitAi.Requests;
+
+namespace Lib.Wit.Runtime.Requests
+{
+    internal interface IWitVRequestFactory
+    {
+        IWitSyncVRequest CreateWitSyncVRequest(IWitRequestConfiguration configuration);
+
+        IWitInfoVRequest CreateWitInfoVRequest(IWitRequestConfiguration configuration);
+    }
+
+    internal class WitVRequestFactory : IWitVRequestFactory
+    {
+        public IWitSyncVRequest CreateWitSyncVRequest(IWitRequestConfiguration configuration)
+        {
+            return new WitSyncVRequest(configuration);
+        }
+
+        public IWitInfoVRequest CreateWitInfoVRequest(IWitRequestConfiguration configuration)
+        {
+            return new WitInfoVRequest(configuration);
+        }
+    }
+}

@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:43685b8b7f96c43d23eab03c2c2394d3e46ad42871798328c8ceaf0faf927f07
-size 464
+﻿/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using UnityEngine;
+
+namespace Meta.WitAi.Data.Configuration
+{
+    /// <summary>
+    /// A base class for additional serialized configuration data
+    /// </summary>
+    public abstract class WitConfigurationAssetData : ScriptableObject
+    {
+    }
+}

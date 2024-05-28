@@ -1,3 +1,38 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1125d744c5f7adff6eacc2310e81af93d51a38a698d696fa3c6813d269e46e59
-size 1208
+using UnityEngine;
+
+namespace Unity.AI.Navigation.Samples
+{
+    /// <summary>
+    /// Component for moving GameObjects within a NavMesh.
+    /// Requests a NavMesh update whenever its owning GameObject has stopped moving.
+    /// </summary>
+    [RequireComponent(typeof(Rigidbody))]
+    [RequireComponent(typeof(NavMeshModifier))]
+    public class DynamicNavMeshObject : MonoBehaviour
+    {
+        Rigidbody m_Rigidbody;
+        NavMeshModifier m_NavMeshModifier;
+        bool m_WasMoving;
+
+        void Start()
+        {
+            m_Rigidbody = GetComponent<Rigidbody>();
+            m_NavMeshModifier = GetComponent<NavMeshModifier>();
+            m_NavMeshModifier.enabled = true;
+            m_WasMoving = !m_Rigidbody.IsSleeping();
+        }
+
+        void Update()
+        {
+            bool isMoving = !m_Rigidbody.IsSleeping() && m_Rigidbody.velocity.sqrMagnitude > 0.1f;
+
+            if ((m_WasMoving && !isMoving) || (!m_WasMoving && isMoving))
+            {
+                m_NavMeshModifier.ignoreFromBuild = isMoving;
+                GloballyUpdatedNavMeshSurface.RequestNavMeshUpdate();
+            }
+
+            m_WasMoving = isMoving;
+        }
+    }
+}

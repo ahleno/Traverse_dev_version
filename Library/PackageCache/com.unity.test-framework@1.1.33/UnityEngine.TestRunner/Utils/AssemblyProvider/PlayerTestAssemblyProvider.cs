@@ -1,3 +1,54 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b45581729f32e39b9fe48a620eb2574cab3435d8314e2c7ccabb034ee9ea84cb
-size 1563
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using NUnit.Framework.Interfaces;
+using UnityEngine.TestTools.NUnitExtensions;
+
+namespace UnityEngine.TestTools.Utils
+{
+    internal class PlayerTestAssemblyProvider
+    {
+        private IAssemblyLoadProxy m_AssemblyLoadProxy;
+        private readonly List<string> m_AssembliesToLoad;
+
+        //Cached until domain reload
+        private static List<IAssemblyWrapper> m_LoadedAssemblies;
+
+        internal PlayerTestAssemblyProvider(IAssemblyLoadProxy assemblyLoadProxy, List<string> assembliesToLoad)
+        {
+            m_AssemblyLoadProxy = assemblyLoadProxy;
+            m_AssembliesToLoad = assembliesToLoad;
+            LoadAssemblies();
+        }
+
+        public List<IAssemblyWrapper> GetUserAssemblies()
+        {
+            return m_LoadedAssemblies;
+        }
+
+        private void LoadAssemblies()
+        {
+            if (m_LoadedAssemblies != null)
+            {
+                return;
+            }
+
+            m_LoadedAssemblies = new List<IAssemblyWrapper>();
+
+            foreach (var userAssembly in m_AssembliesToLoad)
+            {
+                IAssemblyWrapper a;
+                try
+                {
+                    a = m_AssemblyLoadProxy.Load(userAssembly);
+                }
+                catch (FileNotFoundException)
+                {
+                    continue;
+                }
+                if (a != null)
+                    m_LoadedAssemblies.Add(a);
+            }
+        }
+    }
+}

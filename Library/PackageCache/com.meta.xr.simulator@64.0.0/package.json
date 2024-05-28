@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6225d0c16f9def924773a5744105cbfbd69553e810379d74287689c2d8685213
-size 881
+{
+  "name": "com.meta.xr.simulator",
+  "displayName": "Meta XR Simulator",
+  "version": "64.0.0",
+  "description": "Meta XR Simulator allows developers to preview their VR changes without needing a physical device.",
+  "samples": [],
+  "unity": "2021.3",
+  "unityRelease": "26f1",
+  "author": {
+    "name": "Meta Platforms, Inc.",
+    "url": "https://developer.oculus.com/"
+  },
+  "documentationUrl": "https://developer.oculus.com/documentation/unity/",
+  "changelogUrl": "https://developer.oculus.com/downloads/package/unity-integration/",
+  "licensesUrl": "https://developer.oculus.com/licenses/oculussdk",
+  "licenseMessage": "By adding or using this package you agree to the terms and conditions of the Meta Platforms Technologies SDK License Agreement: https://developer.oculus.com/licenses/oculussdk",
+  "keywords": [
+    "Oculus",
+    "XrSim",
+    "Meta",
+    "Quest"
+  ]
+}

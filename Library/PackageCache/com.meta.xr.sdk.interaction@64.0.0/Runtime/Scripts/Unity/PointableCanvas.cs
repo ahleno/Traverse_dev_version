@@ -1,3 +1,94 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:153c99734c291ee0d2f59bf739d82420af45cd8c6cd5df76ed7ae637b9349bea
-size 2804
+/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * Licensed under the Oculus SDK License Agreement (the "License");
+ * you may not use the Oculus SDK except in compliance with the License,
+ * which is provided at the time of installation or download, or which
+ * otherwise accompanies this software in either electronic or hard copy form.
+ *
+ * You may obtain a copy of the License at
+ *
+ * https://developer.oculus.com/licenses/oculussdk/
+ *
+ * Unless required by applicable law or agreed to in writing, the Oculus SDK
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+using UnityEngine;
+using UnityEngine.UI;
+
+namespace Oculus.Interaction
+{
+    /// <summary>
+    /// PointableCanvas allows any IPointable to forward its
+    /// events onto an associated Canvas via the IPointableCanvas interface
+    /// Requires a PointableCanvasModule present in the scene.
+    /// </summary>
+    public class PointableCanvas : PointableElement, IPointableCanvas
+    {
+        [Tooltip("PointerEvents will be forwarded to this Unity Canvas.")]
+        [SerializeField]
+        private Canvas _canvas;
+        public Canvas Canvas => _canvas;
+
+        private bool _registered = false;
+
+        protected override void Start()
+        {
+            this.BeginStart(ref _started, () => base.Start());
+            this.AssertField(Canvas, nameof(Canvas));
+            this.AssertIsTrue(Canvas.TryGetComponent(out GraphicRaycaster raycaster),
+                $"{nameof(PointableCanvas)} requires that the {nameof(Canvas)} object has an attached GraphicRaycaster.");
+            this.EndStart(ref _started);
+        }
+
+        private void Register()
+        {
+            PointableCanvasModule.RegisterPointableCanvas(this);
+            _registered = true;
+        }
+
+        private void Unregister()
+        {
+            if (!_registered) return;
+            PointableCanvasModule.UnregisterPointableCanvas(this);
+            _registered = false;
+        }
+
+        protected override void OnEnable()
+        {
+            base.OnEnable();
+            if (_started)
+            {
+                Register();
+            }
+        }
+
+        protected override void OnDisable()
+        {
+            if (_started)
+            {
+                Unregister();
+            }
+            base.OnDisable();
+        }
+
+        #region Inject
+
+        public void InjectAllPointableCanvas(Canvas canvas)
+        {
+            InjectCanvas(canvas);
+        }
+
+        public void InjectCanvas(Canvas canvas)
+        {
+            _canvas = canvas;
+        }
+
+        #endregion
+    }
+}

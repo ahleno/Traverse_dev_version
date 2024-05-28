@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f3fcb74d7fe0b3d7c380fc365024449f5364540ae6e940e316cd2d23c5579662
-size 568
+{
+    "name": "Meta.Voice.Samples.TTSLipSync",
+    "rootNamespace": "",
+    "references": [
+        "Meta.WitAi.TTS",
+        "Meta.WitAi.Lib"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "define": "OVR_UNITY_PACKAGE_MANAGER",
+            "name": "com.meta.xr.sdk.voice",
+            "expression": ""
+        }
+    ],
+    "noEngineReferences": false
+}

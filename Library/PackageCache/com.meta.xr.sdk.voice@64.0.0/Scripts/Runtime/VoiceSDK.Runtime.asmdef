@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:81d023a537f0d49a4fcbb559d504dc49b0271561341e0af6f48a72262af2af53
-size 681
+{
+    "name": "VoiceSDK.Runtime",
+    "rootNamespace": "",
+    "references": [
+        "AssistantVoiceCommandCommon",
+        "AssistantCoreSDKRuntime",
+        "Meta.WitAi",
+        "Meta.WitAi.Conduit",
+        "Meta.WitAi.Lib",
+        "Meta.WitAi.TTS"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "define": "OVR_UNITY_PACKAGE_MANAGER",
+            "name": "com.meta.xr.sdk.voice",
+            "expression": ""
+        }
+    ],
+    "noEngineReferences": false
+}

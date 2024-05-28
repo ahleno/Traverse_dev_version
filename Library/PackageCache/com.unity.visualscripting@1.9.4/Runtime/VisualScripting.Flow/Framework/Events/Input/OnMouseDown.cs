@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d19420acf0abaaa9cf269e34384cd77b0cb5478085ba1f13c697ff1c4cf43414
-size 487
+using System;
+
+namespace Unity.VisualScripting
+{
+    /// <summary>
+    /// Called when the user has pressed the mouse button while over the GUI element or collider.
+    /// </summary>
+    [UnitCategory("Events/Input")]
+    public sealed class OnMouseDown : GameObjectEventUnit<EmptyEventArgs>, IMouseEventUnit
+    {
+        protected override string hookName => EventHooks.OnMouseDown;
+        public override Type MessageListenerType => typeof(UnityOnMouseDownMessageListener);
+    }
+}

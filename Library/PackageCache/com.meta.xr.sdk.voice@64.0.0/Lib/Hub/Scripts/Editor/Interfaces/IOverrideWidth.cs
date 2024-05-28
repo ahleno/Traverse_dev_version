@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2f1bc6a7293e7cf3ac407b7f30172956587d6d3e46c6a37cd0e088ff7b5c37b3
-size 402
+﻿/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+namespace Meta.Voice.Hub.Interfaces
+{
+    public interface IOverrideSize
+    {
+        float OverrideWidth { get; set; }
+        float OverrideHeight { get; set; }
+    }
+}

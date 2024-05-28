@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c059991285987e3c892c5623d952c24ebe309d4187ff4fcd52b3b31f992b6c27
-size 656
+/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using System;
+using UnityEngine.Scripting;
+
+namespace Meta.WitAi.TTS.Data
+{
+    /// <summary>
+    /// An audio event with viseme data
+    /// </summary>
+    [Serializable]
+    public class TTSVisemeEvent : TTSEvent<Viseme>
+    {
+        [Preserve]
+        public static Viseme GetVisemeAot(string inViseme)
+        {
+            Enum.TryParse(inViseme, out Viseme result);
+            return result;
+        }
+    }
+}

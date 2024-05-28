@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e84f4e17f758c5be57f33114cfd4872a6e14deb4d9945773d8d0ad10310e2fae
-size 371
+/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+namespace Meta.Voice.Samples.WitShapes
+{
+    public enum Shape
+    {
+        Cube,
+        Sphere,
+        Capsule,
+        Cylinder,
+    }
+}

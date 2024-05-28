@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f8998a2ba26a464e4f7040499f54f449f6fd93c62842ef88b9059edb59dd0ddc
-size 498
+/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using System;
+
+namespace Meta.WitAi.TTS.Data
+{
+    /// <summary>
+    /// An audio event with string data for specific audio phoneme sound
+    /// at a specified sample offset
+    /// </summary>
+    [Serializable]
+    public class TTSPhonemeEvent : TTSStringEvent {}
+}

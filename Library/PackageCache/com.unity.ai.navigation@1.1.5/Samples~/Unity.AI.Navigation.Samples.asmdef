@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7a776fce56828da2cced4d6012c80a495611668c6e4512a2d8f9cbd0fefb5858
-size 478
+{
+    "name": "Unity.AI.Navigation.Samples",
+    "rootNamespace": "",
+    "references": [
+        "GUID:8c4dd21966739024fbd72155091d199e",
+        "GUID:1dcde1c83efa6e14e8e75ed67addeba3"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

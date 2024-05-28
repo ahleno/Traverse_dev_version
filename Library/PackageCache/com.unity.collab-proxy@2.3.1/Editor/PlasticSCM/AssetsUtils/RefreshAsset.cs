@@ -1,3 +1,50 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9c4e8a961721dfc0f6e84ae17228484d3eca31f549bc698cb5205dfd2c43d2ec
-size 1527
+﻿using UnityEditor.PackageManager;
+
+using Unity.PlasticSCM.Editor.AssetUtils.Processor;
+
+namespace Unity.PlasticSCM.Editor.AssetUtils
+{
+    internal static class RefreshAsset
+    {
+        internal static void BeforeLongAssetOperation()
+        {
+            UnityEditor.AssetDatabase.DisallowAutoRefresh();
+        }
+
+        internal static void AfterLongAssetOperation()
+        {
+            UnityEditor.AssetDatabase.AllowAutoRefresh();
+
+            UnityAssetDatabase();
+
+            // Client is an API to interact with package manager
+            // Client.Resolve() will resolve any pending packages added or removed from the project.
+            // https://docs.unity3d.com/ScriptReference/PackageManager.Client.html
+            Client.Resolve();
+        }
+
+        internal static void UnityAssetDatabase()
+        {
+            UnityEditor.AssetDatabase.Refresh(
+                UnityEditor.ImportAssetOptions.Default);
+
+            UnityEditor.VersionControl.Provider.ClearCache();
+
+            if (PlasticPlugin.AssetStatusCache != null)
+                PlasticPlugin.AssetStatusCache.Clear();
+
+            AssetPostprocessor.SetIsRepaintNeededAfterAssetDatabaseRefresh();
+        }
+
+        internal static void VersionControlCache()
+        {
+            UnityEditor.VersionControl.Provider.ClearCache();
+
+            if (PlasticPlugin.AssetStatusCache != null)
+                PlasticPlugin.AssetStatusCache.Clear();
+
+            ProjectWindow.Repaint();
+            RepaintInspector.All();
+        }
+    }
+}

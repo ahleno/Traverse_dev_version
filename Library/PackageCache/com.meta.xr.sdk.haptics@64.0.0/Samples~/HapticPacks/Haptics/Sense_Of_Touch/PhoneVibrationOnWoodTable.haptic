@@ -1,3 +1,1 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4089f18213a58c46e5f72f889b52053795e8f43988af202e89b3e80bcfa3cab1
-size 615
+{"version": {"major": 1, "minor": 0, "patch": 0}, "metadata": {"editor": "Meta Haptics Studio", "source": "PhoneVibrationOnWoodTable.wav", "project": "Phone", "tags": [], "description": ""}, "signals": {"continuous": {"envelopes": {"amplitude": [{"time": 0, "amplitude": 0.0039231675}, {"time": 5e-06, "amplitude": 0.6009049773755657}, {"time": 1.4449949, "amplitude": 0.5945701357466063}, {"time": 1.4449999, "amplitude": 0}], "frequency": [{"time": 0, "frequency": 0}, {"time": 5e-06, "frequency": 0.7984572351583703}, {"time": 1.4449949, "frequency": 0.8018099547511308}, {"time": 1.4449999, "frequency": 0}]}}}}

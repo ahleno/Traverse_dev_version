@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:70f34ac617de2ff0b82fb9962f672758b71ce8688f4d2a3938673732cee4fd02
-size 468
+/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using Meta.WitAi.Interfaces;
+using UnityEngine;
+
+namespace Meta.WitAi.ServiceReferences
+{
+    public abstract class AudioInputServiceReference : MonoBehaviour, IAudioEventProvider
+    {
+        public abstract IAudioInputEvents AudioEvents { get; }
+    }
+}

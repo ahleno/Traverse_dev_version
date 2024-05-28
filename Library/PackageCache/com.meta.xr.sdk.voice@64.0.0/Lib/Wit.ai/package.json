@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d1a1015ad63af97f2836d7be55001f289c98b49b7c27c7607739e78616594b4c
-size 358
+{
+  "name": "com.meta.witai",
+  "displayName": "Meta - Wit.ai",
+  "version": "64.0.0",
+  "samples": [],
+  "description": "wit-unity is the Unity SDK for Wit.ai. It provides convenience tools for activating Wit and processing the responses that are returned.",
+  "unity": "2019.4",
+  "author": {
+    "name": "Meta - Wit.ai",
+    "url": "https://wit.ai"
+  }
+}

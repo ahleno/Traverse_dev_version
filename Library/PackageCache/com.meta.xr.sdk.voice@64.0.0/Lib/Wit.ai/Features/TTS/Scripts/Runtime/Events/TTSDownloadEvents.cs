@@ -1,3 +1,40 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5eff17ef1aad74cb928c327291969223a3834157c774b5fbb45b3e7dc02503d3
-size 1286
+﻿/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using System;
+using Meta.WitAi.TTS.Data;
+using UnityEngine;
+using UnityEngine.Events;
+
+namespace Meta.WitAi.TTS.Events
+{
+    [Serializable]
+    public class TTSClipDownloadEvent : UnityEvent<TTSClipData, string>
+    {
+    }
+    [Serializable]
+    public class TTSClipDownloadErrorEvent : UnityEvent<TTSClipData, string, string>
+    {
+    }
+
+    [Serializable]
+    public class TTSDownloadEvents
+    {
+        [Tooltip("Called when a audio clip download begins")]
+        public TTSClipDownloadEvent OnDownloadBegin = new TTSClipDownloadEvent();
+
+        [Tooltip("Called when a audio clip is downloaded successfully")]
+        public TTSClipDownloadEvent OnDownloadSuccess = new TTSClipDownloadEvent();
+
+        [Tooltip("Called when a audio clip downloaded has been cancelled")]
+        public TTSClipDownloadEvent OnDownloadCancel = new TTSClipDownloadEvent();
+
+        [Tooltip("Called when a audio clip downloaded has failed")]
+        public TTSClipDownloadErrorEvent OnDownloadError = new TTSClipDownloadErrorEvent();
+    }
+}

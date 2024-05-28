@@ -1,3 +1,34 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c410f56daef78e718d5a93158683d066c3de7c53d099fa71f45e4059ccbf3337
-size 837
+using System.Runtime.CompilerServices;
+
+using UnityEngine;
+
+using UnityEditor.XR.Management.Metadata;
+
+[assembly:InternalsVisibleTo("Unity.XR.Management.EditorTests")]
+[assembly:InternalsVisibleTo("Unity.XR.Management.Tests.Standalone")]
+namespace Unity.XR.Management.TestPackage.Editor
+{
+    internal class TestPackage : IXRPackage
+    {
+        public TestPackage() {}
+
+        public IXRPackageMetadata metadata 
+        { 
+            get
+            {
+                return TestMetadata.CreateAndGetMetadata();
+            }
+        }
+        
+        public bool PopulateNewSettingsInstance(ScriptableObject obj)
+        {
+            TestSettings packageSettings = obj as TestSettings;
+            if (packageSettings != null)
+            {
+                return true;
+            }
+            return false;
+        }
+
+    }
+}

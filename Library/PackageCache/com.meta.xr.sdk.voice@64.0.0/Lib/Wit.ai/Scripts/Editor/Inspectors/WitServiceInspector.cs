@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:24c0e0fa6ef92cd31da6dd46d72ab6db99f266b9ea752d728637d581f767db09
-size 365
+﻿/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using UnityEditor;
+
+namespace Meta.WitAi.Inspectors
+{
+    [CustomEditor(typeof(WitService))]
+    public class WitServiceInspector : WitInspector { }
+}

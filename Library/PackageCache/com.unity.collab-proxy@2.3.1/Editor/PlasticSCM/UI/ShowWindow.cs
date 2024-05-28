@@ -1,3 +1,40 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f2d0d73f81880c67e450da5dfd7b6026149283076cb578a8dbd33d8fb5047f6f
-size 1136
+﻿using System;
+
+using UnityEditor;
+
+namespace Unity.PlasticSCM.Editor.UI
+{
+    internal static class ShowWindow
+    {
+        internal static PlasticWindow Plastic()
+        {
+            return ShowPlasticWindow(false);
+        }
+
+        internal static PlasticWindow PlasticDisablingCollab()
+        {
+            return ShowPlasticWindow(true);
+        }
+
+        static PlasticWindow ShowPlasticWindow(bool disableCollabWhenLoaded)
+        {
+            PlasticWindow window = EditorWindow.GetWindow<PlasticWindow>(
+                UnityConstants.PLASTIC_WINDOW_TITLE,
+                true,
+                mConsoleWindowType,
+                mProjectBrowserType);
+
+            if (disableCollabWhenLoaded)
+                window.DisableCollabIfEnabledWhenLoaded();
+
+            window.SetupWindowTitle(PlasticNotification.Status.None);
+
+            return window;
+        }
+
+        static Type mConsoleWindowType = typeof(EditorWindow).
+            Assembly.GetType("UnityEditor.ConsoleWindow");
+        static Type mProjectBrowserType = typeof(EditorWindow).
+            Assembly.GetType("UnityEditor.ProjectBrowser");
+    }
+}

@@ -1,3 +1,42 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b03ea4b9ae09d9ed4650d330e9bf9dc47cd083bc01a746f5392a10300b9f3234
-size 1088
+/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using System;
+
+namespace Meta.Conduit
+{
+    /// <summary>
+    /// Represents incoming request parameters from Wit.Ai.
+    /// </summary>
+    public struct ConduitParameterValue
+    {
+        /// <summary>
+        /// The value of the parameter.
+        /// </summary>
+        public readonly object Value;
+
+        /// <summary>
+        /// The type of the parameter. If a type was not resolved to an existing type, this will be string by default.
+        /// </summary>
+        public Type DataType;
+
+        [UnityEngine.Scripting.Preserve]
+        public ConduitParameterValue(object value)
+        {
+            Value = value;
+            DataType = value.GetType();
+        }
+
+        [UnityEngine.Scripting.Preserve]
+        public ConduitParameterValue(object value, Type dataType)
+        {
+            Value = value;
+            DataType = dataType;
+        }
+    }
+}

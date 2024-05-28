@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0b890c79ae7bdf7f7aa93c235fdcc268617e8f89452ef0cbc204bd77f4f30f42
-size 531
+﻿/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using System;
+
+namespace Meta.WitAi.Attributes
+{
+    /// <summary>
+    /// An attribute to tag a method that accepts a Invoke(WitConfiguration, WitConfigurationAssetData)
+    /// </summary>
+    [AttributeUsage(AttributeTargets.Method)]
+    public class WitConfigurationAssetRefreshAttribute : Attribute
+    {
+    }
+}

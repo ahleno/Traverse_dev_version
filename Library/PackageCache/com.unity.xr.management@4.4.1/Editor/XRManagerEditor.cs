@@ -1,3 +1,35 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8f5daa29df6ba601701c23ac1d5d981a3ff2e5615894229762b2b75346f2bc54
-size 924
+using UnityEngine.XR.Management;
+
+namespace UnityEditor.XR.Management
+{
+    [CustomEditor(typeof(XRManagerSettings))]
+    internal class XRManagerSettingsEditor : Editor
+    {
+        XRLoaderOrderUI m_LoaderUi = new XRLoaderOrderUI();
+
+        internal BuildTargetGroup BuildTarget
+        {
+            get;
+            set;
+        }
+
+        public void Reload()
+        {
+            m_LoaderUi.CurrentBuildTargetGroup = BuildTargetGroup.Unknown;
+        }
+
+        /// <summary><see href="https://docs.unity3d.com/ScriptReference/Editor.OnInspectorGUI.html">Editor Documentation</see></summary>
+        public override void OnInspectorGUI()
+        {
+            if (serializedObject == null || serializedObject.targetObject == null)
+                return;
+
+            serializedObject.Update();
+
+            m_LoaderUi.OnGUI(BuildTarget);
+
+            serializedObject.ApplyModifiedProperties();
+        }
+    }
+
+}

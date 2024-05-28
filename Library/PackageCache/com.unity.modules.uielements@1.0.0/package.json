@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cc328b4fcb2bb2db4fefec6a51142e5c8d4fa05a64a780c19727aab14928bd46
-size 479
+{
+    "name": "com.unity.modules.uielements",
+    "version": "1.0.0",
+    "type": "module",
+    "displayName": "UIElements",
+    "description": "The UIElements module implements the UIElements retained mode UI framework. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.UIElementsModule.html",
+    "dependencies": {
+        "com.unity.modules.ui": "1.0.0",
+        "com.unity.modules.imgui": "1.0.0",
+        "com.unity.modules.jsonserialize": "1.0.0"
+    }
+}

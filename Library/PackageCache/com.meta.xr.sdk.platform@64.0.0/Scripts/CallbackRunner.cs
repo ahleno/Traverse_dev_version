@@ -1,3 +1,44 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5f0dfcfcdc4821468472fd84d8b041aabb62ba7cff8b76ea7a43bb2a255a4272
-size 986
+using System.Runtime.InteropServices;
+using UnityEngine;
+
+namespace Oculus.Platform
+{
+    public class CallbackRunner : MonoBehaviour
+    {
+        [DllImport(CAPI.DLL_NAME)]
+        static extern void ovr_UnityResetTestPlatform();
+
+        public bool IsPersistantBetweenSceneLoads = true;
+
+        void Awake()
+        {
+            var existingCallbackRunner = FindObjectOfType<CallbackRunner>();
+            if (existingCallbackRunner != this)
+            {
+                Debug.LogWarning("You only need one instance of CallbackRunner");
+            }
+
+            if (IsPersistantBetweenSceneLoads)
+            {
+                DontDestroyOnLoad(gameObject);
+            }
+        }
+
+        void Update()
+        {
+            Request.RunCallbacks();
+        }
+
+        void OnDestroy()
+        {
+#if UNITY_EDITOR
+            ovr_UnityResetTestPlatform();
+#endif
+        }
+
+        void OnApplicationQuit()
+        {
+            Callback.OnApplicationQuit();
+        }
+    }
+}

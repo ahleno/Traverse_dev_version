@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:36dba134040aece8dade6e6b7ff01eef02d6178ecfc5298f634b6225dc89066a
-size 774
+﻿/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using Meta.WitAi.Interfaces;
+using UnityEngine;
+
+namespace Meta.WitAi.Data.Entities
+{
+    public class DynamicEntityDataProvider : MonoBehaviour, IDynamicEntitiesProvider
+    {
+        [SerializeField] internal WitDynamicEntitiesData[] entitiesDefinition;
+        public WitDynamicEntities GetDynamicEntities()
+        {
+            WitDynamicEntities entities = new WitDynamicEntities();
+            foreach (var entity in entitiesDefinition)
+            {
+                entities.Merge(entity);
+            }
+
+            return entities;
+        }
+    }
+}

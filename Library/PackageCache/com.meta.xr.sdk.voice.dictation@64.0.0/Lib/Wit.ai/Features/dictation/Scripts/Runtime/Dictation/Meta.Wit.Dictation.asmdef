@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c4d672ff864826a845c199d8de87ccd59f5782106615946625b0a9291098e9f7
-size 563
+{
+    "name": "Meta.Wit.Dictation",
+    "rootNamespace": "",
+    "references": [
+        "Meta.WitAi.Lib",
+        "Meta.WitAi"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "define": "OVR_UNITY_PACKAGE_MANAGER",
+            "name": "com.meta.xr.sdk.voice.dictation",
+            "expression": ""
+        }
+    ],
+    "noEngineReferences": false
+}

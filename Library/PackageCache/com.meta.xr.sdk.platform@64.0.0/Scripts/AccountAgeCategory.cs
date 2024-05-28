@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:52717837b2fe0b56c0a7cbbfda1fece725c91973098b5c5830766427a553e49c
-size 369
+// This file was @generated with LibOVRPlatform/codegen/main. Do not modify it!
+
+namespace Oculus.Platform
+{
+
+  using Description = System.ComponentModel.DescriptionAttribute;
+
+  public enum AccountAgeCategory : int
+  {
+    [Description("UNKNOWN")]
+    Unknown,
+
+    [Description("CH")]
+    Ch,
+
+    [Description("TN")]
+    Tn,
+
+    [Description("AD")]
+    Ad,
+
+  }
+
+}
