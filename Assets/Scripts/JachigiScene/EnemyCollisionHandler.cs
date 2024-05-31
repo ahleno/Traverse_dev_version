@@ -21,8 +21,8 @@ public class EnemyCollisionHandler : MonoBehaviour
 
         if (collision.gameObject.name == "shortWoodStick")
         {
-            Rigidbody longStickRigidbody = collision.gameObject.GetComponent<Rigidbody>();
-            
+            Rigidbody shortStickRigidbody = collision.gameObject.GetComponent<Rigidbody>();
+            shortStickRigidbody.velocity = new Vector3(0,0,0);
             
         }
     }

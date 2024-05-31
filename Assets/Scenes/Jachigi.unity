@@ -454,6 +454,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1031027707, guid: abc00000000014270541121732349840, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.9170017
@@ -527,6 +535,14 @@ PrefabInstance:
     - target: {fileID: 1031027703, guid: abc00000000014270541121732349840, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1031027707, guid: abc00000000014270541121732349840, type: 3}
       propertyPath: m_LocalPosition.x
@@ -602,6 +618,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -663,6 +687,14 @@ PrefabInstance:
     - target: {fileID: 1031027703, guid: abc00000000014270541121732349840, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1031027707, guid: abc00000000014270541121732349840, type: 3}
       propertyPath: m_LocalPosition.x
@@ -737,6 +769,14 @@ PrefabInstance:
     - target: {fileID: 1031027703, guid: abc00000000014270541121732349840, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -905,6 +945,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1031027707, guid: abc00000000014270541121732349840, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.9170017
@@ -978,6 +1026,14 @@ PrefabInstance:
     - target: {fileID: 1031027703, guid: abc00000000014270541121732349840, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1031027707, guid: abc00000000014270541121732349840, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1053,6 +1109,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1031027707, guid: abc00000000014270541121732349840, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.9170017
@@ -1127,6 +1191,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1188,6 +1260,14 @@ PrefabInstance:
     - target: {fileID: 1031027703, guid: abc00000000014270541121732349840, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1251,6 +1331,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1312,6 +1400,14 @@ PrefabInstance:
     - target: {fileID: 1031027703, guid: abc00000000014270541121732349840, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1375,6 +1471,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1437,6 +1541,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1461,7 +1573,7 @@ GameObject:
   - component: {fileID: 544853461}
   - component: {fileID: 544853460}
   m_Layer: 0
-  m_Name: Enemy (1)
+  m_Name: Enemy 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1479,8 +1591,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f6d87ac2d536784d87f87868fe22e9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distance: 20
-  speed: 15
+  minDistance: 3
+  maxDistance: 5
+  minSpeed: 1
+  maxSpeed: 3
 --- !u!136 &544853461
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1563,7 +1677,7 @@ Transform:
   m_GameObject: {fileID: 544853459}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.42, y: 0.349, z: 6.9889994}
+  m_LocalPosition: {x: 7.42, y: 0.349, z: 7.22}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1620,6 +1734,14 @@ PrefabInstance:
     - target: {fileID: 1031027703, guid: abc00000000014270541121732349840, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1031027707, guid: abc00000000014270541121732349840, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1732,6 +1854,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1794,6 +1924,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1855,6 +1993,14 @@ PrefabInstance:
     - target: {fileID: 1031027703, guid: abc00000000014270541121732349840, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1031027707, guid: abc00000000014270541121732349840, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1930,6 +2076,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1992,6 +2146,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2053,6 +2215,14 @@ PrefabInstance:
     - target: {fileID: 1031027703, guid: abc00000000014270541121732349840, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1031027707, guid: abc00000000014270541121732349840, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2128,6 +2298,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2189,6 +2367,14 @@ PrefabInstance:
     - target: {fileID: 1031027703, guid: abc00000000014270541121732349840, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1031027707, guid: abc00000000014270541121732349840, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2557,6 +2743,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2618,6 +2812,14 @@ PrefabInstance:
     - target: {fileID: 1031027703, guid: abc00000000014270541121732349840, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2681,6 +2883,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2742,6 +2952,14 @@ PrefabInstance:
     - target: {fileID: 1031027703, guid: abc00000000014270541121732349840, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2805,6 +3023,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2866,6 +3092,14 @@ PrefabInstance:
     - target: {fileID: 1031027703, guid: abc00000000014270541121732349840, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1031027707, guid: abc00000000014270541121732349840, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3062,6 +3296,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3123,6 +3365,14 @@ PrefabInstance:
     - target: {fileID: 1031027703, guid: abc00000000014270541121732349840, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3280,7 +3530,7 @@ Transform:
   m_GameObject: {fileID: 1096198764}
   serializedVersion: 2
   m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: -2.33, y: 0.13, z: 7.21}
+  m_LocalPosition: {x: -1.931, y: 0.13, z: 7.21}
   m_LocalScale: {x: 0.03, y: 0.2, z: 0.03}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3337,6 +3587,14 @@ PrefabInstance:
     - target: {fileID: 1031027703, guid: abc00000000014270541121732349840, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3506,6 +3764,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3530,7 +3796,7 @@ GameObject:
   - component: {fileID: 1165585650}
   - component: {fileID: 1165585649}
   m_Layer: 0
-  m_Name: Enemy (2)
+  m_Name: Enemy 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3548,8 +3814,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f6d87ac2d536784d87f87868fe22e9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distance: 20
-  speed: 15
+  minDistance: 3
+  maxDistance: 5
+  minSpeed: 1
+  maxSpeed: 3
 --- !u!136 &1165585650
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3632,7 +3900,7 @@ Transform:
   m_GameObject: {fileID: 1165585648}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.43, y: 0.349, z: 6.6309996}
+  m_LocalPosition: {x: 4.43, y: 0.349, z: 7.23}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3690,6 +3958,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3714,7 +3990,7 @@ GameObject:
   - component: {fileID: 1217100270}
   - component: {fileID: 1217100269}
   m_Layer: 0
-  m_Name: Enemy
+  m_Name: Enemy 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3732,8 +4008,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f6d87ac2d536784d87f87868fe22e9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distance: 20
-  speed: 15
+  minDistance: 3
+  maxDistance: 5
+  minSpeed: 1
+  maxSpeed: 3
 --- !u!136 &1217100270
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3816,7 +4094,7 @@ Transform:
   m_GameObject: {fileID: 1217100268}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.3199997, y: 0.349, z: 8.94}
+  m_LocalPosition: {x: 5.3199997, y: 0.349, z: 7.22}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3873,6 +4151,14 @@ PrefabInstance:
     - target: {fileID: 1031027703, guid: abc00000000014270541121732349840, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4026,6 +4312,14 @@ PrefabInstance:
     - target: {fileID: 1031027703, guid: abc00000000014270541121732349840, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4198,6 +4492,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4329,6 +4631,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1031027707, guid: abc00000000014270541121732349840, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.9170017
@@ -4403,6 +4713,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4464,6 +4782,14 @@ PrefabInstance:
     - target: {fileID: 1031027703, guid: abc00000000014270541121732349840, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4778,6 +5104,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4804,7 +5138,7 @@ GameObject:
   - component: {fileID: 1833105224}
   - component: {fileID: 1833105231}
   m_Layer: 0
-  m_Name: LongWoodStick_temp
+  m_Name: LongWoodStick
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4973,8 +5307,8 @@ Transform:
   m_GameObject: {fileID: 1833105223}
   serializedVersion: 2
   m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: -3.6079998, y: 0.7032, z: 5.6959996}
-  m_LocalScale: {x: 0.03, y: 1, z: 0.03}
+  m_LocalPosition: {x: -2.628, y: 0.7032, z: 5.6959996}
+  m_LocalScale: {x: 0.03, y: 0.8, z: 0.03}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 93538756}
@@ -5054,6 +5388,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1031027707, guid: abc00000000014270541121732349840, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.9170017
@@ -5127,6 +5469,14 @@ PrefabInstance:
     - target: {fileID: 1031027703, guid: abc00000000014270541121732349840, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1031027707, guid: abc00000000014270541121732349840, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5202,6 +5552,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5263,6 +5621,14 @@ PrefabInstance:
     - target: {fileID: 1031027703, guid: abc00000000014270541121732349840, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5326,6 +5692,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5387,6 +5761,14 @@ PrefabInstance:
     - target: {fileID: 1031027703, guid: abc00000000014270541121732349840, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5675,6 +6057,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1031027707, guid: abc00000000014270541121732349840, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.9170017
@@ -5748,6 +6138,14 @@ PrefabInstance:
     - target: {fileID: 1031027703, guid: abc00000000014270541121732349840, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1031027707, guid: abc00000000014270541121732349840, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5863,6 +6261,14 @@ PrefabInstance:
     - target: {fileID: 1031027703, guid: abc00000000014270541121732349840, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031027705, guid: abc00000000014270541121732349840, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

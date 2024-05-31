@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "D:\\Traverse_Jachigi\\Traverse\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Traverse_Jachigi\\Traverse\\Assets\\Scripts\\JachigiScene\\EnemyCollisionHandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\JachigiScene\\EnemyCollisionHandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{87241EDA-FD11-45CC-EF16-74A31D5D65BC}|Assembly-CSharp.csproj|D:\\Traverse_Jachigi\\Traverse\\assets\\scripts\\jachigiscene\\shortwoodstickcollisionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87241EDA-FD11-45CC-EF16-74A31D5D65BC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\jachigiscene\\shortwoodstickcollisionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Traverse_Jachigi\\Traverse\\Assets\\Scripts\\JachigiScene\\EnemyMoveHandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\JachigiScene\\EnemyMoveHandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{87241EDA-FD11-45CC-EF16-74A31D5D65BC}|Assembly-CSharp.csproj|d:\\traverse_jachigi\\traverse\\assets\\scripts\\jachigiscene\\longwoodstickhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87241EDA-FD11-45CC-EF16-74A31D5D65BC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\jachigiscene\\longwoodstickhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87241EDA-FD11-45CC-EF16-74A31D5D65BC}|Assembly-CSharp.csproj|D:\\Traverse_Jachigi\\Traverse\\assets\\scripts\\jachigiscene\\jachigigamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87241EDA-FD11-45CC-EF16-74A31D5D65BC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\jachigiscene\\jachigigamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87241EDA-FD11-45CC-EF16-74A31D5D65BC}|Assembly-CSharp.csproj|d:\\traverse_jachigi\\traverse\\assets\\scripts\\jachigiscene\\enemymovehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87241EDA-FD11-45CC-EF16-74A31D5D65BC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\jachigiscene\\enemymovehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87241EDA-FD11-45CC-EF16-74A31D5D65BC}|Assembly-CSharp.csproj|D:\\Traverse_Jachigi\\Traverse\\assets\\scripts\\jachigiscene\\enemycollisionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87241EDA-FD11-45CC-EF16-74A31D5D65BC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\jachigiscene\\enemycollisionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,28 +35,66 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "LongWoodStickHandler.cs",
+              "DocumentMoniker": "D:\\Traverse_Jachigi\\Traverse\\Assets\\Scripts\\JachigiScene\\LongWoodStickHandler.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\JachigiScene\\LongWoodStickHandler.cs",
+              "ToolTip": "D:\\Traverse_Jachigi\\Traverse\\Assets\\Scripts\\JachigiScene\\LongWoodStickHandler.cs",
+              "RelativeToolTip": "Assets\\Scripts\\JachigiScene\\LongWoodStickHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvxcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T09:42:55.126Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "shortWoodStickCollisionHandler.cs",
+              "DocumentMoniker": "D:\\Traverse_Jachigi\\Traverse\\Assets\\Scripts\\JachigiScene\\shortWoodStickCollisionHandler.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\JachigiScene\\shortWoodStickCollisionHandler.cs",
+              "ToolTip": "D:\\Traverse_Jachigi\\Traverse\\Assets\\Scripts\\JachigiScene\\shortWoodStickCollisionHandler.cs",
+              "RelativeToolTip": "Assets\\Scripts\\JachigiScene\\shortWoodStickCollisionHandler.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAiwCQAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T09:10:10.679Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "JachigiGameManager.cs",
+              "DocumentMoniker": "D:\\Traverse_Jachigi\\Traverse\\Assets\\Scripts\\JachigiScene\\JachigiGameManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\JachigiScene\\JachigiGameManager.cs",
+              "ToolTip": "D:\\Traverse_Jachigi\\Traverse\\Assets\\Scripts\\JachigiScene\\JachigiGameManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\JachigiScene\\JachigiGameManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T08:58:48.9Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "EnemyMoveHandler.cs",
               "DocumentMoniker": "D:\\Traverse_Jachigi\\Traverse\\Assets\\Scripts\\JachigiScene\\EnemyMoveHandler.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\JachigiScene\\EnemyMoveHandler.cs",
               "ToolTip": "D:\\Traverse_Jachigi\\Traverse\\Assets\\Scripts\\JachigiScene\\EnemyMoveHandler.cs",
               "RelativeToolTip": "Assets\\Scripts\\JachigiScene\\EnemyMoveHandler.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAADwvwAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-29T13:31:04.195Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "EnemyCollisionHandler.cs",
               "DocumentMoniker": "D:\\Traverse_Jachigi\\Traverse\\Assets\\Scripts\\JachigiScene\\EnemyCollisionHandler.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\JachigiScene\\EnemyCollisionHandler.cs",
               "ToolTip": "D:\\Traverse_Jachigi\\Traverse\\Assets\\Scripts\\JachigiScene\\EnemyCollisionHandler.cs",
               "RelativeToolTip": "Assets\\Scripts\\JachigiScene\\EnemyCollisionHandler.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAMAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-29T13:24:12.564Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-29T13:24:12.564Z"
             }
           ]
         }

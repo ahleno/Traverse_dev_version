@@ -1,9 +1,11 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Numerics;
 using Unity.VisualScripting;
 using UnityEngine;
 using Vector3 = UnityEngine.Vector3;
+using Random = UnityEngine.Random;
 
 
 public class shortWoodStickCollisionHandler : MonoBehaviour
@@ -14,6 +16,9 @@ public class shortWoodStickCollisionHandler : MonoBehaviour
     private int cnt = 0;
     public int gravity;
     public int torqueValue;
+
+    private bool isAttacked = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -32,11 +37,13 @@ public class shortWoodStickCollisionHandler : MonoBehaviour
         if (collision.gameObject.name == "LongWoodStick")
         {
             Rigidbody longStickRigidbody = collision.gameObject.GetComponent<Rigidbody>();
+            isAttacked = true;
+            //Debug.Log(isAttacked);
             if (cnt == 0)
             {
                 Debug.Log("최초 충돌, 상단 힘");
                 Vector3 attackUP = Vector3.up * force_up;
-                Vector3 torqueVector = new Vector3(0, 0, torqueValue);
+                Vector3 torqueVector = new Vector3(torqueValue, Random.Range(1,3), 0);
                 Debug.Log(attackUP);
                 rigidbody.AddForce(attackUP, ForceMode.Impulse);
                 rigidbody.AddTorque(torqueVector);
