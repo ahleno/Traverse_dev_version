@@ -8,6 +8,8 @@ public class ShopUIManager : MonoBehaviour
 {
     public Text currentYeopjeonText;
     public GameManagerTest gameManagerTest;
+
+    public GameObject[] itemPanels;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,4 +25,6 @@ public class ShopUIManager : MonoBehaviour
     public void MoveToMainScene(){
         SceneManager.LoadScene("MainScene");
     }
+
+    
 }
