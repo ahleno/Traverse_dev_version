@@ -1,28 +1,3 @@
-using UnityEngine;
-
-namespace UnityEditor.TestTools.CodeCoverage
-{
-    internal class CoverageSettings
-    {
-        public const string ReportFolderName = "Report";
-        public const string ReportHistoryFolderName = "Report-history";
-        public const string PackageName = "Code Coverage";
-
-        public string rootFolderPath;
-        public string rootFolderName = "CodeCoverage";
-        public string resultsPathFromCommandLine;
-        public string resultsFileName = "TestCoverageResults";
-        public string resultsFileExtension;
-        public string resultsFolderSuffix;
-        public string resultsFolderPath;
-        public string resultsRootFolderPath;
-        public string resultsFilePath;
-        public string historyPathFromCommandLine;
-        public string historyFolderPath;
-        public string overrideIncludeAssemblies;
-        public bool overrideGenerateHTMLReport = false;
-        public bool hasPersistentRunData = true;
-        public bool resetCoverageData = true;
-        public bool revealReportInFinder = true;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:1d8a099de910ba11272a3ed9e4040c11ea8bfb0f85833a20cfab5f26f6853021
+size 1063

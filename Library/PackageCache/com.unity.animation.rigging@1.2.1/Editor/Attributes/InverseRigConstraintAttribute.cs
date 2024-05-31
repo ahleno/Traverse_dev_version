@@ -1,32 +1,3 @@
-using System;
-using UnityEngine;
-using UnityEngine.Animations.Rigging;
-
-namespace UnityEditor.Animations.Rigging
-{
-    /// <summary>
-    /// The [InverseRigConstraint] attribute allows to match an inverse constraint (inverse solve) to its
-    /// base constraint (forward solve) counterpart.  This is used in bi-directional baking to override
-    /// constraints when baking animations to constraints.
-    /// </summary>
-    [AttributeUsage(AttributeTargets.Class, Inherited = false, AllowMultiple = false)]
-    public sealed class InverseRigConstraintAttribute : Attribute
-    {
-        /// <summary>
-        /// Constructor.
-        /// </summary>
-        /// <param name="targetBinderType">The base constraint type.</param>
-        public InverseRigConstraintAttribute(Type targetBinderType)
-        {
-            if (targetBinderType == null || !typeof(IRigConstraint).IsAssignableFrom(targetBinderType))
-                Debug.LogError("Invalid constraint for InverseRigConstraint attribute.");
-
-            this.baseConstraint = targetBinderType;
-        }
-
-        /// <summary>
-        /// Retrieves the base constraint type.
-        /// </summary>
-        public Type baseConstraint { get; }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:defca9ea49c6e77c5f7a0cf5847ad41ace6dec1a3cbb29eb9d2df378dfcf0ccb
+size 1208

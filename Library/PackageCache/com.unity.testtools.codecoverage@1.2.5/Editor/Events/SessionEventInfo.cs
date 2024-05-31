@@ -1,26 +1,3 @@
-using System.Collections.Generic;
-
-namespace UnityEditor.TestTools.CodeCoverage
-{
-    /// <summary> 
-    /// The code coverage session information retuned by the coverage session <see cref="Events"/>.
-    /// </summary>
-    public class SessionEventInfo
-    {
-        /// <summary> 
-        /// The code coverage session mode.
-        /// </summary>
-        public SessionMode SessionMode { get; internal set; }
-        /// <summary> 
-        /// The coverage results paths of the files or folders created during the code coverage session.
-        /// </summary>
-        public List<string> SessionResultPaths { get; internal set; }
-
-        internal SessionEventInfo(SessionMode mode, List<string> resultPaths)
-        {
-            SessionMode = mode;
-            SessionResultPaths = resultPaths;
-        }
-    }
-}
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:ec39ce1b014db53be2f313e471d380d901018c9935ebd9f9d3ef349c1a74d62a
+size 819

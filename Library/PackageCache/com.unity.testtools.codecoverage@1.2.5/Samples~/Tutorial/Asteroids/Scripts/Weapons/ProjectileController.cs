@@ -1,30 +1,3 @@
-﻿using UnityEngine;
-
-public class ProjectileController : BaseProjectile 
-{
-    private Vector2 direction = Vector2.right;
-
-    private void Update()
-    {
-        if (!GameManager.IsPaused)
-            Move();
-    }
-
-    public void Move()
-    {
-        transform.position += (Vector3)direction * Time.deltaTime * 16;
-        transform.up = direction;
-        if (Vector2.Distance(transform.position, Vector2.zero) > 20.0f)
-            DestroyImmediate(gameObject);
-    }
-
-    public void SetDirection(Vector2 value)
-    {
-        direction = value;
-    }
-
-    public Vector2 GetDirection()
-    {
-        return direction;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:53c2410caffc9d142648ad72cc4957fc88a1fccf801ae129493e1299a6648312
+size 633

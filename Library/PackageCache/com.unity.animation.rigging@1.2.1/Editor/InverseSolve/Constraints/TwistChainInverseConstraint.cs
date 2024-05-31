@@ -1,24 +1,3 @@
-using UnityEngine.Animations.Rigging;
-
-namespace UnityEditor.Animations.Rigging
-{
-    /// <summary>
-    /// TwistChain inverse constraint.
-    /// </summary>
-    /// <seealso cref="TwistChainConstraint"/>
-    [InverseRigConstraint(typeof(TwistChainConstraint))]
-    public class TwistChainInverseConstraint : OverrideRigConstraint<
-        TwistChainConstraint,
-        TwistChainInverseConstraintJob,
-        TwistChainConstraintData,
-        TwistChainInverseConstraintJobBinder<TwistChainConstraintData>
-        >
-    {
-        /// <summary>
-        /// Constructor.
-        /// </summary>
-        /// <param name="baseConstraint">Base constraint to override.</param>
-        public TwistChainInverseConstraint(TwistChainConstraint baseConstraint) : base(baseConstraint) {}
-    }
-}
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:f30f820c3ba9496bf79012340e2e3e6bb94918d822836de8cdae615a3ef19c6e
+size 786

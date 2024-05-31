@@ -1,11 +1,3 @@
-namespace UnityEngine.Animations.Rigging
-{
-    /// <summary>
-    /// This interface represents an animation job with a weight value.
-    /// </summary>
-    public interface IWeightedAnimationJob : IAnimationJob
-    {
-        /// <summary>The main weight given to the constraint. This is a value in between 0 and 1.</summary>
-        FloatProperty jobWeight { get; set; }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:8f01b7d9803d3d76ed186d7aa1d1465751f36109318248c57b7a7a1f250d4b97
+size 379

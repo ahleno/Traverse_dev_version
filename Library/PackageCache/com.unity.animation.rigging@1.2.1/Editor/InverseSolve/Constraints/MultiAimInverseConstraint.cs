@@ -1,24 +1,3 @@
-using UnityEngine.Animations.Rigging;
-
-namespace UnityEditor.Animations.Rigging
-{
-    /// <summary>
-    /// MultiAim inverse constraint.
-    /// </summary>
-    /// <seealso cref="MultiAimConstraint"/>
-    [InverseRigConstraint(typeof(MultiAimConstraint))]
-    public class MultiAimInverseConstraint : OverrideRigConstraint<
-        MultiAimConstraint,
-        MultiAimInverseConstraintJob,
-        MultiAimConstraintData,
-        MultiAimInverseConstraintJobBinder<MultiAimConstraintData>
-        >
-    {
-        /// <summary>
-        /// Constructor.
-        /// </summary>
-        /// <param name="baseConstraint">Base constraint to override.</param>
-        public MultiAimInverseConstraint(MultiAimConstraint baseConstraint) : base(baseConstraint) {}
-    }
-}
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:b86177a75372fed4708101f1735086a25e66684a99fe432696bb58c32020c473
+size 764

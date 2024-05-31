@@ -1,17 +1,3 @@
-* [Animation Rigging](index.md)
-* [Rigging workflow](RiggingWorkflow.md)
-* [Animation Rigging Menu](AnimationRiggingMenu.md)
-* [Bidirectional Motion Transfer](BidirectionalMotionTransfer.md)
-* [Constraint components](ConstraintComponents.md)
-    * [Blend Constraint](constraints/BlendConstraint.md)
-    * [Chain IK Constraint](constraints/ChainIKConstraint.md)
-    * [Damped Transform](constraints/DampedTransform.md)
-    * [Multi-Aim Constraint](constraints/MultiAimConstraint.md)
-    * [Multi-Parent Constraint](constraints/MultiParentConstraint.md)
-    * [Multi-Position Constraint](constraints/MultiPositionConstraint.md)
-    * [Multi-Referential Constraint](constraints/MultiReferentialConstraint.md)
-    * [Multi-Rotation Constraint](constraints/MultiRotationConstraint.md)
-    * [Override Transform](constraints/OverrideTransform.md)
-    * [Twist Chain Constraint](constraints/TwistChainConstraint.md)
-    * [Twist Correction](constraints/TwistCorrection.md)
-    * [Two Bone IK Constraint](constraints/TwoBoneIKConstraint.md)
+version https://git-lfs.github.com/spec/v1
+oid sha256:0871544f5fc3336f4c5d586a286871b6166f4defe7a9f55ef09955077dc4ed0d
+size 1033

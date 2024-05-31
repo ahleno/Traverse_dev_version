@@ -1,22 +1,3 @@
-{
-    "name": "meta.xr.sdk.sharedassets.editor",
-    "rootNamespace": "",
-    "references": [],
-    "includePlatforms": [
-        "Editor"
-    ],
-    "excludePlatforms": [],
-    "allowUnsafeCode": false,
-    "overrideReferences": false,
-    "precompiledReferences": [],
-    "autoReferenced": true,
-    "defineConstraints": [],
-    "versionDefines": [
-        {
-            "define": "OVR_UNITY_PACKAGE_MANAGER",
-            "name": "com.meta.xr.sdk.sharedassets",
-            "expression": ""
-        }
-    ],
-    "noEngineReferences": false
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:140c80ae1a97de6ed9acc8ab146ec6629c95316bd07da1e113fcbdce6e5ce93e
+size 543

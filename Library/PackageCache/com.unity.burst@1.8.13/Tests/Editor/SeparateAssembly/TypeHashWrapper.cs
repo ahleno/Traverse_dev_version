@@ -1,16 +1,3 @@
-using Unity.Burst;
-
-public static class TypeHashWrapper
-{
-    public static int GetIntHash()
-    {
-        return BurstRuntime.GetHashCode32<int>();
-    }
-
-    public static int GetGenericHash<T>()
-    {
-        return BurstRuntime.GetHashCode32<SomeStruct<T>>();
-    }
-
-    public struct SomeStruct<T> { }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:b034360192f2e7471168a8f7d1b15cb662db7107c4b85959357b7b27ac250ec5
+size 308

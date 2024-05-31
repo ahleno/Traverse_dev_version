@@ -1,12 +1,3 @@
-# Editor reference
-
-Explore the specific Burst Editor features.
-
-|**Topic**|**Description**|
-|---|---|
-|[Burst menu](editor-burst-menu.md)|Use the Burst menu to control the Burst settings in your project.|
-|[Burst Inspector](editor-burst-inspector.md)|Use the Burst Inspector to see the jobs and Burst compiled targets in your project.|
-
-## Additional resources
-
-* [Building your project](building-projects.md)
+version https://git-lfs.github.com/spec/v1
+oid sha256:fcc29c53b267ea54489182d80e42bc5ec49e3387dfc96c5fc97ce9d41767c3e5
+size 410

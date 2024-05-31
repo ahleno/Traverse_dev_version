@@ -1,17 +1,3 @@
-namespace OverloadedFunctionPointers
-{
-#if UNITY_2021_2_OR_NEWER && UNITY_EDITOR
-    public unsafe struct Callable
-    {
-        public int Value;
-
-        private Callable(int x)
-        {
-            Value = x;
-        }
-
-        public static Callable Create<T1, T2>(delegate* unmanaged[Cdecl] < T1, T2, void > function) => new Callable(2);
-        public static Callable Create<T1, TRet>(delegate* unmanaged[Cdecl] < T1, TRet > function) => new Callable(3);
-    }
-#endif
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:693e209771a956a84bbb0b9cb14aa6467be84d080e65adb0c8d01232d388593b
+size 477

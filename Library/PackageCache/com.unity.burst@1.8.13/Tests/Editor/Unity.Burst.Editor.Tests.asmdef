@@ -1,34 +1,3 @@
-{
-    "name": "Unity.Burst.Editor.Tests",
-    "references": [
-        "Unity.Burst",
-        "Unity.Mathematics",
-        "Unity.Burst.Tests.UnitTests",
-        "SeparateAssembly",
-        "Unity.Burst.Editor"
-    ],
-    "optionalUnityReferences": [
-        "TestAssemblies"
-    ],
-    "includePlatforms": [
-        "Editor"
-    ],
-    "excludePlatforms": [],
-    "allowUnsafeCode": true,
-    "overrideReferences": true,
-    "precompiledReferences": [
-        "nunit.framework.dll"
-    ],
-    "autoReferenced": false,
-    "defineConstraints": [
-        "UNITY_INCLUDE_TESTS"
-    ],
-    "versionDefines": [
-        {
-            "name": "Unity",
-            "expression": "",
-            "define": "FOO"
-        }
-    ],
-    "noEngineReferences": false
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:f5c4bd3a3ead95ae4a76bedc5c66b841f79643a34d01ec6d7281f861610e18e9
+size 753

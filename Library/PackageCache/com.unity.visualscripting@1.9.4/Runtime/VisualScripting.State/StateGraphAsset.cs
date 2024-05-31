@@ -1,21 +1,3 @@
-using UnityEngine;
-
-namespace Unity.VisualScripting
-{
-    [TypeIcon(typeof(StateGraph))]
-    [CreateAssetMenu(menuName = "Visual Scripting/State Graph", fileName = "New State Graph", order = 81)]
-    [HelpURL("https://docs.unity3d.com/Packages/com.unity.visualscripting@latest/index.html?subfolder=/manual/vs-state-graphs-intro.html")]
-    public sealed class StateGraphAsset : Macro<StateGraph>
-    {
-        [ContextMenu("Show Data...")]
-        protected override void ShowData()
-        {
-            base.ShowData();
-        }
-
-        public override StateGraph DefaultGraph()
-        {
-            return StateGraph.WithStart();
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ccab7d477379b0041e3a4ee208b98353463ec9f287c41c6989ffc89799c39a19
+size 654

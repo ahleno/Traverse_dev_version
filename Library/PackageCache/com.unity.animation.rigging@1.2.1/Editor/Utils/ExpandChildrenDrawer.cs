@@ -1,36 +1,3 @@
-﻿using UnityEngine;
-using UnityEngine.Animations.Rigging;
-
-namespace UnityEditor.Animations.Rigging
-{
-    [CustomPropertyDrawer(typeof(ExpandChildrenAttribute))]
-    class ExpandChildrenDrawer : PropertyDrawer
-    {
-        public override float GetPropertyHeight(SerializedProperty property, GUIContent label)
-        {
-            property.isExpanded = true;
-            return EditorGUI.GetPropertyHeight(property)
-                - EditorGUIUtility.standardVerticalSpacing
-                - EditorGUIUtility.singleLineHeight;
-        }
-
-        public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
-        {
-            var endProperty = property.GetEndProperty();
-            var childProperty = property.Copy();
-            childProperty.NextVisible(true);
-            while (!SerializedProperty.EqualContents(childProperty, endProperty))
-            {
-                position.height = EditorGUI.GetPropertyHeight(childProperty);
-                OnChildPropertyGUI(position, childProperty);
-                position.y += position.height + EditorGUIUtility.standardVerticalSpacing;
-                childProperty.NextVisible(false);
-            }
-        }
-
-        protected virtual void OnChildPropertyGUI(Rect position, SerializedProperty childProperty)
-        {
-            EditorGUI.PropertyField(position, childProperty, true);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:49d68283bd0e89306c8f41eea9e7901d389de329a2cb03a4e720afac4657b761
+size 1396

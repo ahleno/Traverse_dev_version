@@ -1,19 +1,3 @@
-using System;
-using NUnit.Framework;
-using NUnit.Framework.Interfaces;
-
-namespace Burst.Compiler.IL.Tests
-{
-    [AttributeUsage(AttributeTargets.Method, AllowMultiple = false)]
-    public class WindowsOnlyAttribute : Attribute
-    {
-        public WindowsOnlyAttribute(string reason)
-        {
-        }
-    }
-
-    [AttributeUsage(AttributeTargets.Method, AllowMultiple = true, Inherited = false)]
-    public sealed class TestCompilerAttribute : TestCaseAttribute, ITestBuilder
-    {
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:489404f5922f57b50256f449ad14c08e2303f904ce7d848cf8ef720c8e01b7b8
+size 511

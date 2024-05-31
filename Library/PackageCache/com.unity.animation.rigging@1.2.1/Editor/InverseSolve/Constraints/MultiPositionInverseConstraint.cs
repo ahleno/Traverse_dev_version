@@ -1,24 +1,3 @@
-using UnityEngine.Animations.Rigging;
-
-namespace UnityEditor.Animations.Rigging
-{
-    /// <summary>
-    /// MultiPosition inverse constraint.
-    /// </summary>
-    /// <seealso cref="MultiPositionConstraint"/>
-    [InverseRigConstraint(typeof(MultiPositionConstraint))]
-    public class MultiPositionInverseConstraint : OverrideRigConstraint<
-        MultiPositionConstraint,
-        MultiPositionInverseConstraintJob,
-        MultiPositionConstraintData,
-        MultiPositionInverseConstraintJobBinder<MultiPositionConstraintData>
-        >
-    {
-        /// <summary>
-        /// Constructor.
-        /// </summary>
-        /// <param name="baseConstraint">Base constraint to override.</param>
-        public MultiPositionInverseConstraint(MultiPositionConstraint baseConstraint) : base(baseConstraint) {}
-    }
-}
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:e2759bb5b75ab7fcbfed70631a6a018e0431c0d7ba6413cfada049ac3e350fb5
+size 819

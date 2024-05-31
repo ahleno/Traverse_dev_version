@@ -1,18 +1,3 @@
-using System;
-using UnityEngine;
-
-namespace UnityEditor.Animations.Rigging
-{
-    [AttributeUsage(AttributeTargets.Class, Inherited = false, AllowMultiple = false)]
-    internal sealed class CustomOverlayAttribute : Attribute
-    {
-        private Type m_EffectorType;
-
-        public CustomOverlayAttribute(Type effectorType)
-        {
-            m_EffectorType = effectorType;
-        }
-
-        public Type effectorType { get => m_EffectorType; }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:5af18a905b1668b934d5e9dc76755249abf7c959697b9d27eb4dc835f81ff7cd
+size 458

@@ -1,24 +1,3 @@
-using UnityEngine.Animations.Rigging;
-
-namespace UnityEditor.Animations.Rigging
-{
-    /// <summary>
-    /// MultiRotation inverse constraint.
-    /// </summary>
-    /// <seealso cref="MultiRotationConstraint"/>
-    [InverseRigConstraint(typeof(MultiRotationConstraint))]
-    public class MultiRotationInverseConstraint : OverrideRigConstraint<
-        MultiRotationConstraint,
-        MultiRotationInverseConstraintJob,
-        MultiRotationConstraintData,
-        MultiRotationInverseConstraintJobBinder<MultiRotationConstraintData>
-        >
-    {
-        /// <summary>
-        /// Constructor.
-        /// </summary>
-        /// <param name="baseConstraint">Base constraint to override.</param>
-        public MultiRotationInverseConstraint(MultiRotationConstraint baseConstraint) : base(baseConstraint) {}
-    }
-}
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:3553f48f4a63c4076f1b57b41a60680ef7afec47863ee9b32494962a26760b78
+size 819
