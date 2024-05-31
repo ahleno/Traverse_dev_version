@@ -1,24 +1,3 @@
-using UnityEngine.Animations.Rigging;
-
-namespace UnityEditor.Animations.Rigging
-{
-    /// <summary>
-    /// TwoBone IK inverse constraint.
-    /// </summary>
-    /// <seealso cref="TwoBoneIKConstraint"/>
-    [InverseRigConstraint(typeof(TwoBoneIKConstraint))]
-    public class TwoBoneIKInverseConstraint : OverrideRigConstraint<
-        TwoBoneIKConstraint,
-        TwoBoneIKInverseConstraintJob,
-        TwoBoneIKConstraintData,
-        TwoBoneIKInverseConstraintJobBinder<TwoBoneIKConstraintData>
-        >
-    {
-        /// <summary>
-        /// Constructor.
-        /// </summary>
-        /// <param name="baseConstraint">Base constraint to override.</param>
-        public TwoBoneIKInverseConstraint(TwoBoneIKConstraint baseConstraint) : base(baseConstraint) {}
-    }
-}
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:8f1eb72e8ea6ad57796cfdd5c25dbb5740a88e676e6be15083c6af4dcf4bcb87
+size 776

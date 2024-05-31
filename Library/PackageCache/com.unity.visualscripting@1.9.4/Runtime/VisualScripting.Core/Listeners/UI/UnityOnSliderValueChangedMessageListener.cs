@@ -1,15 +1,3 @@
-using UnityEngine.UI;
-
-namespace Unity.VisualScripting
-{
-    [UnityEngine.AddComponentMenu("")]
-    [VisualScriptingHelpURL(typeof(UnityOnSliderValueChangedMessageListener))]
-    public sealed class UnityOnSliderValueChangedMessageListener : MessageListener
-    {
-        private void Start()
-        {
-            GetComponent<Slider>()?.onValueChanged?.AddListener((value) =>
-                EventBus.Trigger(EventHooks.OnSliderValueChanged, gameObject, value));
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:494d3885c265257d8963c029efaa24ad8746d94795bdb3f663ed73a4c22970f9
+size 483

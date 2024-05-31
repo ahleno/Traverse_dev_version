@@ -1,20 +1,3 @@
-{
-    "name": "Unity.Burst.CodeGen",
-    "references": [
-        "Unity.Burst"
-    ],
-    "includePlatforms": [
-        "Editor"
-    ],
-    "excludePlatforms": [],
-    "allowUnsafeCode": true,
-    "overrideReferences": true,
-    "precompiledReferences": [
-        "Unity.Burst.Cecil.dll",
-        "Unity.Burst.Cecil.Rocks.dll",
-        "Unity.Burst.Cecil.Pdb.dll",
-        "Unity.Burst.Cecil.Mdb.dll"
-    ],
-    "autoReferenced": false,
-    "versionDefines": []
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:5fd74ad478b9e0482c2c689d92b3e91a5dd6961cfbbf33ce062c67706b6f74c0
+size 464

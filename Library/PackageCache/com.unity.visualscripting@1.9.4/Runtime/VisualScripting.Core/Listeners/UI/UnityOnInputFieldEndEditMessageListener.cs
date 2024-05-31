@@ -1,15 +1,3 @@
-using UnityEngine.UI;
-
-namespace Unity.VisualScripting
-{
-    [UnityEngine.AddComponentMenu("")]
-    [VisualScriptingHelpURL(typeof(UnityOnInputFieldEndEditMessageListener))]
-    public sealed class UnityOnInputFieldEndEditMessageListener : MessageListener
-    {
-        private void Start()
-        {
-            GetComponent<InputField>()?.onEndEdit?.AddListener((value) =>
-                EventBus.Trigger(EventHooks.OnInputFieldEndEdit, gameObject, value));
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:db3474eb4b97796c44af1ad9f31bad5c7930708235885f79ec613f178c327973
+size 479

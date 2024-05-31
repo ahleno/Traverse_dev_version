@@ -1,29 +1,3 @@
-using NUnit.Framework;
-using Unity.Mathematics;
-
-namespace Burst.Compiler.IL.Tests
-{
-    [TestFixture]
-    internal partial class VectorsQuaternions
-    {
-        [TestCompiler]
-        public static float Normalize()
-        {
-            var v4 = new quaternion(1.0f, 2.0f, 3.0f, 4.0f);
-            var result = math.normalize(v4);
-            return Vectors.ConvertToFloat(result.value);
-        }
-
-        [TestCompiler]
-        public static float IdentityValue()
-        {
-            // Force ldsflda
-            return Vectors.ConvertToFloat(PassByRef(quaternion.identity.value));
-        }
-
-        private static float4 PassByRef(in float4 x)
-        {
-            return x;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:502078e4a974b8d59a3d57ebc025b7e2ceb6983072639742d59825bd6d5c185c
+size 702

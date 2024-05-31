@@ -1,23 +1,3 @@
-using UnityEngine;
-
-namespace UnityEditor.Animations.Rigging
-{
-    internal static class AnimationRiggingContextMenus
-    {
-        [MenuItem("CONTEXT/Animator/Rig Setup", false, 611)]
-        static void RigSetup(MenuCommand command)
-        {
-            var animator = command.context as Animator;
-
-            AnimationRiggingEditorUtils.RigSetup(animator.transform);
-        }
-
-        [MenuItem("CONTEXT/Animator/Bone Renderer Setup", false, 612)]
-        static void BoneRendererSetup(MenuCommand command)
-        {
-            var animator = command.context as Animator;
-
-            AnimationRiggingEditorUtils.BoneRendererSetup(animator.transform);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a095c92381c6447142a28728a1d4c2e607a8e78c2244b0b85ce517de34b822bf
+size 677

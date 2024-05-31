@@ -1,12 +1,3 @@
-{
-    "name": "Unity.Animation.Rigging",
-    "references": ["Unity.Burst"],
-    "optionalUnityReferences": [],
-    "includePlatforms": [],
-    "excludePlatforms": [],
-    "allowUnsafeCode": true,
-    "overrideReferences": false,
-    "precompiledReferences": [],
-    "autoReferenced": true,
-    "defineConstraints": []
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a01c21adc3cdedc99b07ee3e30f245be5c37c598b7675812088db882938d0c35
+size 319

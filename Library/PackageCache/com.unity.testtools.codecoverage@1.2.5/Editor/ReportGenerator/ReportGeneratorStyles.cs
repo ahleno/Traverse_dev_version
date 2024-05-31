@@ -1,10 +1,3 @@
-﻿using UnityEngine;
-
-namespace UnityEditor.TestTools.CodeCoverage
-{
-    internal static class ReportGeneratorStyles
-    {
-        public static readonly GUIContent ProgressTitle = EditorGUIUtility.TrTextContent("Code Coverage");
-        public static readonly GUIContent ProgressInfoCreating = EditorGUIUtility.TrTextContent("Generating the report..");
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:3a58d972bd59170dee6ade798e0abb4ba34ceec1f4a9c7013ad85ee8cdfa2fbf
+size 362

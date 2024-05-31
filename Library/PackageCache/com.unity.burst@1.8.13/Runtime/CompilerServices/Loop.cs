@@ -1,19 +1,3 @@
-namespace Unity.Burst.CompilerServices
-{
-#if UNITY_BURST_EXPERIMENTAL_LOOP_INTRINSICS
-    public static class Loop
-    {
-        /// <summary>
-        /// Must be called from inside a loop.
-        /// Will cause a compiler error in Burst-compiled code if the loop is not auto-vectorized.
-        /// </summary>
-        public static void ExpectVectorized() { }
-
-        /// <summary>
-        /// Must be called from inside a loop.
-        /// Will cause a compiler error in Burst-compiled code if the loop is auto-vectorized.
-        /// </summary>
-        public static void ExpectNotVectorized() { }
-    }
-#endif
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:e1aa27513bdb58756eebe8fac5380629db0edb4eb471c2372f71c64c201bcfce
+size 618

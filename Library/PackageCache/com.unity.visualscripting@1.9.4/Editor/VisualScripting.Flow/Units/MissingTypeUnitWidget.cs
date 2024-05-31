@@ -1,31 +1,3 @@
-using UnityEditor;
-using UnityEngine;
-
-namespace Unity.VisualScripting
-{
-    [Widget(typeof(MissingType))]
-    public class MissingTypeUnitWidget : UnitWidget<MissingType>
-    {
-        public MissingTypeUnitWidget(FlowCanvas canvas, MissingType unit)
-            : base(canvas, unit)
-        { }
-
-        protected override bool showSubtitle => !string.IsNullOrEmpty(unit.formerType);
-
-        protected override void CacheDescription()
-        {
-            base.CacheDescription();
-
-            if (showSubtitle)
-            {
-                titleContent.text = unit.formerType;
-                subtitleContent.text = "Script Missing!";
-            }
-            else
-            {
-                titleContent.text = "Script Missing!";
-            }
-            titleContent.tooltip = $"No definition for type '{unit.formerType}' can be found. Did you perhaps remove a '{unit.formerType}.cs' script file?";
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:62f7efb50cf5e96409df5fa4b5b9a2401cc7069a0efd603c29676f77e8331d1a
+size 930

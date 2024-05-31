@@ -1,18 +1,3 @@
-﻿namespace UnityEngine.Animations.Rigging
-{
-    /// <summary>
-    /// This interface is used to represent all constraint data structs.
-    /// </summary>
-    public interface IAnimationJobData
-    {
-        /// <summary>
-        /// Retrieves the data valid state.
-        /// </summary>
-        /// <returns>Returns true if data can be successfully used in a constraint. Returns false otherwise.</returns>
-        bool IsValid();
-        /// <summary>
-        /// Resets values to defaults.
-        /// </summary>
-        void SetDefaultValues();
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:cc0dd2e398edb597ffc07106b9a0681c48879a6fa9b796df7d496d2666ed39dd
+size 558

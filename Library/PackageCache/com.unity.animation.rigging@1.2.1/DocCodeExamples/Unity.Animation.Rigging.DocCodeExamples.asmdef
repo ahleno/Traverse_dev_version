@@ -1,16 +1,3 @@
-{
-    "name": "Unity.Animation.Rigging.DocCodeExamples",
-    "rootNamespace": "",
-    "references": [
-        "Unity.Animation.Rigging"
-    ],
-    "includePlatforms": [],
-    "excludePlatforms": [],
-    "allowUnsafeCode": false,
-    "overrideReferences": true,
-    "precompiledReferences": [],
-    "autoReferenced": false,
-    "defineConstraints": [],
-    "versionDefines": [],
-    "noEngineReferences": false
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:84da03428d74b50bb606bc725fb8721a8a0cc8b293c995b4d59c111898b64389
+size 412

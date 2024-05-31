@@ -1,14 +1,3 @@
-using UnityEngine.EventSystems;
-
-namespace Unity.VisualScripting
-{
-    [UnityEngine.AddComponentMenu("")]
-    [VisualScriptingHelpURL(typeof(UnityOnDeselectMessageListener))]
-    public sealed class UnityOnDeselectMessageListener : MessageListener, IDeselectHandler
-    {
-        public void OnDeselect(BaseEventData eventData)
-        {
-            EventBus.Trigger(EventHooks.OnDeselect, gameObject, eventData);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:0dd620436cbffc2cbb14036574fff888ff237b47a12883fd9217ba67967fec5f
+size 432

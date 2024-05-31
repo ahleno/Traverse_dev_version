@@ -1,5 +1,3 @@
-{
-	"displayName":"Animation Rigging Constraint Samples",
-	"description": "Import ConstraintSamples.unitypackage to see basic setup and usage of animation rigging constraints.",
-	"createSeparatePackage": false
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:e8f2f61b7a50e5ea958ae3e2f5851692860b18dee204bb122d32fdcaf7cd3344
+size 211
