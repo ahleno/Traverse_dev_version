@@ -17,7 +17,7 @@ public class shortWoodStickCollisionHandler : MonoBehaviour
     public int gravity;
     public int torqueValue;
 
-    private bool isAttacked = false;
+    public bool isAttacked = false;
 
     // Start is called before the first frame update
     void Start()
@@ -30,6 +30,12 @@ public class shortWoodStickCollisionHandler : MonoBehaviour
     {
 
     }
+
+    public bool IsAttacked()
+    {
+        return isAttacked;
+    }
+
     private void OnCollisionEnter(Collision collision)
     {
         // Debug.Log("충돌");
@@ -52,7 +58,7 @@ public class shortWoodStickCollisionHandler : MonoBehaviour
             else
             {
                 //rigidbody.AddForce(longStickRigidbody.velocity, ForceMode.Impulse);
-                rigidbody.AddForce(Vector3.forward * force_forward, ForceMode.Impulse);
+                rigidbody.AddForce(transform.forward * force_forward, ForceMode.Impulse);
                 Debug.Log("추후 충돌, 자유 힘");
                 Debug.Log(longStickRigidbody.velocity);
             }
