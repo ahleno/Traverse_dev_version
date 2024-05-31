@@ -2,22 +2,34 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class JachigiGameManager : MonoBehaviour
 {
+    public static JachigiGameManager gm;
+    public Text scoreText;
+
     public GameObject shortWoodStick;  // Assign this in the inspector
 
+    private shortWoodStickCollisionHandler shortWoodStickCollisionHandler;
     private Rigidbody rb;              // Rigidbody component of the object
     private Vector3 initialPosition;
     private Quaternion initialRotation;
 
+    private void Awake()
+    {
+        if(gm == null)
+        {
+            gm = this;
+        }
+    }
 
 
     void Start()
     {
         // Get the Rigidbody component attached to the object
         rb = shortWoodStick.GetComponent<Rigidbody>();
-
+        shortWoodStickCollisionHandler = shortWoodStick.GetComponent<shortWoodStickCollisionHandler>();
         // 돌아갈 위치 
         initialPosition = shortWoodStick.transform.position;
         initialRotation = shortWoodStick.transform.rotation;
@@ -26,7 +38,7 @@ public class JachigiGameManager : MonoBehaviour
     void Update()
     {
         
-        if (true)// (shortWoodStick.isAttacked)
+        if (shortWoodStickCollisionHandler.isAttacked)
         {
             // Check if the velocity magnitude (speed) is 0
             if (rb.velocity.magnitude == 0)
@@ -47,6 +59,7 @@ public class JachigiGameManager : MonoBehaviour
         // 초기 상태로 만듬
         shortWoodStick.transform.position = initialPosition;
         shortWoodStick.transform.rotation = initialRotation;
+        shortWoodStickCollisionHandler.isAttacked = false;
         // shortWoodStick.isAttacked = false;
         rb.velocity = Vector3.zero;
 
