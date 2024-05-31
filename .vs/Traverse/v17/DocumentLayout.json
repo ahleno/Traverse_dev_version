@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\Unity\\Traverse\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Unity\\Traverse\\Assets\\Scripts\\ShopScene\\Mirror.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\ShopScene\\Mirror.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Unity\\Traverse\\Assets\\Scripts\\ShopScene\\RiggingManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\ShopScene\\RiggingManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -35,6 +39,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Mirror.cs",
+              "DocumentMoniker": "D:\\Unity\\Traverse\\Assets\\Scripts\\ShopScene\\Mirror.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ShopScene\\Mirror.cs",
+              "ToolTip": "D:\\Unity\\Traverse\\Assets\\Scripts\\ShopScene\\Mirror.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ShopScene\\Mirror.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T02:06:32.717Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "RiggingManager.cs",
               "DocumentMoniker": "D:\\Unity\\Traverse\\Assets\\Scripts\\ShopScene\\RiggingManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ShopScene\\RiggingManager.cs",
@@ -47,7 +64,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "shortWoodStickCollisionHandler.cs",
               "DocumentMoniker": "D:\\Unity\\Traverse\\Assets\\Scripts\\JachigiScene\\shortWoodStickCollisionHandler.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\JachigiScene\\shortWoodStickCollisionHandler.cs",
@@ -59,7 +76,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "EnemyMoveHandler.cs",
               "DocumentMoniker": "D:\\Unity\\Traverse\\Assets\\Scripts\\JachigiScene\\EnemyMoveHandler.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\JachigiScene\\EnemyMoveHandler.cs",
@@ -71,7 +88,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "ShopUIManager.cs",
               "DocumentMoniker": "D:\\Unity\\Traverse\\Assets\\Scripts\\ShopScene\\ShopUIManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ShopScene\\ShopUIManager.cs",
@@ -83,7 +100,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Item.cs",
               "DocumentMoniker": "D:\\Unity\\Traverse\\Assets\\Scripts\\ShopScene\\Item.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ShopScene\\Item.cs",

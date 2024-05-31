@@ -477,6 +477,7 @@
 "Assets/Scripts/JachigiScene/shortWoodStickCollisionHandler.cs"
 "Assets/Scripts/ShopScene/IKFootSolver.cs"
 "Assets/Scripts/ShopScene/Item.cs"
+"Assets/Scripts/ShopScene/Mirror.cs"
 "Assets/Scripts/ShopScene/RiggingManager.cs"
 "Assets/Scripts/ShopScene/ShopUIManager.cs"
 "Assets/Scripts/SpawnButtonHandler.cs"
