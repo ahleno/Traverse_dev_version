@@ -475,6 +475,7 @@
 "Assets/Scripts/JachigiScene/JachigiGameManager.cs"
 "Assets/Scripts/JachigiScene/LongWoodStickHandler.cs"
 "Assets/Scripts/JachigiScene/shortWoodStickCollisionHandler.cs"
+"Assets/Scripts/ShopScene/GameManagerTest.cs"
 "Assets/Scripts/ShopScene/IKFootSolver.cs"
 "Assets/Scripts/ShopScene/Item.cs"
 "Assets/Scripts/ShopScene/Mirror.cs"
