@@ -1,3 +1,31 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:05323cceb68f6d14f75c5641e26b0c0b15d93370e08c8b022c684d48abefd2d0
-size 739
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class GameModelSelector : MonoBehaviour
+{
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+    }
+    
+    public void PlaySinglePlayer()
+    {
+        // 개인 플레이 모드 로직 추가
+        Debug.Log("Single Player Mode Selected");
+        // 예: SceneManager.LoadScene("SinglePlayerScene");
+    }
+
+    public void PlayMultiplayer()
+    {
+        // 멀티 플레이 모드 로직 추가
+        Debug.Log("Multiplayer Mode Selected");
+        // 예: SceneManager.LoadScene("MultiplayerScene");
+    }
+}
