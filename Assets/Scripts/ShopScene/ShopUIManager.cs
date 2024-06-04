@@ -1,30 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.SceneManagement;
-using UnityEngine.UI;
-
-public class ShopUIManager : MonoBehaviour
-{
-    public Text currentYeopjeonText;
-    public GameManagerTest gameManagerTest;
-
-    public GameObject[] itemPanels;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        currentYeopjeonText.text = gameManagerTest.yeopjeon.ToString();     
-    }
-
-    public void MoveToMainScene(){
-        SceneManager.LoadScene("MainScene");
-    }
-
-    
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:7a78fe9034585d01353bec9a5cf4be6c206420e2da48553350e533f2420176b1
+size 661
