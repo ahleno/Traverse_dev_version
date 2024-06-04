@@ -1,3 +1,77 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ad5bd0c4ed47cd90e1f6ac7fe0292e27e6863ebf777a9441643580d25b18272a
-size 2117
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Numerics;
+using Unity.VisualScripting;
+using UnityEngine;
+using Vector3 = UnityEngine.Vector3;
+using Random = UnityEngine.Random;
+
+
+public class shortWoodStickCollisionHandler : MonoBehaviour
+{
+    public Rigidbody rigidbody;
+    public int force_up;
+    public int force_forward;
+    
+    public int gravity;
+    public int torqueValue;
+
+    public bool isAttacked = false;
+    public int cnt = 0;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        Physics.gravity = new Vector3(0, gravity, 0);
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
+
+    public bool IsAttacked()
+    {
+        return isAttacked;
+    }
+    public int getCnt()
+    {
+        return cnt;
+    }
+    public void setCnt(int cnt)
+    {
+        this.cnt = cnt;
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        // Debug.Log("충돌");
+        // Debug.Log(collision.gameObject.name);
+        if (collision.gameObject.name == "LongWoodStick")
+        {
+            Rigidbody longStickRigidbody = collision.gameObject.GetComponent<Rigidbody>();
+            isAttacked = true;
+            //Debug.Log(isAttacked);
+            if (cnt == 0)
+            {
+                Debug.Log("최초 충돌, 상단 힘");
+                Vector3 attackUP = Vector3.up * force_up;
+                Vector3 torqueVector = new Vector3(torqueValue, Random.Range(1,3), 0);
+                Debug.Log(attackUP);
+                rigidbody.AddForce(attackUP, ForceMode.Impulse);
+                rigidbody.AddTorque(torqueVector);
+                cnt++;
+            }
+            else
+            {
+                //rigidbody.AddForce(longStickRigidbody.velocity, ForceMode.Impulse);
+                rigidbody.AddForce(transform.forward * force_forward, ForceMode.Impulse);
+                Debug.Log("추후 충돌, 자유 힘");
+                Debug.Log(longStickRigidbody.velocity);
+            }
+        }
+
+    }
+}

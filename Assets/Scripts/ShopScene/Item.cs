@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5d488193b84bd23d5f4103c1cfde7994eebb38750f48147037b215c660a4dcc2
-size 506
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Item : MonoBehaviour
+{
+    public GameObject panel;
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+
+    void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.CompareTag("Circle"))
+        {
+            panel.SetActive(true);
+        }
+    }
+}
