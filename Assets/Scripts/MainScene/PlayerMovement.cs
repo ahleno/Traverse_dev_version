@@ -1,33 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.SceneManagement;
-using UnityEngine.UI;
-
-public class PlayerMovement : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    public void MoveToShopScene(){
-        SceneManager.LoadScene("ShopScene");
-        Debug.Log("상점 들어감");
-    }
-    public void MoveToTuhoScene(){
-        SceneManager.LoadScene("Tuho");
-        Debug.Log("투호 들어감");
-    }
-    public void MoveToJachigiScene(){
-        SceneManager.LoadScene("Jachigi");
-        Debug.Log("자치기 들어감");
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d699d22a8898b717d6691e0ca8ca7b6da632197cb381c6ac80a981edbddcda73
+size 984
