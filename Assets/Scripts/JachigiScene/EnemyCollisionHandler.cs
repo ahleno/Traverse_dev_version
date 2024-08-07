@@ -1,29 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class EnemyCollisionHandler : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-
-        if (collision.gameObject.name == "shortWoodStick")
-        {
-            Rigidbody shortStickRigidbody = collision.gameObject.GetComponent<Rigidbody>();
-            shortStickRigidbody.velocity = new Vector3(0,0,0);
-            
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:2257fa42c389fa1a0a0ebae2089901d767e7a4b2e59bb9e4f3199c18bfb5317b
+size 926

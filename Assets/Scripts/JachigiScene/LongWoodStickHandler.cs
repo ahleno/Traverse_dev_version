@@ -1,23 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class LongWoodStickHandler : MonoBehaviour
-{
-    public Rigidbody rigidbody;
-    private Vector3 lastPosition;
-    // Start is called before the first frame update
-    void Start()
-    {
-        lastPosition = transform.position;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        Vector3 velocity = (transform.position - lastPosition) / Time.deltaTime;
-
-        lastPosition = transform.position;
-        rigidbody.velocity = velocity;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:995f653a5e8283d7de361fa6995d9c8295333fc940033a46c754cbfc256953e9
+size 559
