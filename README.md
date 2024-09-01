@@ -4,7 +4,7 @@ Genre : 3D VR Simulation Game
 <br>
   Version : Demo v1.0.0
   <br>
-  Device : Meta Quest 3
+  Device : Meta Quest 3, PICO 2
   <h2>🕹️ How To Play</h2>
 GO ./APK Dir, Build the APK file to your device using Meta Quest Developer Hub.
 We're going to enroll in Quest Store.
