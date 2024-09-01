@@ -13,7 +13,7 @@ We're going to enroll in Quest Store.
 현재 프로보노 ICT 멘토링 참여중<br>
 공모전 SW개발설계서 파일 : 
 
-[SW개발_HW제작설계서_일반(개인정보 기재x)_Traverse.pptx](https://github.com/user-attachments/files/16827800/SW._HW._.x._Traverse.pptx)
+[SW개발_HW제작설계서](https://github.com/user-attachments/files/16827800/SW._HW._.x._Traverse.pptx)
 
 
 <h2>⚡️ Technology Stack We Used</h2>
