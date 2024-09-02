@@ -1,26 +1,24 @@
 <div align=center>
-<h1>🇰🇷 사회적 약자를 위한 VR 전통놀이 시뮬레이션 게임 : Traverse</h1>
-Genre : 3D VR Simulation Game
+<h1>사회적 약자를 위한 VR 전통놀이 시뮬레이션 게임 : Traverse</h1>
+장르 : 3D VR 시뮬레이션 게임
 <br>
-  Version : Demo v1.0.0
+  버전 : Demo v1.0.0
   <br>
-  Device : Meta Quest 3, PICO 2
+  기기 : Meta Quest 3, PICO 2
   <h2>🕹️ How To Play</h2>
-GO ./APK Dir, Build the APK file to your device using Meta Quest Developer Hub.
-We're going to enroll in Quest Store.
+./APK 폴더의 apk 파일을 다운받고 Meta Quest Developer Hub를 통해 Quest 기기에 해당 파일을 빌드해서 실행 <br>
+퀘스트 스토어에 추후 등록 예정
 
 <h2>📄 Document</h2>
 현재 프로보노 ICT 멘토링 참여중<br>
-공모전 SW개발설계서 파일 : 
-
-[SW개발_HW제작설계서](https://github.com/user-attachments/files/16827800/SW._HW._.x._Traverse.pptx)
+공모전 SW개발설계서 파일 : (https://github.com/user-attachments/files/16827800/SW._HW._.x._Traverse.pptx)
 
 
 <h2>⚡️ Technology Stack We Used</h2>
 
 
-![Unity](https://img.shields.io/badge/unity-%23000000.svg?style=for-the-badge&logo=unity&logoColor=white)
-![Meta](https://img.shields.io/badge/meta-0467DF?.svg?style=for-the-badge&logo=meta&logoColor=white)
+![Unity](https://img.shields.io/badge/unity-%23000000.svg?style=for-the-badge&logo=unity&logoColor=white) <br>
+![Python](https://img.shields.io/badge/Python-3776AB.svg?style=for-the-badge&logo=Python&logoColor=white)
 
 
 <h2>Tutorial Image</h2>
@@ -47,6 +45,7 @@ We're going to enroll in Quest Store.
 김한얼(ahleno) : 투호 플레이화면 제작<br>
 안소정(AhnSunday) : 메인화면 제작, 멀티플레이를 위한 포톤서버 활용
 </div>
+<br>
 
 ![2024 프로보노 팀사진](https://github.com/user-attachments/assets/ae713946-7602-4b2b-8806-d5449ab52f5d)
 
